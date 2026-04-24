@@ -1,0 +1,159 @@
+# Bean Forge BV — CRM pipeline.
+# Schema: see ARCHITECTURE.md.
+# Stages: new | qualified | proposition | negotiation | won | lost
+# Amounts in EUR. Expected close dates are absolute; the populate script
+# may shift them relative to "now" so the pipeline always feels current.
+
+# ─── New ────────────────────────────────────────────────────────
+- id: lead-sunset-foundry
+  customer_ref: sunset-bean-co
+  title: Sunset Bean — Foundry 60kg inquiry (new facility)
+  stage: new
+  amount: 180000
+  expected_close: 2026-09-30
+  salesperson: james-obrien
+  narrative: |
+    Inbound from website. Sunset is outgrowing two Studios, asked about Foundry.
+    James scheduled discovery call next week.
+
+- id: lead-cafeteros-cumbre-studio2
+  customer_ref: cafeteros-cumbre
+  title: Cafeteros Cumbre — second Studio for Medellín
+  stage: new
+  amount: 65000
+  expected_close: 2026-08-15
+  salesperson: james-obrien
+  narrative: |
+    Existing customer expanding to Medellín. Wants a Studio identical to their Bogotá setup.
+
+- id: lead-barcelona-microroaster
+  customer_ref: null
+  title: Unnamed Barcelona micro-roaster — Atelier inquiry
+  stage: new
+  amount: 18000
+  expected_close: 2026-07-10
+  salesperson: maria-flores
+  narrative: |
+    Intro via Vienna Caffè Institut alumnus. Very early; needs financing options.
+
+# ─── Qualified ──────────────────────────────────────────────────
+- id: lead-meridian-atelier-fleet
+  customer_ref: meridian-coffee-seoul
+  title: Meridian Seoul — 12× Atelier fleet for training program
+  stage: qualified
+  amount: 216000
+  expected_close: 2026-08-30
+  salesperson: jihoon-park
+  narrative: |
+    Chain is rolling out barista training at 12 flagship cafés. Each location gets an
+    Atelier. Budget approved; evaluating us vs. two competitors. Ji-hoon flies Seoul
+    in two weeks for on-site demo.
+
+- id: lead-ironbark-studio3
+  customer_ref: ironbark-coffee
+  title: Ironbark — third Studio for Montreal roastery
+  stage: qualified
+  amount: 65000
+  expected_close: 2026-07-20
+  salesperson: james-obrien
+  narrative: |
+    Existing customer, straightforward upsell. Discussing Forge Control subscription bundle.
+
+- id: lead-vienna-institut-atelier-refresh
+  customer_ref: vienna-caffe-institut
+  title: Vienna Institut — Atelier refresh + training expansion
+  stage: qualified
+  amount: 54000
+  expected_close: 2026-10-01
+  salesperson: maria-flores
+  narrative: |
+    Institute is refreshing training fleet (3× Atelier). Also wants onboarding for 20 students.
+
+# ─── Proposition ────────────────────────────────────────────────
+- id: lead-northwind-foundry
+  customer_ref: northwind-roasters
+  title: Northwind — Foundry 60kg + Studio retire
+  stage: proposition
+  amount: 205000          # includes trade-in credit on retired Studio
+  expected_close: 2026-07-15
+  salesperson: james-obrien
+  narrative: |
+    Proposal delivered. Customer wants to retire one Studio and add a Foundry for new
+    Seattle space. Waiting on parent-group capex approval.
+
+- id: lead-kreuzberg-foundry2
+  customer_ref: kreuzberg-coffee
+  title: Kreuzberg — second Foundry for Munich expansion
+  stage: proposition
+  amount: 198000
+  expected_close: 2026-08-01
+  salesperson: maria-flores
+  narrative: |
+    Proposal delivered, includes installation + 3-year maintenance contract.
+    Maria confident but Munich lease still not signed on their side.
+
+- id: lead-fortaleza-studio
+  customer_ref: fortaleza-coffee
+  title: Fortaleza Melbourne — Studio upgrade
+  stage: proposition
+  amount: 67500
+  expected_close: 2026-07-30
+  salesperson: jihoon-park
+  narrative: |
+    Replacing legacy machine. Comparing our quote vs. a local Australian competitor.
+
+# ─── Negotiation ────────────────────────────────────────────────
+- id: lead-alberti-maintenance
+  customer_ref: alberti-caffe
+  title: Alberti Caffè — 5-year maintenance contract renewal
+  stage: negotiation
+  amount: 49000
+  expected_close: 2026-06-15
+  salesperson: maria-flores
+  narrative: |
+    Renewal discussion. Customer pushing for rate lock; we want CPI escalator.
+    Expecting close by mid-June.
+
+- id: lead-kintaro-control-fleet
+  customer_ref: kintaro-roastworks
+  title: Kintaro — Forge Control rollout across entire fleet (7 machines)
+  stage: negotiation
+  amount: 12600          # €150/mo × 7 machines × 12 months
+  expected_close: 2026-06-30
+  salesperson: jihoon-park
+  narrative: |
+    Loyal customer, already on Forge Control for one machine. Negotiating multi-machine
+    discount + bundled onboarding for their head roaster team.
+
+# ─── Won (recent) ───────────────────────────────────────────────
+- id: lead-ribbon-bean-studio
+  customer_ref: ribbon-bean
+  title: Ribbon & Bean — additional Studio for Shoreditch roastery
+  stage: won
+  amount: 68000
+  expected_close: 2026-03-20
+  salesperson: maria-flores
+  narrative: |
+    Closed March. Machine shipped, installation next month. Classic Ribbon upsell.
+
+- id: lead-orsted-maintenance-foundry
+  customer_ref: orsted-espresso
+  title: Ørsted — maintenance contract for Studio
+  stage: won
+  amount: 4200
+  expected_close: 2026-04-05
+  salesperson: maria-flores
+  narrative: |
+    Small but strategic — first maintenance contract with Ørsted. Gets us in the door for a Foundry pitch.
+
+# ─── Lost ───────────────────────────────────────────────────────
+- id: lead-lost-tokyo-chain
+  customer_ref: null
+  title: Tokyo chain — 30× Atelier fleet (LOST to local competitor)
+  stage: lost
+  amount: 540000
+  expected_close: 2026-02-28
+  salesperson: jihoon-park
+  narrative: |
+    Lost on price. Competitor offered in-country service, we couldn't match the margin.
+    Fueled the urgency of Ji-hoon's distributor-network project.

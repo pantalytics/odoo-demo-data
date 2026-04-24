@@ -1,0 +1,258 @@
+# Bean Forge BV — 25-person cast.
+# Schema: see ARCHITECTURE.md.
+# Slug IDs are used as refs across customers, projects, CRM.
+
+# ─── Leadership ─────────────────────────────────────────────────
+- id: teun-boon
+  name: Teun Boon
+  nationality: NL
+  role: CEO
+  department: Leadership
+  manager: null
+  email: teun.boon@beanforge.com
+  languages: [nl, en, de]
+  bio: Third-generation family CEO. Believes roasters are instruments, not appliances. Pushing for B-Corp.
+
+- id: elena-rossi
+  name: Elena Rossi
+  nationality: IT
+  role: CFO
+  department: Leadership
+  manager: teun-boon
+  email: elena.rossi@beanforge.com
+  languages: [it, en, nl]
+  bio: Keeps the family business from getting too romantic about its margins. Spreadsheet black belt.
+
+- id: marcus-chen
+  name: Marcus Chen
+  nationality: GB
+  role: Head of Sales
+  department: Leadership
+  manager: teun-boon
+  email: marcus.chen@beanforge.com
+  languages: [en, zh]
+  bio: Ex-big-coffee. Translates Bean Forge's craft story into commercial contracts.
+
+- id: priya-raghavan
+  name: Priya Raghavan
+  nationality: IN
+  role: Head of Marketing
+  department: Leadership
+  manager: teun-boon
+  email: priya.raghavan@beanforge.com
+  languages: [en, hi, ta]
+  bio: Obsessed with the Polaroid wall. Wants every customer's origin story in the next campaign.
+
+- id: bram-visser
+  name: Bram Visser
+  nationality: NL
+  role: Chief Engineer
+  department: Leadership
+  manager: teun-boon
+  email: bram.visser@beanforge.com
+  languages: [nl, en, de]
+  bio: "\"The Nose.\" Calibration-roasts every machine before it ships. Controversial opinions on white chocolate."
+
+# ─── Management ─────────────────────────────────────────────────
+- id: kwame-asante
+  name: Kwame Asante
+  nationality: GH
+  role: Operations Manager
+  department: Operations
+  manager: teun-boon
+  email: kwame.asante@beanforge.com
+  languages: [en, tw]
+  bio: Former cocoa-supply-chain engineer. Runs the shop floor with calm ruthlessness.
+
+- id: ingrid-lindqvist
+  name: Ingrid Lindqvist
+  nationality: SE
+  role: HR Manager
+  department: HR
+  manager: teun-boon
+  email: ingrid.lindqvist@beanforge.com
+  languages: [sv, en, no]
+  bio: Fierce defender of Friday calibration-roast ritual. Knows every birthday.
+
+- id: zahra-yilmaz
+  name: Zahra Yılmaz
+  nationality: TR
+  role: QA & Compliance Lead
+  department: Operations
+  manager: kwame-asante
+  email: zahra.yilmaz@beanforge.com
+  languages: [tr, en, de]
+  bio: Holds the CE/UL/export-compliance keys. Laminates everything.
+
+- id: sofia-mendes
+  name: Sofia Mendes
+  nationality: PT
+  role: Purchasing Manager
+  department: Operations
+  manager: kwame-asante
+  email: sofia.mendes@beanforge.com
+  languages: [pt, en, es]
+  bio: Negotiated the Milano Burner Works exclusivity deal. Secret weapon on steel pricing.
+
+- id: daniel-katz
+  name: Daniel Katz
+  nationality: IL
+  role: Financial Controller
+  department: Finance
+  manager: elena-rossi
+  email: daniel.katz@beanforge.com
+  languages: [he, en, fr]
+  bio: Runs the books. Obsessive about month-end close timelines.
+
+# ─── Production (shop floor) ────────────────────────────────────
+- id: hiroshi-tanaka
+  name: Hiroshi Tanaka
+  nationality: JP
+  role: Production Lead
+  department: Production
+  manager: kwame-asante
+  email: hiroshi.tanaka@beanforge.com
+  languages: [ja, en]
+  bio: Ex-Mazak. Brought lean-manufacturing rigor to the Forge shop floor.
+
+- id: tomas-vargas
+  name: Tomás Vargas
+  nationality: MX
+  role: Senior Welder
+  department: Production
+  manager: hiroshi-tanaka
+  email: tomas.vargas@beanforge.com
+  languages: [es, en]
+  bio: Chassis whisperer. Can weld a Foundry frame in his sleep.
+
+- id: aisha-okonkwo
+  name: Aisha Okonkwo
+  nationality: NG
+  role: Assembly Technician
+  department: Production
+  manager: hiroshi-tanaka
+  email: aisha.okonkwo@beanforge.com
+  languages: [en, yo]
+  bio: Assembles drum-and-drive sub-assemblies. Fastest torque-wrench on the floor.
+
+- id: lea-dubois
+  name: Léa Dubois
+  nationality: FR
+  role: Electronics Technician
+  department: Production
+  manager: hiroshi-tanaka
+  email: lea.dubois@beanforge.com
+  languages: [fr, en]
+  bio: Handles PLC wiring and probe calibration. Keeps the soldering-station organized to a fault.
+
+- id: sebastian-herrera
+  name: Sebastián Herrera
+  nationality: CL
+  role: Electronics Technician
+  department: Production
+  manager: hiroshi-tanaka
+  email: sebastian.herrera@beanforge.com
+  languages: [es, en]
+  bio: Firmware-flashing, panel-testing, final-electrical. Always humming.
+
+- id: mateusz-nowak
+  name: Mateusz Nowak
+  nationality: PL
+  role: Finishing Technician
+  department: Production
+  manager: hiroshi-tanaka
+  email: mateusz.nowak@beanforge.com
+  languages: [pl, en, de]
+  bio: Powder-coating and polishing specialist. Treats every chassis like a show car.
+
+- id: anja-novak
+  name: Anja Novak
+  nationality: SI
+  role: Finishing Technician
+  department: Production
+  manager: hiroshi-tanaka
+  email: anja.novak@beanforge.com
+  languages: [sl, en, de]
+  bio: Signs every machine she finishes. The wall of customer Polaroids was her idea.
+
+- id: omar-el-sayed
+  name: Omar El-Sayed
+  nationality: EG
+  role: QC Inspector
+  department: Production
+  manager: zahra-yilmaz
+  email: omar.elsayed@beanforge.com
+  languages: [ar, en]
+  bio: Runs the pre-ship inspection checklist. Found the probe defect on a 2024 batch that saved a recall.
+
+# ─── Sales & Marketing ──────────────────────────────────────────
+- id: maria-flores
+  name: Maria Flores
+  nationality: ES
+  role: Account Executive — EMEA
+  department: Sales
+  manager: marcus-chen
+  email: maria.flores@beanforge.com
+  languages: [es, en, fr]
+  bio: Covers Southern Europe + Middle East. Closed the Kreuzberg deal in a single tasting session.
+
+- id: james-obrien
+  name: James O'Brien
+  nationality: IE
+  role: Account Executive — Americas
+  department: Sales
+  manager: marcus-chen
+  email: james.obrien@beanforge.com
+  languages: [en]
+  bio: Travels Seattle → Portland → San Francisco four times a year. Knows every roastmaster west of the Rockies by first name.
+
+- id: jihoon-park
+  name: Ji-hoon Park
+  nationality: KR
+  role: Account Executive — APAC
+  department: Sales
+  manager: marcus-chen
+  email: jihoon.park@beanforge.com
+  languages: [ko, en, ja]
+  bio: Joined 2025. Building out the Japan and Korea distributor network from scratch.
+
+- id: chloe-martin
+  name: Chloé Martin
+  nationality: FR
+  role: Content & Social Lead
+  department: Marketing
+  manager: priya-raghavan
+  email: chloe.martin@beanforge.com
+  languages: [fr, en]
+  bio: Runs the Polaroid campaign, Instagram, and the behind-the-scenes factory-tour videos.
+
+# ─── Support & Field ────────────────────────────────────────────
+- id: piet-bakker
+  name: Piet Bakker
+  nationality: NL
+  role: Warehouse & Shipping Lead
+  department: Operations
+  manager: kwame-asante
+  email: piet.bakker@beanforge.com
+  languages: [nl, en]
+  bio: Teun's nephew. Knows every crate, every shipping route, every customs quirk.
+
+- id: viktor-petrovic
+  name: Viktor Petrović
+  nationality: HR
+  role: Field Service Technician
+  department: Operations
+  manager: kwame-asante
+  email: viktor.petrovic@beanforge.com
+  languages: [hr, en, de, it]
+  bio: Travels worldwide for installations and on-site service. Clocked 180 flights in 2025.
+
+- id: fatima-al-hassan
+  name: Fatima Al-Hassan
+  nationality: MA
+  role: Office Manager
+  department: Operations
+  manager: teun-boon
+  email: fatima.alhassan@beanforge.com
+  languages: [ar, fr, en, nl]
+  bio: Runs reception, travel bookings, customer tours. The person who actually knows where everything is.

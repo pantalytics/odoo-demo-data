@@ -1,0 +1,72 @@
+# Bean Forge BV — suppliers. ALL FICTIONAL.
+# Schema: see ARCHITECTURE.md.
+
+- id: milano-burner-works
+  name: Milano Burner Works S.p.A.
+  country: IT
+  city: Milan
+  category: burner
+  notes: Sole supplier of gas burners for Studio and Foundry lines. Exclusivity deal negotiated by Sofia in 2022.
+
+- id: delft-steel-fab
+  name: Delft Steel Fabrication BV
+  country: NL
+  city: Delft
+  category: steel
+  notes: Stainless-steel chassis fabricator. Local, short lead times. Key for Atelier + Studio volumes.
+
+- id: rhine-valley-steel
+  name: Rhine Valley Steel Werke
+  country: DE
+  city: Duisburg
+  category: steel
+  notes: Heavier-gauge stainless for Foundry chassis. Quarterly contracts.
+
+- id: bavaria-plc
+  name: Bavaria PLC Systems GmbH
+  country: DE
+  city: Munich
+  category: electronics
+  notes: PLC controllers + touchscreens. All three Forge lines.
+
+- id: copenhagen-sensors
+  name: Copenhagen Sensor Co.
+  country: DK
+  city: Copenhagen
+  category: electronics
+  notes: Precision temperature probes (bean + exhaust). Competitive alternative to German sourcing.
+
+- id: porto-wiring
+  name: Porto Wiring & Harnesses
+  country: PT
+  city: Porto
+  category: electronics
+  notes: Custom wiring harnesses. Sofia's find — quality equal to German suppliers at 30% less.
+
+- id: de-jong-packaging
+  name: De Jong Wood Packaging BV
+  country: NL
+  city: Utrecht
+  category: packaging
+  notes: Export-grade wood crates for all shipped machines. ISPM-15 certified.
+
+- id: bruges-powder-coat
+  name: Bruges Powder Coat & Finish
+  country: BE
+  city: Bruges
+  category: finishing
+  notes: Powder coating for chassis. Mateusz's preferred partner.
+
+- id: tuscan-drum-castings
+  name: Tuscan Drum Castings SRL
+  country: IT
+  city: Florence
+  category: machining
+  notes: Machined drum sub-assemblies. Italian precision, slow but excellent.
+
+- id: amsterdam-shipping
+  name: Amsterdam Shipping Alliance
+  country: NL
+  city: Amsterdam
+  category: logistics
+  notes: Sea freight consolidator for Americas + APAC exports. Not a manufacturing supplier — ops-critical though.

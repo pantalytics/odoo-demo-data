@@ -1,0 +1,12 @@
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+__pycache__/
+*.pyc
+.env
+.env.local
+
+# Generated images (not yet checked in — uncomment to ignore once generated)
+# images/generated/

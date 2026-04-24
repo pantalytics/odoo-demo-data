@@ -1,0 +1,141 @@
+# Bean Forge BV — projects.
+# Schema: see ARCHITECTURE.md.
+# Mix of internal (R&D, compliance, expansion) and billable (customer installation).
+
+# ─── Internal ───────────────────────────────────────────────────
+- id: proj-forge-hybrid-30kg
+  name: Forge 30kg Hybrid — R&D
+  kind: internal
+  lead: bram-visser
+  start: 2025-10-01
+  end: 2026-12-31
+  narrative: |
+    Next-gen hybrid gas-electric 30kg roaster. Bridges Studio and Foundry.
+    Targeted launch Q1 2027. Strategic for energy-conscious markets.
+  tasks:
+    - title: Electric element sourcing + sizing
+      assignee: lea-dubois
+      done: true
+    - title: Drum + gas-burner integration prototyping
+      assignee: bram-visser
+      done: true
+    - title: Controls firmware port
+      assignee: sebastian-herrera
+      done: false
+    - title: CE pre-certification review
+      assignee: zahra-yilmaz
+      done: false
+    - title: Field prototype trial at partner roastery
+      assignee: bram-visser
+      done: false
+
+- id: proj-bcorp-certification
+  name: B-Corp certification track
+  kind: internal
+  lead: teun-boon
+  start: 2025-09-01
+  end: 2026-09-30
+  narrative: |
+    Company-wide initiative. Supplier audits, governance changes, employee surveys.
+    CEO-led with HR and Finance support.
+  tasks:
+    - title: Initial BIA baseline assessment
+      assignee: teun-boon
+      done: true
+    - title: Supplier audit — fair-trade cocoa analog for machines
+      assignee: sofia-mendes
+      done: false
+    - title: Governance by-law amendments
+      assignee: elena-rossi
+      done: false
+    - title: Employee engagement survey + action plan
+      assignee: ingrid-lindqvist
+      done: false
+    - title: Submit full BIA
+      assignee: teun-boon
+      done: false
+
+- id: proj-factory-hall-3
+  name: Factory expansion — Hall 3
+  kind: internal
+  lead: kwame-asante
+  start: 2026-01-15
+  end: 2026-11-30
+  narrative: |
+    Third production hall to handle growing Foundry demand.
+    Construction, crane install, assembly-line layout, commissioning.
+  tasks:
+    - title: Building permit & contractor selection
+      assignee: kwame-asante
+      done: true
+    - title: Crane & heavy-equipment install
+      assignee: kwame-asante
+      done: false
+    - title: Assembly-line layout design
+      assignee: hiroshi-tanaka
+      done: false
+    - title: QC workflow integration
+      assignee: zahra-yilmaz
+      done: false
+
+- id: proj-apac-distributor-network
+  name: APAC distributor network buildout
+  kind: internal
+  lead: jihoon-park
+  start: 2026-01-01
+  end: 2026-12-31
+  narrative: |
+    Build regional service partners in Japan and Korea (and exploratory in Singapore).
+    Response to losing the Tokyo chain deal on in-country-service grounds.
+  tasks:
+    - title: Japan — identify + qualify 3 candidate distributors
+      assignee: jihoon-park
+      done: true
+    - title: Korea — distributor MoU
+      assignee: jihoon-park
+      done: false
+    - title: Service-tech training program for partners
+      assignee: viktor-petrovic
+      done: false
+
+# ─── Billable (customer installations) ──────────────────────────
+- id: proj-install-kintaro-foundry
+  name: Kintaro Roastworks — Foundry installation (Tokyo)
+  kind: billable
+  lead: viktor-petrovic
+  customer_ref: kintaro-roastworks
+  start: 2026-05-10
+  end: 2026-05-18
+  narrative: |
+    On-site install + commissioning + operator training. Viktor + Hiroshi traveling.
+    5 install days + 3 training days billable.
+  tasks:
+    - title: Pre-trip site survey review
+      assignee: viktor-petrovic
+      done: true
+    - title: On-site install (5 days)
+      assignee: viktor-petrovic
+      done: false
+    - title: Operator training (3 days)
+      assignee: hiroshi-tanaka
+      done: false
+    - title: Commissioning sign-off + customer Polaroid
+      assignee: viktor-petrovic
+      done: false
+
+- id: proj-install-ribbon-studio
+  name: Ribbon & Bean — Shoreditch Studio installation
+  kind: billable
+  lead: viktor-petrovic
+  customer_ref: ribbon-bean
+  start: 2026-04-22
+  end: 2026-04-25
+  narrative: |
+    3-day install. London trip, simple site, repeat customer — the easy kind.
+  tasks:
+    - title: Install + commissioning
+      assignee: viktor-petrovic
+      done: false
+    - title: Operator training
+      assignee: viktor-petrovic
+      done: false

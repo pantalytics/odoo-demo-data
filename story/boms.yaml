@@ -1,0 +1,88 @@
+# Bean Forge BV — bills of materials.
+# Schema: see ARCHITECTURE.md.
+# Multi-level: BOMs can reference sub-assembly BOMs or raw product refs.
+# Raw-material refs below (chassis-*, drum-*, etc.) are placeholders; they'll be
+# created in Odoo as components when the populate script runs.
+
+# ─── Forge Atelier 1kg ──────────────────────────────────────────
+- id: bom-forge-atelier
+  product_ref: forge-atelier
+  version: 1
+  components:
+    - product_ref: chassis-atelier
+      qty: 1
+    - product_ref: drum-assembly-atelier
+      qty: 1
+    - product_ref: burner-3kw-electric
+      qty: 1
+    - product_ref: control-panel-v2
+      qty: 1
+    - product_ref: probe-set
+      qty: 1
+    - product_ref: wiring-harness-atelier
+      qty: 1
+    - product_ref: shipping-crate-small
+      qty: 1
+
+# ─── Forge Studio 15kg ──────────────────────────────────────────
+- id: bom-forge-studio
+  product_ref: forge-studio
+  version: 1
+  components:
+    - product_ref: chassis-studio
+      qty: 1
+    - product_ref: drum-assembly-studio
+      qty: 1
+    - product_ref: burner-15kw-gas
+      qty: 1
+    - product_ref: control-panel-v2
+      qty: 1
+    - product_ref: probe-set
+      qty: 2      # Studio ships with dual probe sets
+    - product_ref: chaff-collector-studio
+      qty: 1
+    - product_ref: wiring-harness-studio
+      qty: 1
+    - product_ref: shipping-crate-medium
+      qty: 1
+
+# ─── Forge Foundry 60kg ─────────────────────────────────────────
+- id: bom-forge-foundry
+  product_ref: forge-foundry
+  version: 1
+  components:
+    - product_ref: chassis-foundry
+      qty: 1
+    - product_ref: drum-assembly-foundry
+      qty: 1
+    - product_ref: burner-60kw-gas
+      qty: 1
+    - product_ref: control-panel-v2
+      qty: 1
+    - product_ref: probe-set
+      qty: 3
+    - product_ref: afterburner-foundry
+      qty: 1      # Foundry ships with afterburner included
+    - product_ref: chaff-collector-foundry
+      qty: 1
+    - product_ref: wiring-harness-foundry
+      qty: 1
+    - product_ref: shipping-crate-large
+      qty: 1
+
+# ─── Sub-assembly: drum-assembly-studio ─────────────────────────
+# Example of a multi-level BOM for MRP demo purposes.
+- id: bom-drum-assembly-studio
+  product_ref: drum-assembly-studio
+  version: 1
+  components:
+    - product_ref: drum-casting-15l
+      qty: 1
+    - product_ref: drive-shaft
+      qty: 1
+    - product_ref: drum-drive-belt
+      qty: 2
+    - product_ref: bearing-pair
+      qty: 2
+    - product_ref: drum-end-plate
+      qty: 2

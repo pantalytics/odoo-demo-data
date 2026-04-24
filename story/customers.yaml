@@ -1,0 +1,187 @@
+# Bean Forge BV — B2B customer roster. ALL FICTIONAL.
+# Schema: see ARCHITECTURE.md.
+# Mix of specialty roasters, chains building in-house roasting, academia, and food-co customers.
+
+# ─── EMEA ───────────────────────────────────────────────────────
+- id: kreuzberg-coffee
+  name: Kreuzberg Coffee Co.
+  type: specialty_roaster
+  country: DE
+  city: Berlin
+  segment: key_account
+  account_exec: maria-flores
+  notes: Runs 2× Studio and 1× Foundry. Evaluating Foundry #2 for a new Munich roastery.
+
+- id: fjord-coffee
+  name: Fjord Coffee
+  type: specialty_roaster
+  country: NO
+  city: Oslo
+  segment: mid_market
+  account_exec: maria-flores
+  notes: Launched with an Atelier in 2022, upgraded to Studio in 2024. Nordic specialty scene tastemaker.
+
+- id: ribbon-bean
+  name: Ribbon & Bean
+  type: specialty_roaster
+  country: GB
+  city: London
+  segment: key_account
+  account_exec: maria-flores
+  notes: Three London cafés + wholesale. Studio customer since 2019. Active referral source.
+
+- id: alberti-caffe
+  name: Alberti Caffè
+  type: specialty_roaster
+  country: IT
+  city: Bologna
+  segment: mid_market
+  account_exec: maria-flores
+  notes: Third-generation family roaster. Bought Foundry in 2023 after 30 years on a competitor.
+
+- id: orsted-espresso
+  name: Ørsted Espresso
+  type: specialty_roaster
+  country: DK
+  city: Copenhagen
+  segment: mid_market
+  account_exec: maria-flores
+  notes: Four-café chain. Studio + maintenance contract.
+
+- id: drop-coffee-lab
+  name: Drop Coffee Lab
+  type: specialty_roaster
+  country: SE
+  city: Stockholm
+  segment: smb
+  account_exec: maria-flores
+  notes: Atelier customer. Runs training workshops quarterly.
+
+- id: vienna-caffe-institut
+  name: Vienna Caffè Institut
+  type: academia
+  country: AT
+  city: Vienna
+  segment: smb
+  account_exec: maria-flores
+  notes: Barista school. Runs 2× Atelier for training. Strategic for referral to student alumni.
+
+- id: casa-do-cafe-lisboa
+  name: Casa do Café Lisboa
+  type: specialty_roaster
+  country: PT
+  city: Lisbon
+  segment: mid_market
+  account_exec: maria-flores
+  notes: Portugal's top specialty roaster. Studio customer since 2021.
+
+# ─── Americas ───────────────────────────────────────────────────
+- id: northwind-roasters
+  name: Northwind Roasters
+  type: specialty_roaster
+  country: US
+  city: Seattle
+  segment: key_account
+  account_exec: james-obrien
+  notes: Two Studios since 2022. Evaluating Foundry upgrade for new roasting facility.
+
+- id: pine-ridge-coffee
+  name: Pine Ridge Coffee
+  type: specialty_roaster
+  country: US
+  city: Portland
+  segment: key_account
+  account_exec: james-obrien
+  notes: Regional Pacific Northwest roaster. Foundry customer. Strong Forge Control adopter.
+
+- id: sunset-bean-co
+  name: Sunset Bean Co.
+  type: specialty_roaster
+  country: US
+  city: San Francisco
+  segment: mid_market
+  account_exec: james-obrien
+  notes: Multi-location cafés + wholesale. Studio customer.
+
+- id: cinco-soles-cafe
+  name: Cinco Soles Café
+  type: specialty_roaster
+  country: MX
+  city: Mexico City
+  segment: mid_market
+  account_exec: james-obrien
+  notes: Mexico's leading specialty roaster. Bought Atelier 2023, considering Studio.
+
+- id: cafeteros-cumbre
+  name: Cafeteros Cumbre
+  type: specialty_roaster
+  country: CO
+  city: Bogotá
+  segment: smb
+  account_exec: james-obrien
+  notes: Colombian roaster + exporter. Studio customer, interested in vertical integration.
+
+- id: ironbark-coffee
+  name: Ironbark Coffee
+  type: specialty_roaster
+  country: CA
+  city: Toronto
+  segment: mid_market
+  account_exec: james-obrien
+  notes: Canadian chain. Two Studios, negotiating third.
+
+# ─── APAC ───────────────────────────────────────────────────────
+- id: kintaro-roastworks
+  name: Kintaro Roastworks
+  type: specialty_roaster
+  country: JP
+  city: Tokyo
+  segment: key_account
+  account_exec: jihoon-park
+  notes: Tokyo institution. Bought Foundry in 2024 — largest APAC deal to date.
+
+- id: meridian-coffee-seoul
+  name: Meridian Coffee Seoul
+  type: chain
+  country: KR
+  city: Seoul
+  segment: key_account
+  account_exec: jihoon-park
+  notes: Fast-growing chain building in-house roasting. Atelier fleet in discussion.
+
+- id: harbour-bean
+  name: Harbour Bean
+  type: specialty_roaster
+  country: SG
+  city: Singapore
+  segment: mid_market
+  account_exec: jihoon-park
+  notes: Singapore specialty scene leader. Studio + maintenance contract.
+
+- id: fortaleza-coffee
+  name: Fortaleza Coffee
+  type: specialty_roaster
+  country: AU
+  city: Melbourne
+  segment: mid_market
+  account_exec: jihoon-park
+  notes: Bought Studio 2023. Melbourne specialty-coffee-scene referrer.
+
+# ─── Food & Beverage (adjacent) ─────────────────────────────────
+- id: wonderworks-chocolate
+  name: Wonderworks Chocolate BV
+  type: foodco
+  country: NL
+  city: Zaandam
+  segment: mid_market
+  account_exec: maria-flores
+  notes: Uses Studio for cocoa nib pre-roasting. Demonstrates Bean Forge's non-coffee use cases.
+
+- id: silk-road-tea
+  name: Silk Road Tea Works
+  type: foodco
+  country: CN
+  city: Hangzhou
+  segment: smb
+  account_exec: jihoon-park
+  notes: Tea fermentation/roasting. Atelier customer — edge use case, great for case studies.

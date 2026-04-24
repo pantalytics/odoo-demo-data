@@ -1,0 +1,154 @@
+# Bean Forge BV — product catalog.
+# Schema: see ARCHITECTURE.md.
+# Prices in EUR. Cost prices approximate, for demo realism.
+
+# ─── Finished machines ──────────────────────────────────────────
+- id: forge-atelier
+  name: Forge Atelier 1kg
+  line: Forge
+  category: roaster
+  uom: Units
+  sale_price: 18000
+  cost_price: 7200
+  description: |
+    1kg drum sample roaster. Built for QC labs, training academies, and micro-roasters
+    doing origin cupping. Full manual control with digital profile logging.
+    Single-phase power, compact footprint.
+
+- id: forge-studio
+  name: Forge Studio 15kg
+  line: Forge
+  category: roaster
+  uom: Units
+  sale_price: 65000
+  cost_price: 24000
+  description: |
+    15kg flagship workhorse. The machine most specialty roasters start with and keep
+    for a decade. Gas or electric. Forge Control-ready. Three-phase power.
+
+- id: forge-foundry
+  name: Forge Foundry 60kg
+  line: Forge
+  category: roaster
+  uom: Units
+  sale_price: 180000
+  cost_price: 72000
+  description: |
+    60kg production drum roaster. For established specialty roasters scaling beyond
+    artisan volumes. Heavy-duty construction, PLC-driven, afterburner standard.
+
+- id: forge-hybrid-30kg
+  name: Forge 30kg Hybrid (in development)
+  line: Forge
+  category: roaster
+  uom: Units
+  sale_price: 115000
+  cost_price: 48000
+  description: |
+    NEW — in R&D. Gas + electric hybrid 30kg for sustainability-conscious buyers.
+    Targeted launch Q1 2027. Listed for CRM pipeline use only; not yet sellable.
+
+# ─── Software ────────────────────────────────────────────────────
+- id: forge-control
+  name: Forge Control — SaaS subscription
+  line: Forge Control
+  category: software
+  uom: Units
+  sale_price: 150      # EUR / month per machine
+  cost_price: 12
+  description: |
+    Cloud roast-profile software. Curve authoring, batch logging, multi-machine
+    fleet dashboards. Sold as a per-machine monthly subscription.
+
+- id: forge-control-onboarding
+  name: Forge Control — onboarding & training
+  line: Forge Control
+  category: software
+  uom: Service
+  sale_price: 2500
+  cost_price: 400
+  description: One-time onboarding package per customer (up to 5 operators).
+
+# ─── Accessories ─────────────────────────────────────────────────
+- id: afterburner-studio
+  name: Afterburner retrofit kit — Studio
+  line: Accessories
+  category: accessory
+  uom: Units
+  sale_price: 8500
+  cost_price: 3200
+  description: Afterburner retrofit kit for existing Studio installations. Emission compliance for EU / West Coast US.
+
+- id: afterburner-foundry
+  name: Afterburner retrofit kit — Foundry
+  line: Accessories
+  category: accessory
+  uom: Units
+  sale_price: 16000
+  cost_price: 6000
+  description: Heavy-duty afterburner retrofit for Foundry machines.
+
+- id: chaff-collector-studio
+  name: Chaff collector — Studio
+  line: Accessories
+  category: accessory
+  uom: Units
+  sale_price: 2400
+  cost_price: 900
+  description: Cyclone chaff collector, Studio-compatible.
+
+- id: probe-set
+  name: Calibration probe set (bean + exhaust)
+  line: Accessories
+  category: accessory
+  uom: Units
+  sale_price: 450
+  cost_price: 140
+  description: Replacement bean + exhaust temperature probes, paired and calibrated.
+
+# ─── Spares ──────────────────────────────────────────────────────
+- id: drum-drive-belt
+  name: Drum drive belt (pack of 2)
+  line: Spares
+  category: spare
+  uom: Units
+  sale_price: 85
+  cost_price: 22
+  description: Consumable drive belt. Recommended replacement every 2000 roasting hours.
+
+- id: control-panel-v2
+  name: Control panel assembly v2
+  line: Spares
+  category: spare
+  uom: Units
+  sale_price: 3200
+  cost_price: 1100
+  description: PLC + touchscreen + harness, v2 assembly. Drop-in replacement for field service.
+
+# ─── Services ────────────────────────────────────────────────────
+- id: install-service
+  name: On-site installation & commissioning
+  line: Services
+  category: service
+  uom: Days
+  sale_price: 1800
+  cost_price: 750
+  description: Field-service-technician day rate for installation + commissioning + operator training.
+
+- id: maintenance-contract-studio
+  name: Preventative maintenance contract — Studio
+  line: Services
+  category: service
+  uom: Units
+  sale_price: 4200    # EUR / year
+  cost_price: 1500
+  description: Annual preventative maintenance visit + priority support + consumables bundle. Per machine.
+
+- id: maintenance-contract-foundry
+  name: Preventative maintenance contract — Foundry
+  line: Services
+  category: service
+  uom: Units
+  sale_price: 9800    # EUR / year
+  cost_price: 3200
+  description: Annual preventative maintenance + priority support + consumables for Foundry-class machines.
