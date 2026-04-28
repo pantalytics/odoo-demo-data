@@ -174,7 +174,7 @@ Order matters — employees before CRM (because CRM refs salespeople); products 
 
 - **Slug format**: `kebab-case`, unique within its file
 - **Dates**: ISO 8601 (`YYYY-MM-DD`), preferably relative to "now" for sales/CRM data (handled in population, not in YAML — YAML has absolute dates that get shifted if needed)
-- **Amounts**: always EUR, whole numbers, no currency symbols
+- **Amounts**: whole numbers, no currency symbols. Default currency is EUR; a universe may declare its own (e.g. `unicorn-inc` uses Sparkle ★) — see that universe's `CLAUDE.md`.
 - **Nationality codes**: ISO-3166 alpha-2 uppercase
 - **Language codes**: ISO-639-1 lowercase
 

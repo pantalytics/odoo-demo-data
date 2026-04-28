@@ -4,9 +4,9 @@ This is a hand-driven workflow today. Claude Code reads the YAML files for a **c
 
 ## Pre-flight checks
 
-1. **Choose the universe** to load (e.g. `bean-forge`, `fabelrijk`). Every path below is relative to `universes/<slug>/`.
+1. **Choose the universe** to load (e.g. `bean-forge`, `unicorn-inc`, `provisional-bureau`). Every path below is relative to `universes/<slug>/`.
 2. Confirm the target DB (Odoo.sh instance, local Docker, etc.) and that the Odoo MCP is pointed at it.
-3. Confirm the apps that will receive data are installed: `contacts`, `hr`, `crm`, `sale_management`, `purchase`, `stock`, `mrp`, `project`, `account`.
+3. Install the apps the chosen universe needs — see `story/odoo-apps.yaml` for the per-universe list (typical core: `contacts`, `hr`, `crm`, `sale_management`, `account`; product universes add `purchase`, `stock`, `mrp`; services-led universes add `project`, `hr_timesheet`, `sale_subscription`).
 4. For reruns, slugs in YAML map to `__import__.<slug>` external IDs — idempotent. Dropping + recreating the DB resets everything.
 
 ## Layer order (dependencies matter)
@@ -18,7 +18,7 @@ All paths assume you've chosen a universe slug `<u>` — read files from `univer
 3. **Departments + job positions** — from `department` field on employees.
 4. **Suppliers + customers (`res.partner`)** — `story/suppliers.yaml` + `story/customers.yaml`. Set `supplier_rank`/`customer_rank` accordingly. Link account execs via `user_id`.
 5. **Product categories + products** — `story/products.yaml`. Create categories first, then `product.template` records. Components referenced by BOMs are implicit — create them as internally-routed products.
-6. **Bills of materials** — `story/boms.yaml`. Multi-level: create sub-assembly BOMs first, then top-level.
+6. **Bills of materials** — `story/boms.yaml` *(skip for services-only universes that ship no `boms.yaml`, e.g. `provisional-bureau`)*. Multi-level: create sub-assembly BOMs first, then top-level.
 7. **CRM stages + pipeline** — `story/crm-pipeline.yaml`. Ensure standard stages exist; create leads with `stage_id`, `expected_revenue`, `date_deadline`, `user_id` (salesperson).
 8. **Projects + tasks** — `story/projects.yaml`. `project.project` + `project.task`. Billable projects link to customer partner.
 9. **Sales orders** *(not yet in YAML)* — generated on population, spread across last 180 days, tied to won leads. Mix of quotations + confirmed orders + delivered orders.

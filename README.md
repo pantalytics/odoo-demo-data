@@ -17,7 +17,8 @@ The cast, product catalog, customer roster, CRM pipeline, BOMs, and projects liv
 | Slug | In one line |
 |---|---|
 | [`bean-forge`](universes/bean-forge/) | Bean Forge BV — Utrecht-based precision coffee-roaster manufacturer. Documentary-realism B2B industrial vibe. |
-| [`unicorn-inc`](universes/unicorn-inc/) | (WIP) Unicorn Inc. — cheerful cooperative of fabelwezens supplying real superpowers (pegasus wings, dragon fire, mammoth fur, …). |
+| [`unicorn-inc`](universes/unicorn-inc/) | Unicorn Inc. — cheerful cooperative of fabelwezens supplying real superpowers (pegasus wings, dragon fire, mammoth fur, …). Pixar-styled storybook vibe. |
+| [`provisional-bureau`](universes/provisional-bureau/) | The Provisional Bureau — Amsterdam boutique brand strategy & design studio. Services-led; late-1980s Dutch agency pastiche imagery. |
 
 Each universe folder has its own `CLAUDE.md` (identity + tone) and the same YAML schemas (see [ARCHITECTURE.md](ARCHITECTURE.md)).
 
