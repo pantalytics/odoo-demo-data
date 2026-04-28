@@ -1,0 +1,127 @@
+# The Provisional Bureau — 12-person cast.
+# Schema: see ARCHITECTURE.md.
+# Slug IDs are used as refs across customers, projects, CRM.
+
+# ─── Founder Partners ───────────────────────────────────────────
+- id: hugo-maartens
+  name: Hugo Maartens
+  nationality: NL
+  role: Managing Partner — Strategy
+  department: Leadership
+  manager: null
+  email: hugo.maartens@provisionalbureau.com
+  languages: [nl, en, de]
+  bio: Founding partner. Ex-London consultancy. Quotes Dieter Rams in all-hands. Wrote "We don't do logos. We do legacies." in week one and refuses to retire it.
+
+- id: sam-quist
+  name: Sam Quist
+  nationality: GB
+  role: Creative Partner
+  department: Leadership
+  manager: hugo-maartens
+  email: sam.quist@provisionalbureau.com
+  languages: [en, nl]
+  bio: Founding partner. British-Dutch. Refers to every deliverable as "the work." Genuinely talented designer behind the vocabulary.
+
+- id: indra-vermeulen
+  name: Indra Vermeulen
+  nationality: NL
+  role: Partner — Growth & Client Development
+  department: Leadership
+  manager: hugo-maartens
+  email: indra.vermeulen@provisionalbureau.com
+  languages: [nl, en, fr]
+  bio: Founding partner. Reads the contracts the others don't. Reason the lights stay on.
+
+# ─── Studio leadership ──────────────────────────────────────────
+- id: margot-bakker
+  name: Margot Bakker
+  nationality: NL
+  role: Studio Manager
+  department: Operations
+  manager: indra-vermeulen
+  email: margot.bakker@provisionalbureau.com
+  languages: [nl, en, de]
+  bio: Operations brain of the bureau. Founders still refer to her as "front desk" in internal Slack. Runs the building, the travel, the onboarding, the escalations.
+
+- id: eli-tanaka-brouwer
+  name: Eli Tanaka-Brouwer
+  nationality: NL
+  role: Strategy Director
+  department: Strategy
+  manager: hugo-maartens
+  email: eli.tanaka@provisionalbureau.com
+  languages: [nl, en, ja]
+  bio: Does most of the strategy work that Hugo presents in pitches. Calm, precise, allergic to jargon.
+
+- id: yara-aboagye
+  name: Yara Aboagye
+  nationality: GH
+  role: Design Director
+  department: Design
+  manager: sam-quist
+  email: yara.aboagye@provisionalbureau.com
+  languages: [en, nl, tw]
+  bio: Quietly the strongest creative in the studio. Holds the visual language across every active engagement.
+
+# ─── Strategy & Design ──────────────────────────────────────────
+- id: lina-costa
+  name: Lina Costa
+  nationality: PT
+  role: Senior Brand Strategist
+  department: Strategy
+  manager: eli-tanaka-brouwer
+  email: lina.costa@provisionalbureau.com
+  languages: [pt, en, es]
+  bio: Naming specialist. Ex-publishing. Keeps a notebook of rejected names other clients might one day want.
+
+- id: pieter-de-wit
+  name: Pieter de Wit
+  nationality: NL
+  role: Senior Designer
+  department: Design
+  manager: yara-aboagye
+  email: pieter.dewit@provisionalbureau.com
+  languages: [nl, en]
+  bio: Identity systems, typography, print. Owns the Mustardcouch design system end-to-end.
+
+- id: jonas-berg
+  name: Jonas Berg
+  nationality: SE
+  role: Digital Lead
+  department: Digital
+  manager: sam-quist
+  email: jonas.berg@provisionalbureau.com
+  languages: [sv, en, no]
+  bio: Builds the websites and the design-system tooling. Quietly competent, mildly cynical about agency life.
+
+- id: mei-lin-chen
+  name: Mei-Lin Chen
+  nationality: NL
+  role: Junior Designer
+  department: Design
+  manager: yara-aboagye
+  email: meilin.chen@provisionalbureau.com
+  languages: [nl, en, zh]
+  bio: The most talented person in the building. Underpaid. Indra is "working on it." Will start her own studio within three years.
+
+# ─── Client services ────────────────────────────────────────────
+- id: cassian-foley
+  name: Cassian Foley
+  nationality: IE
+  role: Account Director
+  department: Client Services
+  manager: indra-vermeulen
+  email: cassian.foley@provisionalbureau.com
+  languages: [en, ga]
+  bio: Translates founder-language into client-language and back. The reason rebrands ship on time.
+
+- id: renee-du-plessis
+  name: Renée du Plessis
+  nationality: ZA
+  role: Account Manager — Stewardship
+  department: Client Services
+  manager: cassian-foley
+  email: renee.duplessis@provisionalbureau.com
+  languages: [en, af, nl]
+  bio: Runs the retainer book day-to-day. Knows every stewardship-client deadline by heart.

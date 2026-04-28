@@ -1,0 +1,220 @@
+# Unicorn Inc. — CRM pipeline.
+# Schema: see ../../../ARCHITECTURE.md.
+# Stages: new | qualified | proposition | negotiation | won | lost
+# Amounts in Sparkle (★), whole numbers, no symbol.
+# expected_close dates are absolute; population shifts them so the pipeline
+# always feels recent.
+
+# ─── Silverhall Academy ────────────────────────────────────────
+- id: lead-silverhall-autumn-cohort
+  customer_ref: silverhall-academy
+  title: Silverhall — autumn first-year wing intake (60× Small)
+  stage: negotiation
+  amount: 156000
+  expected_close: 2026-06-30
+  salesperson: kit-brushtail
+  narrative: |
+    Annual anchor contract. 60 pairs of Pegasus Wings (Small) for the new
+    first-year cohort, fitted at Hemelhof over a fortnight. Procurement
+    head haggling on bulk discount; Aurora has approved up to 8% off list.
+
+# ─── Thornwood Knights ─────────────────────────────────────────
+- id: lead-thornwood-torch-renewal
+  customer_ref: thornwood-knights
+  title: Thornwood — Phoenix-Feather Torch annual renewal
+  stage: won
+  amount: 27000
+  expected_close: 2026-04-12
+  salesperson: kit-brushtail
+  narrative: |
+    50× Phoenix-Feather Torches for the night-patrol roster. Closed early
+    after the Quartermaster confirmed Sparkle-Stamp paperwork was in order.
+    Delivery scheduled via Saffi's dragon-airlift.
+
+- id: lead-thornwood-medium-fire
+  customer_ref: thornwood-knights
+  title: Thornwood — bottled dragon fire (Medium) winter resupply
+  stage: proposition
+  amount: 39000
+  expected_close: 2026-09-15
+  salesperson: kit-brushtail
+  narrative: |
+    50× Bottled Dragon Fire (Medium) for forge-work and ceremonial torches
+    through winter. Permit B-1 paperwork already filed. Waiting on the
+    knight-captain's signature.
+
+# ─── Starfall Couriers ─────────────────────────────────────────
+- id: lead-starfall-medium-wings
+  customer_ref: starfall-couriers
+  title: Starfall — Pegasus Wings (Medium) fleet expansion (40 pairs)
+  stage: negotiation
+  amount: 140000
+  expected_close: 2026-06-15
+  salesperson: marisol-tideglass
+  narrative: |
+    Couriers expanding the western sky-route. 40 new pairs of Medium wings
+    plus on-site fitting at Skyharbour. Saffi co-ordinating logistics.
+    Customer pushing for a Q3 invoice schedule.
+
+# ─── Three-Spires Theatre ──────────────────────────────────────
+- id: lead-three-spires-summer-show
+  customer_ref: three-spires-theatre
+  title: Three-Spires — summer pyrotechnics package (mild + medium fire)
+  stage: qualified
+  amount: 18500
+  expected_close: 2026-05-30
+  salesperson: tobias-honeypaw
+  narrative: |
+    20× Bottled Dragon Fire (Mild), 8× Medium, 6× Phoenix-Feather Torches
+    for The Sparrow & The Forge revival. Always last-minute; Tobias has
+    pre-warned Nori at the bottling bench.
+
+# ─── Royal Quartermaster of Borealis ───────────────────────────
+- id: lead-borealis-winter-cloaks
+  customer_ref: royal-quartermaster-borealis
+  title: Borealis — Mammoth-Fur Cloak winter procurement (80 units)
+  stage: proposition
+  amount: 256000
+  expected_close: 2026-08-31
+  salesperson: marisol-tideglass
+  narrative: |
+    80× Mammoth-Fur Cloaks (Adult) for the winter-court household. Borealis
+    procurement requires the full Permit A-3 paper trail and an inspection
+    visit by their own quartermaster before sign-off.
+
+- id: lead-borealis-treaty-ink
+  customer_ref: royal-quartermaster-borealis
+  title: Borealis — Kraken Ink (Giant) for treaty-signing season
+  stage: won
+  amount: 11760
+  expected_close: 2026-03-20
+  salesperson: marisol-tideglass
+  narrative: |
+    12× Kraken Ink (Giant Grade) for the spring treaty round. Closed without
+    drama; Coral Court endorsed the supplier line. Repeat-buyer terms.
+
+# ─── Glimmerbay Aviators ───────────────────────────────────────
+- id: lead-glimmerbay-spring-refit
+  customer_ref: glimmerbay-aviators
+  title: Glimmerbay — seasonal wing refit (12 adventurers)
+  stage: won
+  amount: 42000
+  expected_close: 2026-04-05
+  salesperson: tobias-honeypaw
+  narrative: |
+    12× Pegasus Wings (Medium) refit + parachute resupply for the adventuring
+    season. Closed on the spot at the Glimmerbay trade fair after a
+    showroom flight demo.
+
+- id: lead-glimmerbay-djinn-jar
+  customer_ref: glimmerbay-aviators
+  title: Glimmerbay — Djinn-in-a-Jar enquiry
+  stage: lost
+  amount: 14000
+  expected_close: 2026-02-15
+  salesperson: tobias-honeypaw
+  narrative: |
+    Adventurers asked about a Djinn-in-a-Jar for an upcoming expedition.
+    Lost on terms — they wanted resurrection-clause flexibility, which the
+    Brokerage of Bound Djinn won't allow. Polite no.
+
+# ─── Coral Court Archivists ────────────────────────────────────
+- id: lead-coral-court-mirror-set
+  customer_ref: coral-court-archivists
+  title: Coral Court — Basilisk-Glance Mirror archive set (6 units)
+  stage: negotiation
+  amount: 25200
+  expected_close: 2026-05-22
+  salesperson: marisol-tideglass
+  narrative: |
+    6× Basilisk-Glance Mirrors (Handheld) for the mer-kingdom archive vaults.
+    Permit M-2 trail in flight. Customer requires sea-skiff delivery only
+    — Saffi cannot dragon-airlift a mirror set into Coral Court.
+
+# ─── Skyharbour Trading Consortium ─────────────────────────────
+- id: lead-skyharbour-wholesale-q3
+  customer_ref: skyharbour-traders
+  title: Skyharbour — Q3 wholesale resupply (mixed catalogue)
+  stage: qualified
+  amount: 198000
+  expected_close: 2026-07-10
+  salesperson: kit-brushtail
+  narrative: |
+    Mixed Q3 reorder: 30× Pegasus Wings (Small), 18× Cloud Skiff Kits,
+    24× Phoenix-Feather Torches, 40× Kraken Ink (Squid). Wholesale tier;
+    Sparkle-Stamps must remain visible at unboxing for retail customers.
+
+# ─── Emberhold Forgers' Guild ──────────────────────────────────
+- id: lead-emberhold-inferno-batch
+  customer_ref: emberhold-forgers
+  title: Emberhold — Bottled Dragon Fire (Inferno) industrial batch (20)
+  stage: proposition
+  amount: 48000
+  expected_close: 2026-06-20
+  salesperson: tobias-honeypaw
+  narrative: |
+    20× Inferno-grade bottles for the spring forging cycle. Caldera Elder
+    Cooperative confirmed availability. Permit A-3 + waivers in hand. Nori
+    visiting the guild for site-survey before sign-off.
+
+# ─── Verdant Glade Conservatory ────────────────────────────────
+- id: lead-glade-stage-capes
+  customer_ref: glade-conservatory
+  title: Verdant Glade — Kitsune-Tail Capes for opera ensemble
+  stage: new
+  amount: 11400
+  expected_close: 2026-08-15
+  salesperson: ezri-glimmerwhisker
+  narrative: |
+    6× Kitsune-Tail Capes for the lead ensemble of the autumn sky-opera.
+    First contact — Ezri's enquiry to Bramble pending on whether Foxfire
+    Hollow can supply at scale by autumn.
+
+- id: lead-glade-quills
+  customer_ref: glade-conservatory
+  title: Verdant Glade — Phoenix Feather Quill display set
+  stage: won
+  amount: 3600
+  expected_close: 2026-03-30
+  salesperson: ezri-glimmerwhisker
+  narrative: |
+    5× Phoenix Feather Quills (Display) for the conservatory's masterclass
+    hall. Closed cleanly; gift-wrapped via Rainbow Press.
+
+# ─── Cinderpath Rangers ────────────────────────────────────────
+- id: lead-cinderpath-starter-kit
+  customer_ref: cinderpath-rangers
+  title: Cinderpath — ranger starter kit pilot (5 rangers)
+  stage: qualified
+  amount: 8900
+  expected_close: 2026-05-15
+  salesperson: ezri-glimmerwhisker
+  narrative: |
+    Pilot bundle: 5× Phoenix-Feather Torches, 5× Mammoth-Fur Cloaks,
+    10× Bottled Dragon Fire (Mild). Small order, but a foothold. Rosy is
+    pushing internally to make this the model for ranger-segment growth.
+
+# ─── Moonfall Correspondents ───────────────────────────────────
+- id: lead-moonfall-press-bundle
+  customer_ref: moonfall-correspondents
+  title: Moonfall — press bundle (Small wings, quills, ink)
+  stage: proposition
+  amount: 22600
+  expected_close: 2026-06-05
+  salesperson: ezri-glimmerwhisker
+  narrative: |
+    Realm-wide press bundle: 6× Pegasus Wings (Small) for travel reporters,
+    12× Phoenix Feather Quills (Display), 30× Kraken Ink (Squid Grade) by
+    the case. Editor still sleeping on the budget.
+
+- id: lead-moonfall-investigative
+  customer_ref: moonfall-correspondents
+  title: Moonfall — Basilisk-Glance Mirror for investigative team
+  stage: lost
+  amount: 4200
+  expected_close: 2026-01-20
+  salesperson: ezri-glimmerwhisker
+  narrative: |
+    Investigative desk wanted a Basilisk-Glance Mirror for a story on the
+    Mirrorpolish Guild itself. Lost — supplier refused to ship to a working
+    journalist. Halia made the call; Sparkle Circle agreed.

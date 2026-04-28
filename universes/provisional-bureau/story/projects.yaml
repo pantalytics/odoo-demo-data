@@ -1,0 +1,223 @@
+# The Provisional Bureau — projects.
+# Schema: see ARCHITECTURE.md.
+# Mix of billable client engagements and internal initiatives.
+
+# ─── Billable: flagship rebrand ─────────────────────────────────
+- id: proj-mustardcouch-rebrand
+  name: Mustardcouch — full rebrand
+  kind: billable
+  lead: hugo-maartens
+  customer_ref: mustardcouch
+  start: 2025-11-01
+  end: 2026-10-31
+  narrative: |
+    Year-long flagship engagement. Strategy → identity → design system →
+    digital rollout. Hugo on point with Eli running strategy day-to-day,
+    Yara directing identity, Pieter owning the design system. Budget €380k
+    across phases. Currently mid-identity phase; design-system kickoff in
+    six weeks.
+  tasks:
+    - title: Discovery research + stakeholder interviews
+      assignee: eli-tanaka-brouwer
+      done: true
+    - title: Positioning + narrative framework (signed off)
+      assignee: hugo-maartens
+      done: true
+    - title: Identity exploration — three territories
+      assignee: yara-aboagye
+      done: true
+    - title: Identity development — chosen direction
+      assignee: pieter-de-wit
+      done: false
+    - title: Design system build
+      assignee: pieter-de-wit
+      done: false
+    - title: Website rebuild
+      assignee: jonas-berg
+      done: false
+    - title: Launch toolkit + rollout playbook
+      assignee: yara-aboagye
+      done: false
+
+# ─── Billable: in-flight client work ────────────────────────────
+- id: proj-polder-power-narrative
+  name: Polder Power — transition narrative + identity refresh
+  kind: billable
+  lead: eli-tanaka-brouwer
+  customer_ref: polder-power
+  start: 2026-02-15
+  end: 2026-08-30
+  narrative: |
+    Narrative + identity refresh tied to Polder Power's 2030 renewables
+    transition plan. Big regulated client; lots of stakeholder management.
+    Eli leading; Cassian holding the client side together.
+  tasks:
+    - title: Stakeholder mapping + interview round
+      assignee: eli-tanaka-brouwer
+      done: true
+    - title: Narrative framework draft
+      assignee: lina-costa
+      done: true
+    - title: Board narrative review
+      assignee: hugo-maartens
+      done: false
+    - title: Identity refresh exploration
+      assignee: yara-aboagye
+      done: false
+    - title: Internal launch toolkit
+      assignee: pieter-de-wit
+      done: false
+
+- id: proj-rijndal-wayfinding
+  name: Rijndal Museum — wayfinding implementation
+  kind: billable
+  lead: yara-aboagye
+  customer_ref: rijndal-museum
+  start: 2026-03-01
+  end: 2026-07-15
+  narrative: |
+    Continuation of the 2024 identity refresh — wayfinding system across
+    all four museum floors and outdoor signage. Working with a Rotterdam
+    fabricator. Yara directing; Mei-Lin pulling much of the production.
+  tasks:
+    - title: Wayfinding audit + signage inventory
+      assignee: pieter-de-wit
+      done: true
+    - title: Signage system design
+      assignee: yara-aboagye
+      done: false
+    - title: Fabricator coordination
+      assignee: margot-bakker
+      done: false
+    - title: On-site install supervision (week of opening)
+      assignee: yara-aboagye
+      done: false
+
+- id: proj-stellar-rye-packaging
+  name: Stellar Rye — EU packaging architecture
+  kind: billable
+  lead: yara-aboagye
+  customer_ref: stellar-rye
+  start: 2026-01-20
+  end: 2026-05-30
+  narrative: |
+    Brand-system + packaging architecture for EU retail launch. Smaller
+    engagement — €70k — but strategically interesting (US scale-up
+    entering Europe).
+  tasks:
+    - title: Range strategy + tier mapping
+      assignee: lina-costa
+      done: true
+    - title: Packaging system design
+      assignee: pieter-de-wit
+      done: false
+    - title: Print production handoff
+      assignee: pieter-de-wit
+      done: false
+
+- id: proj-halcyon-bcn-naming
+  name: Halcyon Hotel Group — Barcelona property naming
+  kind: billable
+  lead: lina-costa
+  customer_ref: halcyon-hotel-group
+  start: 2026-04-15
+  end: 2026-05-31
+  narrative: |
+    Naming sprint for Halcyon's new Barcelona property opening Q4 2026.
+    Six-week engagement, fixed fee. Lina leading.
+  tasks:
+    - title: Linguistic + cultural territory mapping
+      assignee: lina-costa
+      done: true
+    - title: Name generation + shortlist
+      assignee: lina-costa
+      done: false
+    - title: Trademark + URL screening (with external counsel)
+      assignee: indra-vermeulen
+      done: false
+    - title: Recommendation deck
+      assignee: lina-costa
+      done: false
+
+- id: proj-drive-thru-farewells-strategy
+  name: Drive-Thru Farewells — brand strategy
+  kind: billable
+  lead: hugo-maartens
+  customer_ref: drive-thru-farewells
+  start: 2026-04-01
+  end: 2026-05-13
+  narrative: |
+    Four-week strategy sprint for an unusual scale-up. Brief is sincere:
+    they want to convince the public that drive-thru farewells are dignified.
+    Hugo (privately delighted) is leading; Eli is doing the actual work.
+  tasks:
+    - title: Discovery + competitive territory
+      assignee: eli-tanaka-brouwer
+      done: true
+    - title: Positioning options
+      assignee: eli-tanaka-brouwer
+      done: false
+    - title: Strategy deck
+      assignee: hugo-maartens
+      done: false
+
+# ─── Internal ───────────────────────────────────────────────────
+- id: proj-own-website-refresh
+  name: The Provisional Bureau — own website refresh
+  kind: internal
+  lead: sam-quist
+  start: 2025-01-15
+  end: 2026-12-31
+  narrative: |
+    The cobbler's-shoes project. Sam has been "starting it next week" since
+    early 2025. Currently parked while Mustardcouch eats senior capacity.
+  tasks:
+    - title: Information architecture
+      assignee: jonas-berg
+      done: true
+    - title: Design exploration
+      assignee: sam-quist
+      done: false
+    - title: Build
+      assignee: jonas-berg
+      done: false
+
+- id: proj-bcorp-track
+  name: B Corp certification track
+  kind: internal
+  lead: indra-vermeulen
+  start: 2025-09-01
+  end: 2026-12-31
+  narrative: |
+    Two clients have asked. Application is open in a tab. Indra moving it
+    along quietly between client work.
+  tasks:
+    - title: BIA baseline assessment
+      assignee: indra-vermeulen
+      done: true
+    - title: Governance amendments
+      assignee: indra-vermeulen
+      done: false
+    - title: Submit BIA
+      assignee: indra-vermeulen
+      done: false
+
+- id: proj-service-design-practice
+  name: Service Design — fourth practice exploration
+  kind: internal
+  lead: indra-vermeulen
+  start: 2026-03-01
+  end: 2026-09-30
+  narrative: |
+    Indra is exploring whether to hire a service-design lead and pitch
+    public-sector work. Decision point end of Q3.
+  tasks:
+    - title: Market sizing + competitor scan
+      assignee: indra-vermeulen
+      done: true
+    - title: Senior-hire shortlist
+      assignee: indra-vermeulen
+      done: false
+    - title: Pilot pitch to one public-sector prospect
+      assignee: hugo-maartens
+      done: false

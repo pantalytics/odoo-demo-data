@@ -1,0 +1,114 @@
+# Unicorn Inc. — fictional supplier roster.
+# Schema: see ../../../ARCHITECTURE.md.
+# All suppliers are fictional fantasy artisans across the realm.
+# Categories are universe-specific and broadly map to product lines.
+
+# ─── Wings & Flight ────────────────────────────────────────────
+- id: aerie-cloudspire
+  name: Cloudspire Pegasus Aerie
+  country: Astralia
+  city: Cloudspire
+  category: pegasus_aviary
+  notes: Sole-source pegasus-feather supplier for sized wing kits. Seasonal moult — heavy stock arrives in spring and autumn. Bramble visits twice a year.
+
+- id: silvermoor-leathers
+  name: Silvermoor Saddlery
+  country: Eldermarch
+  city: Silvermoor
+  category: leatherwork
+  notes: Hand-stitched leather for gryphon saddles and wing-fitting harnesses. Brass cinches, side-pouches, lifetime re-stitching.
+
+- id: zephyr-loom
+  name: Zephyr Loom Sylph Weavers
+  country: Astralia
+  city: Skyharbour
+  category: sylph_weaving
+  notes: Cloud-silk envelopes and sylph-spun parachute canopy. Production weather-dependent — never schedule for storm-week.
+
+- id: willowfen-basketry
+  name: Willowfen Basketry
+  country: Eldermarch
+  city: Willowfen
+  category: basketry
+  notes: Woven willow baskets for the Cloud Skiff Kit. Family workshop, three generations. Slow but flawless.
+
+# ─── Fire & Force ──────────────────────────────────────────────
+- id: emberhold-bottlers
+  name: Emberhold Fire Bottlers
+  country: Drachenland
+  city: Emberhold
+  category: dragonfire
+  notes: Mild and medium-grade dragon fire. Permit-compliant, daily decanting runs. Nori grew up next door to their bottling hall.
+
+- id: caldera-elder-cooperative
+  name: Caldera Elder-Dragon Cooperative
+  country: Drachenland
+  city: Caldera Reach
+  category: dragonfire
+  notes: Inferno-grade only. Decant under permit A-3, by appointment. Long lead times; pricing varies by elder mood.
+
+- id: sunmote-aviary
+  name: Sunmote Phoenix Sanctuary
+  country: Astralia
+  city: Sunmote Cliffs
+  category: phoenix_sanctuary
+  notes: Sustainably gathered phoenix feathers — torches and display quills. Self-immolation handling is their problem, not ours, contractually.
+
+- id: lapis-bottleworks
+  name: Lapis Bottleworks
+  country: Borealis
+  city: Frostkeep
+  category: glassblowing
+  notes: Apothecary bottles for dragon fire (mild/medium) and lapis jars for djinn-in-a-jar. Cold-blown glass holds enchantment longer.
+
+- id: brokerage-of-bound-djinn
+  name: The Brokerage of Bound Djinn
+  country: Marindor
+  city: Saltglass
+  category: djinn_broker
+  notes: Sole source for consenting djinn under the Realm Wish Accord. Heavy paperwork, slow but ironclad. Kael does the binding interview personally.
+
+# ─── Fur & Form ────────────────────────────────────────────────
+- id: northwind-mammoth-herd
+  name: Northwind Mammoth Herd
+  country: Borealis
+  city: Northwind Steppes
+  category: mammoth_fur
+  notes: Sustainably herded northern mammoths. Fur combed, never shorn. Seasonal — winter moult only.
+
+- id: foxfire-dens
+  name: Foxfire Kitsune Dens
+  country: Eldermarch
+  city: Foxfire Hollow
+  category: kitsune_fur
+  notes: Naturally-shed kitsune tail-fur, gathered consensually from the den-elders. Bramble has tea with them every season.
+
+# ─── Ink & Insight / Mirrors ───────────────────────────────────
+- id: tideglass-divers
+  name: Tideglass Kraken Ink Divers
+  country: Marindor
+  city: Tideglass
+  category: kraken_ink
+  notes: Squid-grade and giant-grade kraken ink. Marisol's home cooperative — handshake deals, no contract longer than three pages.
+
+- id: mirrorpolish-guild
+  name: Mirrorpolish Basilisk-Mirror Guild
+  country: Eldermarch
+  city: Mirrorpolish
+  category: basilisk_mirror
+  notes: Basilisk-glance mirrors in gold-leaf frames. Polishing done blindfolded, by guild ritual. Permit M-2 paperwork handled by them.
+
+# ─── Packaging & Trim ──────────────────────────────────────────
+- id: gilded-brass-coopers
+  name: Gilded Brass Coopers
+  country: Drachenland
+  city: Brass Bend
+  category: brass
+  notes: Brass buckles, harness fittings, and quill-stand hardware. Bulk orders ship monthly via dragon-airlift.
+
+- id: rainbow-press-paperworks
+  name: Rainbow Press Paperworks
+  country: Astralia
+  city: Hemelhof
+  category: packaging
+  notes: Sparkle-Stamp parchment, gift wrap, handwritten-note cards. Local — Hemelhof workshop, two streets from the Bazaar.

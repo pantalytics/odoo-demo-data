@@ -1,0 +1,245 @@
+# Unicorn Inc. — product catalogue.
+# Schema: see ../../../ARCHITECTURE.md.
+# Categories must match keys in ../images/flux-presets.yaml `product_category_presets`
+# (otherwise the image generator skips them — fine for service-type SKUs).
+# Prices are in Sparkle (★), whole numbers, no symbol.
+
+# ─── Wings & Flight ────────────────────────────────────────────
+- id: pegasus-wings-small
+  name: Pegasus Wings (Small)
+  line: Wings & Flight
+  category: wings
+  uom: Pair
+  sale_price: 2400
+  cost_price: 900
+  description: |
+    Entry-level fitted pegasus wings for younger fliers and smaller fabelwezens.
+    Iridescent feathers, brass buckle harness, calibration tag, six-month
+    re-fitting included.
+
+- id: pegasus-wings-medium
+  name: Pegasus Wings (Medium)
+  line: Wings & Flight
+  category: wings
+  uom: Pair
+  sale_price: 3500
+  cost_price: 1300
+  description: |
+    The flagship adult flight kit. Iridescent feathers transitioning from
+    cream at the shoulder to soft prism-rainbow at the tips. Sparkle-Stamped
+    individually by the wing-fitter.
+
+- id: pegasus-wings-large
+  name: Pegasus Wings (Large)
+  line: Wings & Flight
+  category: wings
+  uom: Pair
+  sale_price: 4800
+  cost_price: 1850
+  description: |
+    Heavy-duty fitted wings for larger fabelwezens and freight-fliers.
+    Reinforced primaries, dragon-grade buckle harness, twelve-month
+    re-fitting included.
+
+- id: cloud-skiff-kit
+  name: Cloud Skiff Kit
+  line: Wings & Flight
+  category: wings
+  uom: Kit
+  sale_price: 6800
+  cost_price: 2700
+  description: |
+    DIY sky-skiff: silk envelope, woven willow basket, sylph-spun rigging,
+    one bottled tail-wind. For travellers who'd rather sit than flap.
+
+- id: gryphon-saddle-classic
+  name: Gryphon Saddle (Classic)
+  line: Wings & Flight
+  category: wings
+  uom: Units
+  sale_price: 1900
+  cost_price: 720
+  description: |
+    Hand-stitched cradle saddle for medium-sized gryphons. Padded leather,
+    brass cinch, two side-pouches. Works with Sky Logistics rental gryphons.
+
+- id: sylph-spun-parachute
+  name: Sylph-Spun Parachute
+  line: Wings & Flight
+  category: wings
+  uom: Units
+  sale_price: 1450
+  cost_price: 540
+  description: |
+    Emergency parachute woven by sylphs from cloud-silk. Auto-deploys when
+    altitude drops below tree-line. For pegasus owners who like belt-and-braces.
+
+# ─── Fire & Force ──────────────────────────────────────────────
+- id: dragon-fire-mild
+  name: Bottled Dragon Fire (Mild)
+  line: Fire & Force
+  category: fire
+  uom: Bottle
+  sale_price: 320
+  cost_price: 110
+  description: |
+    Single-flame strength dragon fire in a corked apothecary bottle.
+    For hearth lighting, ceremonial use, and gentle camp cooking.
+    Mildly regulated — no permit needed.
+
+- id: dragon-fire-medium
+  name: Bottled Dragon Fire (Medium)
+  line: Fire & Force
+  category: fire
+  uom: Bottle
+  sale_price: 780
+  cost_price: 280
+  description: |
+    Mid-range bottled dragon fire — for forge-work, theatrical pyrotechnics,
+    and emergency thaws. Permit B-1 required at point of sale.
+
+- id: dragon-fire-inferno
+  name: Bottled Dragon Fire (Inferno)
+  line: Fire & Force
+  category: fire
+  uom: Bottle
+  sale_price: 2400
+  cost_price: 920
+  description: |
+    Top-grade industrial dragon fire. Steel-melting heat, decanted from
+    elder dragons under permit. Permit A-3 + signed waiver required.
+    Sold only by appointment.
+
+- id: phoenix-feather-torch
+  name: Phoenix-Feather Torch
+  line: Fire & Force
+  category: fire
+  uom: Units
+  sale_price: 540
+  cost_price: 200
+  description: |
+    Self-relighting torch with a phoenix-feather core. Burns for thirty
+    days per feather. Quartermasters' favourite for night patrols.
+
+- id: djinn-jar
+  name: Djinn-in-a-Jar (Single Wish)
+  line: Fire & Force
+  category: fire
+  uom: Jar
+  sale_price: 14000
+  cost_price: 6800
+  description: |
+    A genuine consenting djinn in a sealed lapis jar. One wish. Terms apply
+    (no resurrection, no time travel, no compelled love). Comes with full
+    legal addendum and a return-and-release clause.
+
+# ─── Fur & Form ────────────────────────────────────────────────
+- id: mammoth-fur-cloak
+  name: Mammoth-Fur Cloak (Adult)
+  line: Fur & Form
+  category: fur
+  uom: Units
+  sale_price: 3200
+  cost_price: 1200
+  description: |
+    Hand-combed mammoth-fur cloak from sustainably herded northern mammoths.
+    Snow-white outer guard hairs over deep russet underwool. Lifetime
+    re-combing service.
+
+- id: kitsune-tail-cape
+  name: Kitsune-Tail Cape
+  line: Fur & Form
+  category: fur
+  uom: Units
+  sale_price: 1900
+  cost_price: 720
+  description: |
+    Cape woven from naturally-shed kitsune tail-fur (no kitsune harmed —
+    Bramble personally collects from supplier dens). Subtle illusion-shimmer
+    in low light.
+
+# ─── Ink & Insight ─────────────────────────────────────────────
+- id: kraken-ink-squid
+  name: Kraken Ink (Squid Grade)
+  line: Ink & Insight
+  category: ink
+  uom: Jar
+  sale_price: 180
+  cost_price: 60
+  description: |
+    Standard ink decanted from juvenile kraken. Oil-slick rainbow surface,
+    permanent black on parchment. Workhorse ink for academies and
+    notaries.
+
+- id: kraken-ink-giant
+  name: Kraken Ink (Giant Grade)
+  line: Ink & Insight
+  category: ink
+  uom: Jar
+  sale_price: 980
+  cost_price: 360
+  description: |
+    Reserve-grade kraken ink from the deep-sea elder pods. Holds an
+    enchantment longer than any other ink in the realm. For signatures
+    that have to mean something.
+
+# ─── Feather ───────────────────────────────────────────────────
+- id: phoenix-feather-quill
+  name: Phoenix Feather Quill (Display)
+  line: Ink & Insight
+  category: feather
+  uom: Units
+  sale_price: 720
+  cost_price: 280
+  description: |
+    Display-grade phoenix feather mounted in a brass quill stand. Glowing
+    ember-tip, faint warmth. Decorative use only — for the writers' study,
+    not active correspondence.
+
+# ─── Mirror ────────────────────────────────────────────────────
+- id: basilisk-mirror-handheld
+  name: Basilisk-Glance Mirror (Handheld)
+  line: Mirror & Misdirection
+  category: mirror
+  uom: Units
+  sale_price: 4200
+  cost_price: 1700
+  description: |
+    Hand-held basilisk-glance mirror in an ornate gold-leaf frame, with a
+    polite cloth cover. Reflects a basilisk's gaze back at it (or any
+    foe foolish enough to mimic one). Permit M-2 required.
+
+# ─── Services (no image; will be skipped by the generator) ─────
+- id: service-wing-fitting
+  name: Wing Fitting Appointment
+  line: Services
+  category: service
+  uom: Hour
+  sale_price: 240
+  cost_price: 90
+  description: |
+    Personal wing-fitting session at the Hemelhof workshop. Includes
+    sizing, harness fitting, balance trial-flight, and the Sparkle-Stamp.
+
+- id: service-fire-rebottling
+  name: Fire Re-Bottling Service
+  line: Services
+  category: service
+  uom: Bottle
+  sale_price: 80
+  cost_price: 30
+  description: |
+    Top up a depleted dragon-fire bottle to its original grade. Bring the
+    empty bottle; collect the next morning.
+
+- id: service-sparkle-restamp
+  name: Sparkle Re-Stamp
+  line: Services
+  category: service
+  uom: Units
+  sale_price: 160
+  cost_price: 50
+  description: |
+    Re-attest a Unicorn Inc. product whose Sparkle-Stamp has faded. Includes
+    Magical QC re-inspection and a fresh handwritten note from the original
+    fitter, where possible.

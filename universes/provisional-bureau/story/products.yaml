@@ -1,0 +1,186 @@
+# The Provisional Bureau — service catalog (services as Odoo products).
+# Schema: see ARCHITECTURE.md.
+# Prices in EUR. Cost prices approximate, for demo realism.
+
+# ─── Strategy engagements ──────────────────────────────────────
+- id: brand-strategy-sprint
+  name: Brand Strategy Sprint
+  line: Strategy
+  category: strategy
+  uom: Service
+  sale_price: 45000
+  cost_price: 18000
+  description: |
+    Four-week brand strategy engagement. Discovery research, stakeholder
+    interviews, positioning development, narrative framework, and a
+    leadership-ready strategy deck. Fixed fee.
+
+- id: naming-sprint
+  name: Naming Sprint
+  line: Strategy
+  category: strategy
+  uom: Service
+  sale_price: 28000
+  cost_price: 10000
+  description: |
+    Three-week naming engagement. Linguistic territory mapping, name
+    generation, shortlist evaluation (linguistic + trademark + URL),
+    final recommendation. Trademark search billed separately.
+
+- id: positioning-workshop-day
+  name: Positioning Workshop (single day)
+  line: Strategy
+  category: strategy
+  uom: Days
+  sale_price: 7500
+  cost_price: 2200
+  description: |
+    Single-day on-site or virtual workshop for client leadership.
+    Two senior strategists facilitating. Outputs: positioning canvas,
+    next-step recommendations.
+
+- id: annual-brand-audit
+  name: Annual Brand Audit
+  line: Strategy
+  category: strategy
+  uom: Service
+  sale_price: 18000
+  cost_price: 6000
+  description: |
+    Annual cross-channel brand audit for stewardship clients. Identity
+    consistency, voice consistency, customer-touchpoint review, drift
+    register, recommendations report.
+
+# ─── Identity engagements ──────────────────────────────────────
+- id: brand-identity-system
+  name: Brand Identity System
+  line: Identity
+  category: identity
+  uom: Service
+  sale_price: 95000
+  cost_price: 38000
+  description: |
+    Twelve-week visual identity engagement. Logo system, type system,
+    color system, photography direction, motion principles, brand
+    guidelines (digital). Excludes implementation.
+
+- id: identity-refresh
+  name: Identity Refresh
+  line: Identity
+  category: identity
+  uom: Service
+  sale_price: 55000
+  cost_price: 22000
+  description: |
+    Eight-week identity refresh for an existing brand. Evolution rather
+    than reinvention. Updated mark, type, color; refreshed guidelines.
+
+- id: design-system-rollout
+  name: Design System Rollout
+  line: Identity
+  category: identity
+  uom: Service
+  sale_price: 42000
+  cost_price: 16000
+  description: |
+    Implementation of an identity system into a design-system library
+    (web + product). Tokens, components, documentation. Ten weeks.
+
+# ─── Digital engagements ──────────────────────────────────────
+- id: boutique-website-build
+  name: Boutique Website Build
+  line: Digital
+  category: digital
+  uom: Service
+  sale_price: 75000
+  cost_price: 30000
+  description: |
+    Sixteen-week design-and-build for a brand-led marketing website.
+    Up to 12 templates, headless CMS, design system handoff. Hosting
+    and ongoing support sold separately.
+
+- id: digital-product-ui-engagement
+  name: Brand-led Product UI Engagement
+  line: Digital
+  category: digital
+  uom: Service
+  sale_price: 60000
+  cost_price: 24000
+  description: |
+    Twelve-week engagement to bring a brand identity into a product UI.
+    Component-level design, motion, narrative integration. Pairs with
+    client engineering team.
+
+# ─── Stewardship retainers (subscriptions) ─────────────────────
+- id: retainer-light
+  name: Brand Stewardship — Light retainer
+  line: Stewardship
+  category: retainer
+  uom: Months
+  sale_price: 4500     # EUR / month
+  cost_price: 1600
+  description: |
+    Monthly light-touch stewardship retainer. ~16 hours/month senior
+    capacity for ad-hoc identity work, brand consistency reviews,
+    and event/campaign asset support.
+
+- id: retainer-standard
+  name: Brand Stewardship — Standard retainer
+  line: Stewardship
+  category: retainer
+  uom: Months
+  sale_price: 8500     # EUR / month
+  cost_price: 3200
+  description: |
+    Monthly stewardship retainer. ~32 hours/month mixed senior + junior
+    capacity. Cross-channel consistency, ongoing identity evolution,
+    new-asset production. Most common retainer tier.
+
+- id: retainer-flagship
+  name: Brand Stewardship — Flagship retainer
+  line: Stewardship
+  category: retainer
+  uom: Months
+  sale_price: 16500    # EUR / month
+  cost_price: 6000
+  description: |
+    Monthly flagship retainer for stewardship clients with high asset
+    velocity (hospitality groups, museums with rotating exhibitions).
+    ~64 hours/month plus dedicated account manager.
+
+# ─── Time & materials ──────────────────────────────────────────
+- id: rate-senior-strategist
+  name: Senior Strategist — day rate
+  line: T&M
+  category: time-material
+  uom: Days
+  sale_price: 2200
+  cost_price: 950
+  description: Day rate for senior strategist engagements outside fixed-fee scope.
+
+- id: rate-design-director
+  name: Design Director — day rate
+  line: T&M
+  category: time-material
+  uom: Days
+  sale_price: 2400
+  cost_price: 1050
+  description: Day rate for design director engagements outside fixed-fee scope.
+
+- id: rate-senior-designer
+  name: Senior Designer — day rate
+  line: T&M
+  category: time-material
+  uom: Days
+  sale_price: 1500
+  cost_price: 700
+  description: Day rate for senior design work outside fixed-fee scope.
+
+- id: rate-junior-designer
+  name: Junior Designer — day rate
+  line: T&M
+  category: time-material
+  uom: Days
+  sale_price: 900
+  cost_price: 450
+  description: Day rate for junior design work outside fixed-fee scope.

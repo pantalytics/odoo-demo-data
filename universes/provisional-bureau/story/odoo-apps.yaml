@@ -1,0 +1,68 @@
+# The Provisional Bureau — recommended Odoo apps for population.
+# Schema: see ARCHITECTURE.md.
+# Order: install `core` first, then `recommended`, then `nice_to_have`.
+#
+# Services-led universe — no manufacturing, no stock, no field service.
+
+# ─── Core (story does not work without these) ──────────────────
+- module: sale_management
+  category: core
+  reason: Quotations and sales orders for fixed-fee engagements + day rates.
+
+- module: crm
+  category: core
+  reason: Pitch pipeline (see crm-pipeline.yaml).
+
+- module: project
+  category: core
+  reason: Flagship rebrand engagements run as multi-phase projects (see projects.yaml).
+
+- module: hr_timesheet
+  category: core
+  reason: Billable hours across project phases and day-rate engagements.
+
+- module: sale_subscription
+  category: core
+  reason: Brand-stewardship retainers — light/standard/flagship monthly tiers.
+
+- module: account
+  category: core
+  reason: Invoicing on milestones and recurring retainers; vendor bills for freelancers.
+
+- module: hr
+  category: core
+  reason: 12-person cast (see employees.yaml).
+
+- module: purchase
+  category: core
+  reason: Freelancers, print shops, photo studios, hosting partners (see suppliers.yaml).
+
+# ─── Recommended (explicitly story-justified) ──────────────────
+- module: helpdesk
+  category: recommended
+  reason: Tickets from stewardship clients on live brand systems (called out in universe CLAUDE.md).
+
+- module: hr_expense
+  category: recommended
+  reason: Pitch travel, on-site shoots, freelancer-bookings, founder restaurant habits.
+
+- module: documents
+  category: recommended
+  reason: Brand guidelines, design-system docs, signed contracts, freelancer NDAs.
+
+- module: sign
+  category: recommended
+  reason: Client engagement contracts and freelancer NDAs across BENELUX/UK/US.
+
+# ─── Nice-to-have (universe-fit, not story-critical) ───────────
+- module: mass_mailing
+  category: nice_to_have
+  reason: Indra's new-business outreach and end-of-year client letters.
+
+- module: survey
+  category: nice_to_have
+  reason: Annual brand-audit feedback surveys for stewardship clients.
+
+- module: social_marketing
+  category: nice_to_have
+  reason: The studio promoting its own work (when Sam's website refresh ever ships).

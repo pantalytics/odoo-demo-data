@@ -1,10 +1,31 @@
 # Architecture
 
+## Repo layout
+
+```
+odoo-demo-data/
+├── CLAUDE.md, ARCHITECTURE.md, README.md, LICENSE
+├── scripts/                         universe-agnostic tooling (--universe flag)
+│   ├── populate.md
+│   ├── generate_images.py
+│   └── generate_odoo_product_images.py
+└── universes/
+    └── <slug>/                      one fictional company per folder
+        ├── CLAUDE.md                story identity + tone for Claude
+        ├── story/                   the data (YAML + company.md)
+        ├── images/
+        │   ├── flux-presets.yaml    brand style + per-type image presets
+        │   └── generated/           FLUX output (kind/slug.jpg)
+        └── scratch/                 (optional) ad-hoc inputs for tooling
+```
+
+All YAML schemas below are universe-agnostic — every universe uses the same files under its `story/` folder. What changes per universe is the content, brand voice, and image style.
+
 ## Design choices
 
 **YAML over XML/CSV.** Demo data is meant to be read and edited by humans more than by Odoo's XML loader. YAML files are source-of-truth; they get translated into Odoo records at population time. This keeps the creative story decoupled from Odoo's framework.
 
-**Narrative in Markdown, tabular data in YAML.** [`company.md`](story/company.md) is the creative brief; everything else is structured so it can feed into MCP calls (or a future batch importer).
+**Narrative in Markdown, tabular data in YAML.** Each universe's `story/company.md` is the creative brief; everything else is structured so it can feed into MCP calls (or a future batch importer).
 
 **Every record has a slug ID.** References use slugs (`teun-boon`, `forge-studio`) rather than positional IDs so files can be reordered, appended to, and cross-referenced without breaking links. Population maps slugs → Odoo IDs at runtime.
 
@@ -12,12 +33,16 @@
 
 ## File schemas
 
+Paths shown are relative to a universe folder (e.g. `universes/bean-forge/`).
+
 ### `story/employees.yaml`
+
+The `nationality` field is typically an ISO-3166 alpha-2 code (used to build a realistic headshot prompt), but a universe may use a free-form adjective like `Elven` or `Draconic` — the image generator passes non-ISO values through as-is.
 
 ```yaml
 - id: teun-boon                 # slug, used as ref elsewhere
   name: Teun Boon
-  nationality: NL               # ISO-3166 alpha-2
+  nationality: NL               # ISO-3166 alpha-2, or a free-form adjective
   role: CEO
   department: Leadership
   manager: null                 # slug ref, or null for top of tree
@@ -28,11 +53,13 @@
 
 ### `story/products.yaml`
 
+Each universe defines its own `category` values. The image generator maps `category` → image preset via the `product_category_presets:` block in `images/flux-presets.yaml`.
+
 ```yaml
 - id: forge-studio
   name: Forge Studio 15kg
   line: Forge                   # product line grouping
-  category: roaster             # roaster | software | accessory | spare
+  category: roaster             # universe-specific; see flux-presets.yaml
   uom: Units
   sale_price: 65000             # EUR
   cost_price: 24000
@@ -99,6 +126,24 @@ Bills of materials. Multi-level allowed via `components` referencing other BOM i
     side-by-side trial. Blocker: approval from parent group.
 ```
 
+### `story/odoo-apps.yaml`
+
+Recommended Odoo modules to install for the universe to function. Population scripts can install them in three passes (`core` → `recommended` → `nice_to_have`) by upgrading `ir.module.module` records. Module names are the technical names (`sale_management`, `industry_fsm`, …), not display labels.
+
+```yaml
+- module: sale_management
+  category: core              # core | recommended | nice_to_have
+  reason: Quotations and sales orders for machines.
+
+- module: industry_fsm
+  category: recommended
+  reason: Worldwide on-site installations (billable field service).
+
+- module: mass_mailing
+  category: nice_to_have
+  reason: Polaroid-campaign newsletters.
+```
+
 ### `story/projects.yaml`
 
 ```yaml
@@ -117,10 +162,11 @@ Bills of materials. Multi-level allowed via `components` referencing other BOM i
 
 ## Flow: YAML → Odoo
 
-1. **Read the YAML files** in dependency order (see [scripts/populate.md](scripts/populate.md)).
-2. **Create Odoo records** via MCP (`create_record` / `create_records`).
-3. **Track slug → Odoo ID** in an in-memory dict for back-references (manager, account_exec, product_ref, etc.).
-4. **Use `__import__.slug` external IDs** so reruns are idempotent — the same slug maps to the same Odoo record.
+1. **Pick a universe** (e.g. `bean-forge`) — the rest of the flow operates within `universes/<slug>/`.
+2. **Read the YAML files** in dependency order (see [scripts/populate.md](scripts/populate.md)).
+3. **Create Odoo records** via MCP (`create_record` / `create_records`).
+4. **Track slug → Odoo ID** in an in-memory dict for back-references (manager, account_exec, product_ref, etc.).
+5. **Use `__import__.slug` external IDs** so reruns are idempotent — the same slug maps to the same Odoo record.
 
 Order matters — employees before CRM (because CRM refs salespeople); products before BOMs; BOMs before sales orders; partners before anything that references them. The populate script enforces this order.
 

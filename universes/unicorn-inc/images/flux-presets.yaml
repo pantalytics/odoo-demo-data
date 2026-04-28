@@ -1,0 +1,239 @@
+# Flux image-generation presets for Unicorn Inc.
+#
+# Skeleton starting point — brand voice and per-type presets will evolve as
+# the story fills out. Structurally identical to universes/bean-forge/images/
+# flux-presets.yaml; see that file for comments on how the generator composes
+# `brand.preamble + subject + type.style + brand.coda + palette/mood`.
+
+# ────────────────────────────────────────────────────────────────
+# Global brand style
+# ────────────────────────────────────────────────────────────────
+brand:
+  name: Unicorn Inc.
+  palette: >
+    saturated rainbow prism, gold leaf, deep sky-blue, blossom-pink,
+    cloud-white, mint and lavender accents — bold, vivid, joyful,
+    never washed-out
+  mood: >
+    Pixar-style 3D-animated feature film. Stylized fantasy characters
+    and props with soft expressive shapes, exaggerated proportions,
+    smooth subsurface-scattering skin/fur/feathers, bright saturated
+    palette. Cinematic key-light + rim-light + atmospheric haze, but
+    framed as a film-still from a major animation studio (Pixar,
+    DreamWorks, Sony Pictures Animation), not live-action photography
+    and not photoreal CGI.
+  preamble: >
+    A cinematic still from a Pixar-style 3D-animated feature about
+    Unicorn Inc., a cheerful fabelwezen cooperative on the sky-island
+    of Hemelhof, supplying real superpowers and mythic materials to
+    the realm.
+  coda: >
+    Pixar-style 3D animation render, stylized character design with
+    expressive features and soft rounded shapes, subsurface scattering
+    on skin and fur, cinematic film-still composition, dramatic key
+    light with soft fill, god-rays and atmospheric haze, rich
+    saturated joyful color grade, slight depth of field. Studio
+    feature-animation quality.
+  negative: >
+    photorealistic, live-action photography, real human faces,
+    uncanny valley, anime, manga, chibi, cel-shaded flat cartoon,
+    sketchy line art, watermark, text artifacts, logo overlay,
+    deformed anatomy, extra limbs, dark grimdark mood, desaturated
+    grey, washed-out colors
+
+# ────────────────────────────────────────────────────────────────
+# products.yaml category → preset key.
+# Edit these as you settle on product lines.
+# ────────────────────────────────────────────────────────────────
+product_category_presets:
+  wings: product_wings
+  fire: product_fire
+  fur: product_fur
+  feather: product_feather
+  ink: product_ink
+  mirror: product_mirror
+  service: product_service
+
+# ────────────────────────────────────────────────────────────────
+# Per-type style presets
+# ────────────────────────────────────────────────────────────────
+types:
+  logo:
+    model: flux-pro-1.1
+    width: 1024
+    height: 1024
+    include_brand_meta: false
+    preamble: >
+      Flat digital brand asset (not a photograph, not a mockup, not printed
+      on paper, not placed in a scene).
+    coda: >
+      Plain solid sunlit-cloud-white background, centered, no shadows,
+      no photographic framing. Joyful prism aesthetic only.
+    style: >
+      Wordmark 'UNICORN INC.' in a confident rounded sans-serif, paired
+      with a small mark of a unicorn silhouette leaping through a rainbow
+      arc. Gold leaf and prism rainbow accents on cloud-white. Vector
+      brand identity, joyful and optimistic.
+
+  headshot:
+    model: flux-dev
+    width: 1024
+    height: 1024
+    style: >
+      Pixar-style 3D-animated character portrait of a cheerful mythical
+      creature — expressive eyes, soft rounded silhouette, stylized
+      proportions, subsurface scattering on skin and fur. Chest-up
+      framing, cinematic key-light from a tall workshop window with
+      soft bounce fill, gentle atmospheric haze. Subject is fully a
+      fabelwezen (not a human with creature features stuck on) and
+      clearly a Unicorn Inc. employee — apron, fitting tape,
+      sparkle-stamp, tool-belt or guild sash. Warm genuine smile.
+      Studio feature-animation quality, like a character poster from
+      a Pixar movie.
+
+  product_wings:
+    model: flux-pro-1.1
+    width: 1408
+    height: 1056
+    style: >
+      Pixar-style 3D-animated hero prop shot of the described flight-gear
+      item, presented on a padded display stand, padded leather, polished
+      brass buckles or sculpted brass hardware where appropriate, soft
+      stylized materials with iridescent or prism highlights where the
+      item naturally has them. Cinematic key-light from a workshop
+      window, gentle haze, shallow depth of field, no rider, no creature.
+      Like a product turntable from a Pixar film.
+
+  product_fire:
+    model: flux-dev
+    width: 1280
+    height: 1280
+    style: >
+      Pixar-style 3D-animated still-life of a corked glass bottle of
+      dragon fire on a worn workshop counter, swirling stylized flame
+      glowing amber-magenta inside with soft volumetric light, sculpted
+      parchment label, cinematic shallow depth of field. Studio
+      feature-animation render.
+
+  product_fur:
+    model: flux-dev
+    width: 1280
+    height: 1280
+    style: >
+      Pixar-style 3D-animated hero shot of a folded mammoth-fur cloak
+      on a polished cedar table, soft fluffy stylized fur with rich
+      subsurface scattering, deep russet and snow-white tones, cinematic
+      key-light, gentle haze. Studio feature-animation render.
+
+  product_feather:
+    model: flux-dev
+    width: 1280
+    height: 1280
+    style: >
+      Pixar-style 3D-animated macro of a single phoenix feather laid on
+      indigo velvet, glowing ember-tip with stylized volumetric heat-
+      shimmer, fine sculpted barbs, dramatic rim-light, cinematic shallow
+      depth of field. Studio feature-animation render.
+
+  product_ink:
+    model: flux-dev
+    width: 1280
+    height: 1280
+    style: >
+      Pixar-style 3D-animated still-life of a corked apothecary jar of
+      kraken ink on a navigator's desk, swirling oil-slick rainbow
+      surface, sculpted brass quill beside it, soft volumetric lighting,
+      cinematic shallow depth of field. Studio feature-animation render.
+
+  product_mirror:
+    model: flux-dev
+    width: 1280
+    height: 1280
+    style: >
+      Pixar-style 3D-animated hero shot of a hand-held basilisk-glance
+      mirror with an ornate sculpted gold frame on a velvet cushion,
+      surface obscured by a polite cloth cover (caution: petrification
+      risk), warm cinematic key-light, gentle haze. Studio feature-
+      animation render.
+
+  product_service:
+    model: flux-dev
+    width: 1280
+    height: 1280
+    style: >
+      Pixar-style 3D-animated still-life suggesting an on-site service
+      engagement at Unicorn Inc.: a polished wooden service kit on a
+      workshop bench — sculpted brass tools, fitting tape, sparkle-stamp,
+      a leather-bound service ledger with a quill, embroidered guild sash
+      folded beside it, soft prism god-rays through a tall workshop
+      window, gentle haze, cinematic shallow depth of field. No human
+      figures. Studio feature-animation render.
+
+  factory_scene:
+    model: flux-pro-1.1
+    width: 1440
+    height: 832
+    style: >
+      Pixar-style 3D-animated wide establishing shot of the Unicorn Inc.
+      fitting & QC workshop on Hemelhof: stylized fabelwezen characters
+      at sun-drenched benches inspecting wings and bottling fire,
+      prism-rainbow god-rays through tall arched windows, atmospheric
+      haze, pastel-painted timber walls with sculpted props, sky-island
+      clouds drifting past outside, epic feature-film scale, rich
+      saturated joyful color grade. Like an opening establishing shot
+      from a Pixar movie.
+
+  customer_placeholder:
+    model: flux-dev
+    width: 1024
+    height: 1024
+    style: >
+      Stylized heraldic tile in Unicorn Inc. palette (cloud-white +
+      rainbow prism + gold-leaf accent), suggesting a fantasy guild,
+      academy or theatre troupe. Soft rounded Pixar-flavored shapes.
+      No text.
+
+# ────────────────────────────────────────────────────────────────
+# Per-item prompt templates — variables come from the matching story YAML
+# ────────────────────────────────────────────────────────────────
+templates:
+  headshot: |
+    Pixar-style stylized character portrait of {name}, a cheerful and
+    fully {nationality_adj}-bodied {role} at Unicorn Inc. — large
+    expressive eyes, soft rounded shapes, species-appropriate fur,
+    feathers, scales or magical traits. NOT a human with creature
+    features stuck on. Wearing Unicorn Inc. workshop attire (apron,
+    tool-belt or guild sash) appropriate to the role.
+    {bio_hint}
+
+  product_wings: |
+    {name}. {description}
+
+  product_fire: |
+    {name}. {description}
+
+  product_fur: |
+    {name}. {description}
+
+  product_feather: |
+    {name}. {description}
+
+  product_ink: |
+    {name}. {description}
+
+  product_mirror: |
+    {name}. {description}
+
+  product_service: |
+    {name}. {description}
+
+  logo: |
+    Primary brand mark for Unicorn Inc., a cheerful fabelwezen cooperative
+    supplying real superpowers from the sky-island of Hemelhof.
+
+  factory_scene: |
+    The Unicorn Inc. fitting & Magical QC workshop on Hemelhof, mid-morning.
+
+  customer_placeholder: |
+    Placeholder heraldic tile for a fantasy B2B customer
+    named {name} based in {city}, {country}.

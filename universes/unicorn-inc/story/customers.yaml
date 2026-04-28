@@ -1,0 +1,111 @@
+# Unicorn Inc. — fictional B2B customer roster.
+# Schema: see ../../../ARCHITECTURE.md.
+# All customers are fictional fantasy organisations.
+
+- id: silverhall-academy
+  name: Silverhall Academy of Aerial Arts
+  type: academy
+  country: Astralia
+  city: Silverhall
+  segment: key_account
+  account_exec: kit-brushtail
+  notes: Buys 60+ Pegasus Wings (Small) every autumn for first-years. Annual contract anchor for Customer Joy.
+
+- id: thornwood-knights
+  name: Order of the Thornwood Knights
+  type: knight_order
+  country: Eldermarch
+  city: Thornwood Keep
+  segment: key_account
+  account_exec: kit-brushtail
+  notes: Long-standing buyer of Phoenix-Feather Torches and mid-grade dragon fire. Very particular about Sparkle-Stamp provenance.
+
+- id: starfall-couriers
+  name: Starfall Couriers Guild
+  type: guild
+  country: Astralia
+  city: Skyharbour
+  segment: key_account
+  account_exec: marisol-tideglass
+  notes: Realm-wide courier network. Bulk Pegasus Wings (Medium) buyer. Saffi Brightwing's main co-conspirator on dragon-airlift scheduling.
+
+- id: three-spires-theatre
+  name: The Three-Spires Theatre Troupe
+  type: troupe
+  country: Eldermarch
+  city: Three Spires
+  segment: mid_market
+  account_exec: tobias-honeypaw
+  notes: Theatrical pyrotechnics — Bottled Dragon Fire (Mild & Medium), Phoenix-Feather Torches. Always last-minute.
+
+- id: royal-quartermaster-borealis
+  name: Royal Quartermaster of Borealis
+  type: royal_court
+  country: Borealis
+  city: Frostkeep
+  segment: key_account
+  account_exec: marisol-tideglass
+  notes: Mammoth-Fur Cloaks, winter-grade dragon fire, kraken ink for treaties. Strict procurement; needs Permit A-3 paper trail every time.
+
+- id: glimmerbay-aviators
+  name: Glimmerbay Aviators
+  type: adventuring_guild
+  country: Marindor
+  city: Glimmerbay
+  segment: mid_market
+  account_exec: tobias-honeypaw
+  notes: Adventuring party that re-fits wings every season. Loud, fun, pays on time.
+
+- id: coral-court-archivists
+  name: Coral Court Archivists
+  type: royal_court
+  country: Marindor
+  city: Coral Court
+  segment: mid_market
+  account_exec: marisol-tideglass
+  notes: Mer-kingdom archive. Buys Kraken Ink (Giant Grade) and Basilisk-Glance Mirror sets. Requires deliveries by sea-skiff only.
+
+- id: skyharbour-traders
+  name: Skyharbour Trading Consortium
+  type: trade_consortium
+  country: Astralia
+  city: Skyharbour
+  segment: key_account
+  account_exec: kit-brushtail
+  notes: Resells Unicorn Inc. wares across the western sky-routes. Wholesale pricing tier; needs the Sparkle-Stamp to be visible at unboxing.
+
+- id: emberhold-forgers
+  name: Emberhold Forgers' Guild
+  type: guild
+  country: Drachenland
+  city: Emberhold
+  segment: key_account
+  account_exec: tobias-honeypaw
+  notes: Industrial buyer of Bottled Dragon Fire (Inferno). Permit-heavy, but stable. Nori Embertongue's hometown crowd.
+
+- id: glade-conservatory
+  name: Verdant Glade Conservatory
+  type: academy
+  country: Eldermarch
+  city: Verdant Glade
+  segment: mid_market
+  account_exec: ezri-glimmerwhisker
+  notes: Music + magical-arts conservatory. Phoenix-Feather Quills, Kitsune-Tail Capes for stage. Teaches an annual masterclass at Hemelhof.
+
+- id: cinderpath-rangers
+  name: Cinderpath Rangers
+  type: ranger_company
+  country: Drachenland
+  city: Cinderpath
+  segment: smb
+  account_exec: ezri-glimmerwhisker
+  notes: Volcanic-region ranger company. Phoenix-Feather Torches, mammoth-fur, basic dragon fire. Small but growing.
+
+- id: moonfall-correspondents
+  name: Moonfall Correspondents
+  type: news_guild
+  country: Astralia
+  city: Moonfall
+  segment: mid_market
+  account_exec: ezri-glimmerwhisker
+  notes: Realm-wide news guild. Pegasus Wings (Small), Phoenix Feather Quills (display), Kraken Ink (Squid Grade) by the case.

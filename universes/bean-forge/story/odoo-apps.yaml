@@ -1,0 +1,74 @@
+# Bean Forge BV — recommended Odoo apps for population.
+# Schema: see ARCHITECTURE.md.
+# Order: install `core` first, then `recommended`, then `nice_to_have`.
+
+# ─── Core (story does not work without these) ──────────────────
+- module: sale_management
+  category: core
+  reason: Quotations and sales orders for machines, accessories, services.
+
+- module: crm
+  category: core
+  reason: Pipeline of leads (see crm-pipeline.yaml).
+
+- module: purchase
+  category: core
+  reason: PO flow to suppliers (Milano Burner Works, Delft Steel, etc.).
+
+- module: stock
+  category: core
+  reason: Multi-warehouse inventory; lot tracking on finished machines.
+
+- module: mrp
+  category: core
+  reason: BOMs and manufacturing orders to build roasters (see boms.yaml).
+
+- module: account
+  category: core
+  reason: Customer invoices, vendor bills, financial reporting.
+
+- module: hr
+  category: core
+  reason: 25-person employee roster (see employees.yaml).
+
+# ─── Recommended (explicitly story-justified) ──────────────────
+- module: mrp_plm
+  category: recommended
+  reason: Forge 30kg Hybrid R&D — engineering change orders + product versioning.
+
+- module: quality
+  category: recommended
+  reason: Bram's calibration-roast ritual + Omar's pre-ship inspection checklist.
+
+- module: industry_fsm
+  category: recommended
+  reason: Viktor's worldwide on-site installations and commissioning (billable field service).
+
+- module: project
+  category: recommended
+  reason: Internal R&D + B-Corp + Hall 3 projects, plus billable customer installations.
+
+- module: hr_timesheet
+  category: recommended
+  reason: Billable installation days and on-site-service-tech day rates.
+
+- module: sale_subscription
+  category: recommended
+  reason: Forge Control SaaS at EUR 150/mo per machine.
+
+- module: maintenance
+  category: recommended
+  reason: Annual preventative maintenance contracts (Studio EUR 4200/yr, Foundry EUR 9800/yr).
+
+# ─── Nice-to-have (universe-fit, not story-critical) ───────────
+- module: documents
+  category: nice_to_have
+  reason: B-Corp BIA paperwork, CE/UL certifications, supplier audits.
+
+- module: sign
+  category: nice_to_have
+  reason: Export contracts and customer-acceptance sign-offs across regions.
+
+- module: mass_mailing
+  category: nice_to_have
+  reason: Priya's Polaroid campaign and customer-origin newsletters.

@@ -1,0 +1,264 @@
+# Unicorn Inc. — 25-fabelwezen cast.
+# Schema: see ../../../ARCHITECTURE.md.
+# `nationality` here is a free-form species adjective (NOT an ISO code) —
+# the image generator passes it through to the Pixar-style headshot prompt.
+# `bio` should lead with a brief physical/magical description so the image
+# prompt has enough to render a cohesive Pixar-style character.
+
+# ─── Sparkle Circle (rotating leadership) ───────────────────────
+- id: aurora-manebraid
+  name: Aurora Manebraid
+  nationality: Unicorn
+  role: Steering Member · Vision
+  department: Sparkle Circle
+  manager: null
+  email: aurora.manebraid@unicorn.inc
+  languages: [common, equine, sylvan]
+  bio: Pearl-coated unicorn with iridescent silver mane and a long spiral horn that picks up rainbow light. Calm voice, soft smile. The Bazaar's quiet anchor — speaks last, decides last, but everyone waits for it.
+
+- id: borgun-emberscale
+  name: Borgun Emberscale
+  nationality: Dragon
+  role: Steering Member · Operations
+  department: Sparkle Circle
+  manager: aurora-manebraid
+  email: borgun.emberscale@unicorn.inc
+  languages: [common, dragontongue, runic]
+  bio: Stout, friendly burgundy dragon, about the size of a large pony, with copper underbelly scales and tiny reading glasses balanced on his snout. Knows every supply route in the realm by heart. Hates surprises.
+
+- id: pippa-sunfeather
+  name: Pippa Sunfeather
+  nationality: Phoenix
+  role: Steering Member · People
+  department: Sparkle Circle
+  manager: aurora-manebraid
+  email: pippa.sunfeather@unicorn.inc
+  languages: [common, ember, sylvan]
+  bio: Small joyful phoenix with sunset-orange and pink plumage, faint heat-shimmer always around her. Founder of the Sparkle-Stamp ritual. Believes culture is a craft.
+
+# ─── Customer Joy ──────────────────────────────────────────────
+- id: kit-brushtail
+  name: Kit Brushtail
+  nationality: Kitsune
+  role: Head of Customer Joy
+  department: Customer Joy
+  manager: aurora-manebraid
+  email: kit.brushtail@unicorn.inc
+  languages: [common, fae, mer]
+  bio: Five-tailed crimson kitsune with white face markings and a perpetually amused grin. Reads customers in seconds. Carries a notebook nobody else can read.
+
+- id: marisol-tideglass
+  name: Marisol Tideglass
+  nationality: Mermaid
+  role: Customer Joy Lead — Coastal Realms
+  department: Customer Joy
+  manager: kit-brushtail
+  email: marisol.tideglass@unicorn.inc
+  languages: [common, mer, dragontongue]
+  bio: Sea-green mermaid with coral-pink hair and a translucent fluke that shimmers when she laughs. Splits her time between Hemelhof and a hovering aquarium-cart at coastal trade fairs.
+
+- id: tobias-honeypaw
+  name: Tobias Honeypaw
+  nationality: Cloud-Panda
+  role: Senior Customer Joy Specialist
+  department: Customer Joy
+  manager: kit-brushtail
+  email: tobias.honeypaw@unicorn.inc
+  languages: [common, sylvan]
+  bio: Plump cloud-panda — soft white-and-grey fluff that drifts as if made of cloud-stuff, with sky-blue eye-patches. Calm voice, tea-time scheduling, never rattled. Beloved by anxious first-time wing buyers.
+
+- id: ezri-glimmerwhisker
+  name: Ezri Glimmerwhisker
+  nationality: Sprite-Bunny
+  role: Customer Joy Apprentice
+  department: Customer Joy
+  manager: kit-brushtail
+  email: ezri.glimmerwhisker@unicorn.inc
+  languages: [common, fae]
+  bio: Tiny rainbow-furred sprite-bunny with oversized ears that twitch when she's listening. Sparkle-trail follows her down corridors. Six months in and already running the welcome desk.
+
+# ─── Marketing & Tales ─────────────────────────────────────────
+- id: lyric-moonquill
+  name: Lyric Moonquill
+  nationality: Sylph
+  role: Head of Marketing & Tales
+  department: Marketing & Tales
+  manager: pippa-sunfeather
+  email: lyric.moonquill@unicorn.inc
+  languages: [common, fae, sylvan, ember]
+  bio: Translucent silver-blue sylph with windborne hair and a quill behind one ear. Writes the Bazaar's catalogue copy and most of its letters of complaint-resolution. Sharper than her ethereal looks suggest.
+
+- id: zephyrine-stardapple
+  name: Zephyrine Stardapple
+  nationality: Pegasus
+  role: Brand Storyteller
+  department: Marketing & Tales
+  manager: lyric-moonquill
+  email: zephyrine.stardapple@unicorn.inc
+  languages: [common, equine, fae]
+  bio: Sky-blue pegasus with constellation-pattern dapples on her flanks and gold-edged feathers. Films the showroom ads in slow motion. Dreams of a Bazaar-funded sky-opera.
+
+- id: ollie-twinklefoot
+  name: Ollie Twinklefoot
+  nationality: Twinkle-Hedgehog
+  role: Showroom & Social
+  department: Marketing & Tales
+  manager: lyric-moonquill
+  email: ollie.twinklefoot@unicorn.inc
+  languages: [common, runic]
+  bio: Round, cheerful twinkle-hedgehog whose quills emit a soft starlight glow when he's excited (which is most of the time). Runs the realm's biggest crystal-ball channel. Bites only on Tuesdays.
+
+# ─── Sourcing & Caravans ───────────────────────────────────────
+- id: grunda-slatestone
+  name: Grunda Slatestone
+  nationality: Golem
+  role: Head of Sourcing & Caravans
+  department: Sourcing & Caravans
+  manager: borgun-emberscale
+  email: grunda.slatestone@unicorn.inc
+  languages: [common, runic, dragontongue]
+  bio: Granite-skinned golem with moss in the joints and a kind, weathered face. Negotiates from a position of literal immovability. Will outlast any bad-faith vendor.
+
+- id: rikard-cloudhoof
+  name: Rikard Cloudhoof
+  nationality: Centaur
+  role: Caravan Coordinator
+  department: Sourcing & Caravans
+  manager: grunda-slatestone
+  email: rikard.cloudhoof@unicorn.inc
+  languages: [common, equine, runic]
+  bio: Chestnut-coated centaur with a salt-and-pepper beard and a worn leather satchel of route maps. Knows which mountain pass is closed before the snow does.
+
+- id: saffi-brightwing
+  name: Saffi Brightwing
+  nationality: Gryphon
+  role: Sky Logistics Lead
+  department: Sourcing & Caravans
+  manager: grunda-slatestone
+  email: saffi.brightwing@unicorn.inc
+  languages: [common, equine, dragontongue]
+  bio: Tawny gryphon with golden eagle-front and a lion-body striped in honey tones. Coordinates the dragon-airlift roster. Won't tolerate late dragons. Loves donuts.
+
+- id: bramble-mossbeard
+  name: Bramble Mossbeard
+  nationality: Faun
+  role: Vendor Relations
+  department: Sourcing & Caravans
+  manager: grunda-slatestone
+  email: bramble.mossbeard@unicorn.inc
+  languages: [common, sylvan, fae]
+  bio: Hazel-furred faun with curly horns wrapped in vines, a moss-flecked beard, and a constant cup of pine-tea. Visits every supplier in person, every season.
+
+# ─── Fitting & Fulfilment ──────────────────────────────────────
+- id: iris-manebraid
+  name: Iris Manebraid
+  nationality: Unicorn
+  role: Head of Fitting & Fulfilment
+  department: Fitting & Fulfilment
+  manager: aurora-manebraid
+  email: iris.manebraid@unicorn.inc
+  languages: [common, equine, fae]
+  bio: Cream-coated unicorn with a lavender braided mane, iridescent pearl horn, and fitting tape always around her neck. Cousin of Aurora. Sparkle-Stamps every wing-set personally.
+
+- id: drift-skyclasp
+  name: Drift Skyclasp
+  nationality: Pegasus
+  role: Wing-Fitter
+  department: Fitting & Fulfilment
+  manager: iris-manebraid
+  email: drift.skyclasp@unicorn.inc
+  languages: [common, equine]
+  bio: Slate-grey pegasus with stark white wing-tips and a fitter's leather apron studded with brass buckles. Famously gentle with first-time fliers.
+
+- id: nori-embertongue
+  name: Nori Embertongue
+  nationality: Dragon
+  role: Fire-Bottling Specialist
+  department: Fitting & Fulfilment
+  manager: iris-manebraid
+  email: nori.embertongue@unicorn.inc
+  languages: [common, dragontongue, ember]
+  bio: Juvenile cherry-red dragon, no bigger than a goat, with a singed apron and protective goggles pushed up onto his brow ridges. Decants dragon fire at the bottling bench. Self-taught. Slightly singed eyebrows.
+
+- id: petal-snowtuft
+  name: Petal Snowtuft
+  nationality: Star-Bear
+  role: Fur Restoration Specialist
+  department: Fitting & Fulfilment
+  manager: iris-manebraid
+  email: petal.snowtuft@unicorn.inc
+  languages: [common, sylvan]
+  bio: Plush, twinkling star-bear — deep-blue galaxy-pelt with tiny pinprick stars across her shoulders and a snow-white belly tuft. Combs mammoth-fur cloaks back to perfect by hand.
+
+- id: juno-inkpetal
+  name: Juno Inkpetal
+  nationality: Mermaid
+  role: Ink-Drawer
+  department: Fitting & Fulfilment
+  manager: iris-manebraid
+  email: juno.inkpetal@unicorn.inc
+  languages: [common, mer]
+  bio: Deep-violet mermaid with bioluminescent freckles down her arms and a long pearl ear-cuff. Drains kraken-ink jars with the steadiest hand on the island.
+
+# ─── Magical QC ────────────────────────────────────────────────
+- id: halia-mirrorbloom
+  name: Halia Mirrorbloom
+  nationality: Dryad
+  role: Head of Magical QC
+  department: Magical QC
+  manager: aurora-manebraid
+  email: halia.mirrorbloom@unicorn.inc
+  languages: [common, sylvan, fae]
+  bio: Birch-skinned dryad with cherry-blossom hair and a clipboard made of a single live leaf. Final word on whether a product gets the Sparkle-Stamp. Polite, immovable.
+
+- id: wisp-cloudpaw
+  name: Wisp Cloudpaw
+  nationality: Rainbow-Sloth
+  role: QC Inspector
+  department: Magical QC
+  manager: halia-mirrorbloom
+  email: wisp.cloudpaw@unicorn.inc
+  languages: [common, sylvan]
+  bio: Slow, contented rainbow-sloth with a gradient pelt going from raspberry through honey to mint. Inspects each product for as long as it takes — which is sometimes a while. Never wrong.
+
+- id: kael-sparksong
+  name: Kael Sparksong
+  nationality: Djinn
+  role: Enchantment Tester
+  department: Magical QC
+  manager: halia-mirrorbloom
+  email: kael.sparksong@unicorn.inc
+  languages: [common, runic, ember, dragontongue]
+  bio: Indigo-skinned djinn with golden tattoos along his arms and a curl of smoke for a lower body. Tests every enchantment by binding it briefly into himself. Sings when bored.
+
+# ─── Accounts & Sparkles ───────────────────────────────────────
+- id: dottie-cobblepocket
+  name: Dottie Cobblepocket
+  nationality: Brownie
+  role: Head of Accounts
+  department: Accounts & Sparkles
+  manager: borgun-emberscale
+  email: dottie.cobblepocket@unicorn.inc
+  languages: [common, fae, runic]
+  bio: Pocket-sized brownie in a patchwork waistcoat covered in tiny ledger-pockets, half-moon spectacles, and a quill behind her ear. Knows where every Sparkle goes.
+
+- id: fennek-goldwhisker
+  name: Fennek Goldwhisker
+  nationality: Sparkle-Squirrel
+  role: Accounts Clerk
+  department: Accounts & Sparkles
+  manager: dottie-cobblepocket
+  email: fennek.goldwhisker@unicorn.inc
+  languages: [common, fae]
+  bio: Tiny sparkle-squirrel with a fluffy gold-dust tail that drops faint glitter when he runs. Maintains the daily ledger. Stress-eats acorns at quarter-end.
+
+# ─── People & Petting ──────────────────────────────────────────
+- id: rosy-sunbasket
+  name: Rosy Sunbasket
+  nationality: Rosy-Capybara
+  role: Head of People & Petting
+  department: People & Petting
+  manager: aurora-manebraid
+  email: rosy.sunbasket@unicorn.inc
+  languages: [common, sylvan]
+  bio: Round, perpetually serene rosy-capybara with a peach-warm coat and a small flower tucked behind one ear. Runs HR and the Bazaar's official daily petting hour. Beloved.

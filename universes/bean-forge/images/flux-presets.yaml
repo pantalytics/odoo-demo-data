@@ -1,0 +1,207 @@
+# Flux image-generation presets for Bean Forge BV.
+#
+# The generator (scripts/generate_images.py) prepends `brand.preamble`
+# and appends `brand.coda` to every prompt, then mixes in the
+# per-type `style` block. Per-item prompts (headshot bio, product
+# description) only have to describe the subject — not the style.
+#
+# Keep it tight: if you find yourself repeating the same phrase in
+# every per-item prompt, it belongs in a preset here.
+
+# ────────────────────────────────────────────────────────────────
+# Global brand style — applied to every image
+# ────────────────────────────────────────────────────────────────
+brand:
+  name: Bean Forge BV
+  palette: >
+    warm neutrals, deep espresso brown, brushed stainless steel,
+    muted brass accents, off-white backdrop, soft amber highlights
+  mood: >
+    craft-oriented industrial, confident without glamour, documentary
+    realism — a third-generation Dutch family workshop, not corporate
+    stock photography
+  preamble: >
+    Photographed for Bean Forge BV, a precision drum-coffee-roaster
+    manufacturer in Utrecht, Netherlands.
+  coda: >
+    Warm neutral color grade, brushed-steel and brass accents, natural
+    workshop atmosphere, realistic textures, no stock-photo gloss,
+    no excessive bokeh, no cartoon or illustration styling.
+  negative: >
+    cartoon, illustration, anime, CGI look, plastic skin, over-smoothed,
+    heavy HDR, oversaturated, watermark, text artifacts, logo on clothing,
+    deformed hands, extra fingers
+
+# ────────────────────────────────────────────────────────────────
+# products.yaml `category` → preset key used for image generation.
+# Categories not listed here are skipped (e.g. intangible services).
+# ────────────────────────────────────────────────────────────────
+product_category_presets:
+  roaster: product_roaster
+  accessory: product_accessory
+  spare: product_accessory
+  software: product_software
+
+# ────────────────────────────────────────────────────────────────
+# Per-type style presets
+# ────────────────────────────────────────────────────────────────
+types:
+  logo:
+    model: flux-pro-1.1
+    width: 1024
+    height: 1024
+    include_brand_meta: false
+    preamble: >
+      Flat digital brand asset (not a photograph, not a mockup, not printed
+      on paper, not placed in a scene).
+    coda: >
+      Plain solid off-white background, centered, no shadows, no texture,
+      no depth of field, no surrounding objects, no photographic framing.
+      Do not render as a business card, billboard, packaging, signage,
+      or product shot. Do not add caption text, watermarks, or artist
+      signatures. Monochrome charcoal ink only.
+    style: >
+      Minimalist professional wordmark 'BEAN FORGE' set in confident
+      industrial sans-serif (slight geometric slab feel), stacked below
+      a small abstract mark that fuses an anvil silhouette with a coffee
+      bean tucked into its belly. Vector logo design, solid charcoal on
+      off-white, generous negative space, centered composition, high
+      contrast, crisp clean edges. App-icon / letterhead quality.
+
+  logo_alt_horizontal:
+    model: flux-pro-1.1
+    width: 1408
+    height: 704
+    include_brand_meta: false
+    preamble: >
+      Flat digital brand asset (not a photograph, not a mockup, not printed
+      on paper, not placed in a scene).
+    coda: >
+      Plain solid off-white background, no shadows, no texture, no depth
+      of field, no surrounding objects. Do not render as a business card,
+      billboard, packaging, signage, or product shot. Do not add caption
+      text, watermarks, or artist signatures. Monochrome charcoal ink only.
+    style: >
+      Horizontal lockup: anvil-and-bean mark on the left, 'BEAN FORGE'
+      wordmark on the right, baseline-aligned, balanced spacing, flat
+      monochrome charcoal on off-white. Print-ready brand lockup.
+
+  headshot:
+    model: flux-dev
+    width: 1024
+    height: 1024
+    style: >
+      Documentary-style corporate headshot. Subject framed from chest up,
+      looking slightly off-camera with a warm, genuine expression. Smart-
+      casual workwear (no visible branding). Shot on a 50mm prime lens,
+      f/2.8, natural workshop lighting from a large north-facing window,
+      stainless-steel coffee-roaster equipment softly out of focus in the
+      background. Realistic skin texture, subtle film grain, photojournalism
+      aesthetic. Avoid the glossy LinkedIn-stock look.
+
+  product_roaster:
+    model: flux-pro-1.1
+    width: 1408
+    height: 1056   # 4:3, catalog-friendly (flux-pro-1.1 caps at 1440/side)
+    style: >
+      High-end catalog product photography of a Bean Forge drum coffee
+      roaster. Brushed stainless-steel body with matte black enamel panels,
+      brass accents on the sight glass and logo plate, cast-iron drum
+      door, digital control panel with amber back-lit display. Three-
+      quarter front-left angle, seamless warm-neutral backdrop, soft
+      studio lighting with gentle shadows, realistic reflections on
+      stainless, no people, no text overlays. Engineering-grade machine,
+      not a toy.
+
+  product_accessory:
+    model: flux-dev
+    width: 1280
+    height: 1280
+    style: >
+      Clean catalog product shot of an industrial coffee-roaster
+      accessory. Brushed stainless-steel construction with brass or
+      black detailing consistent with the Bean Forge design language.
+      Seamless off-white backdrop, soft studio lighting, three-quarter
+      angle, no people, no text overlays.
+
+  product_software:
+    model: flux-dev
+    width: 1408
+    height: 1024
+    style: >
+      Marketing visual for Forge Control, a cloud roast-profile SaaS.
+      Stylized laptop or tablet on a workshop bench next to a brushed-
+      stainless roaster, screen showing a roast-curve dashboard with
+      amber and cream line graphs on a dark UI. Warm workshop light,
+      shallow depth of field, no readable text on screen.
+
+  factory_scene:
+    model: flux-pro-1.1
+    width: 1440
+    height: 832   # flux-pro-1.1 max-per-side 1440
+    style: >
+      Wide documentary photograph of a small Dutch manufacturing workshop:
+      two 15kg brushed-stainless drum coffee roasters mid-assembly on
+      steel benches, tools and calibration probes laid out, workshop
+      lamps, exposed brick and white-painted steel trusses, warm
+      afternoon light from tall windows. No visible faces. Editorial
+      feel — Monocle magazine, not corporate brochure.
+
+  customer_placeholder:
+    model: flux-dev
+    width: 1024
+    height: 1024
+    style: >
+      Abstract geometric brand-tile in warm neutral tones, suggesting a
+      specialty-coffee business. Subtle coffee-bean or cup motif, flat
+      design, single accent color, no text. Used as a placeholder
+      avatar for B2B customer companies in Odoo.
+
+  product_service:
+    model: flux-dev
+    width: 1280
+    height: 1280
+    style: >
+      Documentary product-catalog visual for a Bean Forge field-service
+      offering. A technician's hands (no face) working on a brushed-
+      stainless drum coffee roaster: open service panel, calibration probe,
+      torque wrench, inspection sheet on a clipboard. Warm workshop light,
+      shallow depth of field, brushed steel and brass accents, no text
+      overlays, no readable logos. Suggests craftsmanship and reliability,
+      not generic corporate stock.
+
+# ────────────────────────────────────────────────────────────────
+# Per-item prompt templates (Python .format style)
+# Variables come from the matching YAML story file.
+# ────────────────────────────────────────────────────────────────
+templates:
+  headshot: |
+    Portrait of {name}, a {nationality_adj} {role} at Bean Forge BV.
+    {bio_hint}
+    {age_hint} {gender_hint}
+
+  product_roaster: |
+    {name} — {capacity_kg}kg capacity drum coffee roaster.
+    {description}
+
+  product_accessory: |
+    {name}. {description}
+
+  product_software: |
+    {name}. {description}
+
+  logo: |
+    Primary brand mark for Bean Forge BV, Utrecht-based manufacturer of
+    precision drum coffee roasters. Third-generation family business,
+    craft-oriented engineering brand.
+
+  logo_alt_horizontal: |
+    Horizontal lockup variant of the Bean Forge brand mark, wordmark
+    plus anvil-and-bean icon.
+
+  factory_scene: |
+    The Bean Forge workshop floor in Utrecht, mid-morning.
+
+  customer_placeholder: |
+    Placeholder tile for a fictional specialty-coffee B2B customer
+    named {name} based in {city}, {country}.

@@ -15,7 +15,7 @@
 - id: fjord-coffee
   name: Fjord Coffee
   type: specialty_roaster
-  country: NO
+  country: "NO"
   city: Oslo
   segment: mid_market
   account_exec: maria-flores

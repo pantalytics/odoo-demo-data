@@ -1,0 +1,194 @@
+# The Provisional Bureau — CRM pipeline.
+# Schema: see ARCHITECTURE.md.
+# Stages: new | qualified | proposition | negotiation | won | lost
+# Amounts in EUR. Expected close dates are absolute; the populate
+# script may shift them relative to "now" so the pipeline always
+# feels current.
+
+# ─── New ────────────────────────────────────────────────────────
+- id: lead-carnivore-rfp
+  customer_ref: carnivore-assurance
+  title: Carnivore Assurance — brand strategy + identity RFP
+  stage: new
+  amount: 140000
+  expected_close: 2026-08-30
+  salesperson: indra-vermeulen
+  narrative: |
+    RFP landed via warm intro. Brief is "modernize without spooking the
+    farmers." Hugo is privately delighted. Indra evaluating whether to
+    respond — internal capacity is the question, not the client.
+
+- id: lead-quartile-design-system
+  customer_ref: quartile-fintech
+  title: Quartile — design-system rollout phase 2
+  stage: new
+  amount: 42000
+  expected_close: 2026-07-20
+  salesperson: cassian-foley
+  narrative: |
+    Existing client expanding the design-system rollout into their
+    product app. Inbound from CTO. Cassian scoping next week.
+
+- id: lead-northbound-nonprofit
+  customer_ref: null
+  title: Northbound (TBC nonprofit) — strategy sprint introductory call
+  stage: new
+  amount: 45000
+  expected_close: 2026-09-15
+  salesperson: indra-vermeulen
+  narrative: |
+    Inbound from a sustainability nonprofit (intro from Open Atlas board).
+    Very early. Briefing call scheduled.
+
+# ─── Qualified ──────────────────────────────────────────────────
+- id: lead-meridian-mutual-strategy
+  customer_ref: meridian-mutual
+  title: Meridian Mutual — brand strategy + digital identity
+  stage: qualified
+  amount: 165000
+  expected_close: 2026-09-30
+  salesperson: cassian-foley
+  narrative: |
+    Building society modernizing for younger members. Long sales cycle —
+    second meeting with their CMO and CDO went well; written brief landing
+    next week.
+
+- id: lead-trove-press-series
+  customer_ref: trove-press
+  title: Trove Press — series-design system
+  stage: qualified
+  amount: 38000
+  expected_close: 2026-07-15
+  salesperson: renee-du-plessis
+  narrative: |
+    Independent publisher wants a system to design upcoming book series
+    consistently across imprints. Smaller fee, but Pieter loves the work.
+
+- id: lead-northwind-athletics-identity
+  customer_ref: northwind-athletics
+  title: Northwind Athletics — identity refresh
+  stage: qualified
+  amount: 58000
+  expected_close: 2026-08-15
+  salesperson: renee-du-plessis
+  narrative: |
+    Outdoor apparel scale-up; pitched in 2025, didn't sign retainer but
+    relationship stayed warm. Now ready for an identity refresh ahead of
+    Series C.
+
+# ─── Proposition ────────────────────────────────────────────────
+- id: lead-halcyon-stewardship-renewal
+  customer_ref: halcyon-hotel-group
+  title: Halcyon Hotel Group — flagship retainer renewal (multi-year)
+  stage: proposition
+  amount: 198000   # 16500 EUR/mo × 12
+  expected_close: 2026-06-30
+  salesperson: cassian-foley
+  narrative: |
+    Existing flagship retainer up for renewal. Pitching a 2-year extension
+    with a 5% uplift. Cassian confident. Hugo wants to push for 3 years.
+
+- id: lead-civic-roots-stewardship
+  customer_ref: civic-roots
+  title: Civic Roots — light retainer (move from project)
+  stage: proposition
+  amount: 54000    # 4500 EUR/mo × 12
+  expected_close: 2026-07-10
+  salesperson: renee-du-plessis
+  narrative: |
+    Moving Civic Roots from project-by-project to a light stewardship
+    retainer. Proposal sent; awaiting board sign-off.
+
+- id: lead-kunsthal-noord-2026-program
+  customer_ref: kunsthal-noord
+  title: Kunsthal Noord — 2026 exhibition identities (annual bundle)
+  stage: proposition
+  amount: 36000
+  expected_close: 2026-06-20
+  salesperson: renee-du-plessis
+  narrative: |
+    Annual program of three exhibition identities + one event identity.
+    Returning client; bundling discount applied. Expected to close in June.
+
+# ─── Negotiation ────────────────────────────────────────────────
+- id: lead-bothy-stewardship-renewal
+  customer_ref: bothy-hospitality
+  title: Bothy Hospitality — stewardship retainer renewal
+  stage: negotiation
+  amount: 102000   # 8500 EUR/mo × 12
+  expected_close: 2026-06-15
+  salesperson: cassian-foley
+  narrative: |
+    Renewal at standard tier. Client pushing for a rate freeze; we want
+    a 4% uplift. Likely to land at 2-3%.
+
+- id: lead-open-atlas-2027-launch
+  customer_ref: open-atlas-foundation
+  title: Open Atlas — 2027 strategy launch identity package
+  stage: negotiation
+  amount: 78000
+  expected_close: 2026-07-05
+  salesperson: cassian-foley
+  narrative: |
+    Identity package tied to their 2027 strategy launch. Sensitive to
+    optics — no greenwashing aesthetics. In contracting; final scope
+    being negotiated.
+
+# ─── Won (recent) ───────────────────────────────────────────────
+- id: lead-rijndal-wayfinding
+  customer_ref: rijndal-museum
+  title: Rijndal Museum — wayfinding implementation
+  stage: won
+  amount: 64000
+  expected_close: 2026-02-28
+  salesperson: cassian-foley
+  narrative: |
+    Closed late February. Project kicked off March 1. Continuation of
+    the 2024 identity refresh.
+
+- id: lead-stellar-rye-packaging
+  customer_ref: stellar-rye
+  title: Stellar Rye — EU packaging architecture
+  stage: won
+  amount: 70000
+  expected_close: 2026-01-15
+  salesperson: renee-du-plessis
+  narrative: |
+    Closed January. Strategically interesting — first US scale-up entering
+    EU on our roster.
+
+- id: lead-drive-thru-farewells-strategy
+  customer_ref: drive-thru-farewells
+  title: Drive-Thru Farewells — brand strategy sprint
+  stage: won
+  amount: 45000
+  expected_close: 2026-03-25
+  salesperson: cassian-foley
+  narrative: |
+    Closed end of March. Client asked us with a straight face; we accepted
+    with a straighter face. Sprint is in flight.
+
+# ─── Lost ───────────────────────────────────────────────────────
+- id: lead-lost-european-bank
+  customer_ref: null
+  title: Major European retail bank — naming + identity (LOST)
+  stage: lost
+  amount: 280000
+  expected_close: 2026-02-10
+  salesperson: hugo-maartens
+  narrative: |
+    Lost to a larger consultancy. Client said "you weren't quite the scale
+    we needed." Indra notes this is the third bank lost on the same line —
+    Hugo is sulking, Indra is reconsidering whether banks are a fit at all.
+
+- id: lead-lost-tech-rebrand
+  customer_ref: null
+  title: Series-D SaaS rebrand (LOST)
+  stage: lost
+  amount: 120000
+  expected_close: 2026-03-01
+  salesperson: indra-vermeulen
+  narrative: |
+    Lost to an in-house team. Client decided to do it internally with a
+    big freelance roster. Sam is privately relieved — the brief was
+    "make us look like Hooli but warmer."

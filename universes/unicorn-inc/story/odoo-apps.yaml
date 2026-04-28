@@ -1,0 +1,62 @@
+# Unicorn Inc. — recommended Odoo apps for population.
+# Schema: see ARCHITECTURE.md.
+# Order: install `core` first, then `recommended`, then `nice_to_have`.
+
+# ─── Core (story does not work without these) ──────────────────
+- module: sale_management
+  category: core
+  reason: Quotations and sales orders for wings, fire, fur, feathers, ink, mirrors.
+
+- module: crm
+  category: core
+  reason: Pipeline of leads (see crm-pipeline.yaml).
+
+- module: purchase
+  category: core
+  reason: PO flow to fabelwezen-suppliers and material partners.
+
+- module: stock
+  category: core
+  reason: Inventory of magical materials; lot tracking on regulated goods.
+
+- module: mrp
+  category: core
+  reason: BOMs and manufacturing orders for finished products (see boms.yaml).
+
+- module: account
+  category: core
+  reason: Sparkle-denominated invoices and bills.
+
+- module: hr
+  category: core
+  reason: Mixed-species employee roster (see employees.yaml).
+
+# ─── Recommended (explicitly story-justified) ──────────────────
+- module: quality
+  category: recommended
+  reason: Phoenix feathers self-immolate if mishandled, dragon fire is regulated, mammoth fur is QC-graded.
+
+- module: project
+  category: recommended
+  reason: Wing-fitting engagements, seasonal fur-harvest planning, fire-renewal projects.
+
+- module: hr_timesheet
+  category: recommended
+  reason: Billable on-site engagements (wing-fitting, mirror-installation).
+
+- module: industry_fsm
+  category: recommended
+  reason: Pegasus-wing fitting and basilisk-mirror installation are explicit on-site services.
+
+- module: maintenance
+  category: recommended
+  reason: Basilisk-glance mirrors, kraken-ink presses, fire-storage vessels need regular upkeep.
+
+# ─── Nice-to-have (universe-fit, not story-critical) ───────────
+- module: sale_subscription
+  category: nice_to_have
+  reason: Seasonal mammoth-fur subscriptions and fire-renewal recurring plans.
+
+- module: documents
+  category: nice_to_have
+  reason: Regulated-fire safety paperwork and species-handling guidelines.

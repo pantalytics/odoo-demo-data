@@ -1,0 +1,345 @@
+# Flux image-generation presets for The Provisional Bureau.
+#
+# Visual direction: late-1980s Dutch advertising-agency pastiche.
+# Think Jiskefet's reclamebureau sketches, brochure-photography circa
+# 1987, VHS stills, harsh on-camera flash, fake-mahogany boardrooms,
+# brown leather, mustard yellow, gold trim. Period-accurate and
+# unapologetic — the satirical tension with the studio's "editorial
+# restraint" copy is the whole joke.
+
+# ────────────────────────────────────────────────────────────────
+# Global brand style — applied to every image
+# ────────────────────────────────────────────────────────────────
+brand:
+  name: The Provisional Bureau
+  palette: >
+    mustard yellow primary, chestnut brown, deep burgundy, cream off-white,
+    polished brass and gold trim, beige plastic, single magenta neon accent
+  mood: >
+    late-1980s Dutch advertising-agency pastiche. Glossy corporate
+    brochure printed on heavy stock circa 1987. Loud, confident, slightly
+    tacky in the way the era genuinely was.
+
+    Office props: fake-mahogany desks, lacquered wood wall panelling,
+    brown shag carpet, brown leather Chesterfield seating, boxy beige
+    personal computers with chunky CRT monitors, beige push-button telephones
+    with curly cords, fax machines, telex machines, dot-matrix printers,
+    daisy-wheel printers, electric typewriters, cassette dictaphones
+    and microcassette recorders, portable cassette players with foam-padded headphones, boom-box on a side table, reel-to-reel
+    tape decks in the boardroom, slide projectors and overhead projectors
+    with transparency sheets, brass-rimmed Rolodexes, leather-bound organisers, embossed-tape label-makers, accordion-folder filing
+    racks, pneumatic-tube canisters, lucite paperweights, brass nameplates,
+    pendulum-ball desk toys, glass-topped coffee tables stacked with
+    industry magazines, vertical blinds, tropical houseplants in brass pots,
+    framed motivational prints of sunsets and eagles, framed gilded
+    advertising-award certificates, cork pin-boards with multicoloured
+    thumbtacks, styrofoam coffee cups, glass cola bottles.
+
+    Wardrobe: shoulder-padded power suits in chestnut, mustard, fuchsia
+    or teal, wide silk neckties with bold geometric prints, gold tie-clips,
+    bolo ties, pleated trousers with leather belts, suspenders, pastel
+    button-down shirts, silk blouses with ribbon-tie collars, jewel-tone
+    shoulder-padded jackets, pencil skirts, silk scarves, statement gold
+    earrings, multiple gold chains, gold pinky rings, chunky gold
+    gold-bracelet watches, tortoiseshell or oversized plastic eyeglass
+    frames, lacquered fingernails.
+
+    Hairstyles: men sporting gelled side-parts and combovers, mullets,
+    centre-parted perms, slicked-back yuppie hair, neatly trimmed
+    moustaches; women in big hairsprayed permed curls, teased bouffants,
+    voluminous layered shags, feathered wings, asymmetric bobs, high
+    ponytails with fabric scrunchies, dramatic blowouts.
+
+    Photography: harsh on-camera flash, fluorescent ceiling
+    tubes plus warm desk lamps creating mild magenta-cyan colour cast,
+    warm 35mm film stock, slight chromatic aberration, soft VHS grain,
+    occasional CRT scan-lines. Period-accurate.
+  preamble: >
+    Photographed for The Provisional Bureau, a Dutch advertising and
+    branding agency, brochure shoot circa 1987.
+  coda: >
+    Period-accurate late-1980s aesthetic, harsh on-camera flash, slight
+    VHS grain and chromatic aberration, mild magenta-cyan color cast,
+    warm 35mm film stock. Realistic textures. No modern devices
+    (no smartphones, no flat-screen monitors, no laptops, no AirPods,
+    no modern minimalist furniture). No 2020s editorial cleanliness.
+  negative: >
+    cartoon, illustration, anime, CGI look, plastic skin, over-smoothed,
+    watermark, text artifacts, deformed hands, extra fingers, modern
+    smartphones, modern laptops, flat-screen monitors, AirPods, USB-C,
+    minimalist Scandinavian furniture, post-2010 fashion, post-2010
+    eyewear, sneakers as office wear
+
+# ────────────────────────────────────────────────────────────────
+# products.yaml `category` → preset key used for image generation.
+# ────────────────────────────────────────────────────────────────
+product_category_presets:
+  strategy: service_strategy
+  identity: service_identity
+  digital: service_digital
+  retainer: service_retainer
+  time-material: service_rate
+
+# ────────────────────────────────────────────────────────────────
+# Per-type style presets
+# ────────────────────────────────────────────────────────────────
+types:
+  logo:
+    model: flux-pro-1.1
+    width: 1024
+    height: 1024
+    include_brand_meta: false
+    preamble: >
+      Flat digital brand asset (not a photograph, not a mockup, not
+      printed on paper, not placed in a scene).
+    coda: >
+      Solid cream off-white background, centered, no shadows beyond a
+      crisp 1980s drop-shadow. Do not render as a business card,
+      billboard, packaging, signage, or product shot. Do not add caption
+      text, watermarks, or artist signatures.
+    style: >
+      Bold late-1980s corporate brand mark for 'THE PROVISIONAL BUREAU'.
+      Heavy gold-and-burgundy serif slab wordmark, generous letter
+      spacing, thin gold rule above and below. Optional small geometric
+      crest above (a stamped square ribbon with the initials 'PB' in
+      negative). Hard offset drop-shadow in burgundy. Period-accurate
+      1987 corporate-identity look — confident, slightly tacky, gold-
+      embossed letterhead energy. Vector-clean edges on solid cream.
+
+  logo_alt_horizontal:
+    model: flux-pro-1.1
+    width: 1408
+    height: 704
+    include_brand_meta: false
+    preamble: >
+      Flat digital brand asset (not a photograph, not a mockup, not
+      printed on paper, not placed in a scene).
+    coda: >
+      Solid cream off-white background, no environmental context, no
+      caption text or watermarks.
+    style: >
+      Horizontal late-1980s corporate lockup. Small gold-and-burgundy
+      'PB' ribbon-crest on the left, 'THE PROVISIONAL BUREAU' wordmark
+      in heavy gold serif slab on the right, baseline-aligned, thin gold
+      rules framing the lockup. Period-accurate 1987 brand-identity
+      lockup, gold-embossed letterhead feel.
+
+  headshot:
+    model: flux-dev
+    width: 1024
+    height: 1024
+    style: >
+      Late-1980s Dutch corporate brochure portrait, warm 35mm film,
+      harsh on-camera flash. Subject framed from chest up, posed slightly
+      three-quarter to camera with a confident, mildly stiff smile.
+
+      Period-accurate styling. Hair: men with gelled side-parts and
+      combovers, mullets, centre-parted perms, slicked-back yuppie hair,
+      or neatly trimmed moustaches; women with big hairsprayed permed
+      curls, teased bouffants, voluminous layered shags, feathered wings,
+      asymmetric bobs, or dramatic blowouts.
+      Eyewear: oversized plastic-framed or tortoiseshell eyeglasses
+      (square or aviator).
+      Wardrobe: shoulder-padded power suits in chestnut, mustard, teal
+      or fuchsia; wide silk ties with bold geometric prints and gold
+      tie-clips; or silk blouses with ribbon-tie collars; or jewel-tone
+      shoulder-padded jackets with statement gold earrings, multiple
+      gold chains, and gold pinky rings; chunky gold-bracelet wrist
+      watches; lacquered fingernails.
+
+      Background options (vary across the cast): a mottled blue-grey or
+      warm brown studio photo backdrop with hard flash falloff; OR a
+      softly out-of-focus fake-mahogany office featuring a framed
+      gilded advertising-award certificate, brass nameplate, and
+      tropical houseplant in a brass pot; OR seated at a desk with a
+      beige push-button telephone, leather leather organiser, and brass Rolodex
+      visible.
+
+      Photography: slight chromatic aberration, mild VHS grain, faint
+      magenta-cyan colour cast, realistic skin texture. Period photograph,
+      not modern reconstruction. No modern devices, no 2020s eyewear,
+      no laptops or smartphones, no sneakers.
+
+  service_strategy:
+    model: flux-pro-1.1
+    width: 1408
+    height: 1056
+    style: >
+      Late-1980s Dutch agency brochure still-life suggesting brand
+      strategy work. A fake-mahogany desk in a corporate office: a
+      leather-bound leather organiser open to a page of bullet-pointed notes, a
+      gold Cross pen, a beige push-button telephone with curly cord, a
+      microcassette dictaphone with a fresh tape beside it, a brass
+      Rolodex flipped open, a pendulum-ball desk toy, a glass tumbler
+      of water on a cork coaster, two styrofoam coffee cups, a framed
+      motivational print of a sunset in soft focus, vertical blinds and
+      a tropical houseplant in a brass pot in the background. Brown shag carpet,
+      fluorescent ceiling glow plus warm desk-lamp pool. Harsh on-camera
+      flash, slight VHS grain, period 1987 magazine-ad aesthetic.
+      No modern devices.
+
+  service_identity:
+    model: flux-pro-1.1
+    width: 1408
+    height: 1056
+    style: >
+      Late-1980s agency brochure still-life suggesting brand identity
+      work. A fake-mahogany boardroom table strewn with printed identity
+      mockups in mustard, burgundy, and cream, a gold-embossed presentation
+      folder, two lucite paperweights, magic markers in a leather cup,
+      Pantone swatch booklets fanned open, a Dymo embossed-tape label-
+      maker, an overhead projector with a transparency sheet showing a
+      logo lockup, a 35mm slide carousel beside it. Brown leather
+      Chesterfield chairs softly out of focus, framed gilded
+      advertising-award certificates on the wall behind. Fluorescent
+      overhead lighting plus a warm desk lamp. Harsh flash, period 1987
+      magazine-ad still-life. No modern devices.
+
+  service_digital:
+    model: flux-dev
+    width: 1408
+    height: 1024
+    style: >
+      Late-1980s 'computer division' promotional still-life. A beige
+      boxy beige personal computer with a chunky CRT monitor glowing
+      amber-on-black with a wireframe chart on screen, a beige keyboard,
+      a stack of 5.25-inch floppy disks in paper sleeves, a corded
+      ball-mouse on a fabric mousepad, a daisy-wheel printer beside the
+      desk with a sheet of dot-matrix paper feeding through, a beige
+      modem with two blinking LEDs, a gold-rimmed coffee cup, a leather-
+      bound binder embossed 'INTERACTIVE'. Fake-mahogany desk, brown
+      shag carpet, fluorescent overhead lighting, period-accurate 1987
+      corporate-tech look. Harsh flash, mild chromatic aberration.
+
+  service_retainer:
+    model: flux-dev
+    width: 1280
+    height: 1280
+    style: >
+      Late-1980s agency brochure still-life suggesting an ongoing client
+      relationship. A stack of leather-bound monthly review folders with
+      gold-embossed spines, a brass-rimmed Rolodex full of cards, a
+      microcassette dictaphone with a labelled cassette tape beside it,
+      a beige push-button desk telephone with curly cord, a Dymo
+      embossed-tape label-maker, a leather organiser open to a page of monthly
+      meeting notes, a framed photograph of a handshake (soft focus),
+      a brass pen set on a fake-mahogany desk, a pendulum-ball desk
+      toy mid-swing. Brown shag carpet, fluorescent overhead light,
+      harsh on-camera flash, period-accurate 1987 corporate aesthetic.
+      No modern devices.
+
+  service_rate:
+    model: flux-dev
+    width: 1280
+    height: 1280
+    style: >
+      Late-1980s agency brochure still-life suggesting a billable
+      professional day-rate. A fake-mahogany desk: a brass-trimmed
+      desk clock at 9:05, a leather-bound timesheet ledger open with
+      a fountain pen resting in the spine showing handwritten time
+      entries in pencil columns, a Dymo embossed-tape label on the
+      cover, a microcassette dictaphone with a fresh tape, a brass
+      Cross-style pen, a beige push-button telephone with curly cord
+      partly in frame, a styrofoam coffee cup, a leather organiser
+      open to a calendar page, a small brass nameplate, a glass
+      tumbler of water on a cork coaster. Brown shag carpet, fluorescent
+      ceiling tubes plus warm desk-lamp pool, harsh on-camera flash,
+      slight VHS grain, mild magenta-cyan colour cast. Period-accurate
+      1987 corporate-brochure aesthetic. No modern devices.
+
+  factory_scene:
+    model: flux-pro-1.1
+    width: 1440
+    height: 832
+    style: >
+      Wide late-1980s Dutch advertising-agency office, photographed for
+      a corporate brochure circa 1987. Open-plan layout: rows of fake-
+      mahogany desks, beige boxy beige personal computers with chunky CRT
+      monitors glowing amber-on-black, beige push-button telephones with
+      curly cords, dot-matrix and daisy-wheel printers spitting out
+      perforated paper, fax machines mid-transmission, brass-rimmed
+      Rolodexes, electric typewriters on a side bench, microcassette
+      dictaphones on desks, a portable cassette player with foam-padded
+      headphones beside an art director's workstation, a boom-box on a
+      side table, an overhead projector with a transparency sheet, a
+      35mm slide carousel projector pointed at a roll-down screen, a
+      reel-to-reel tape deck in the boardroom corner, paper trays
+      stacked with printed memos, cork pin-boards with multicoloured
+      thumbtacks, lacquered wood wall panelling. Brown shag carpet
+      throughout. A cluster of brown leather Chesterfield chairs around
+      a glass-topped coffee table piled with industry magazines and
+      glass tumblers of water. Mustard-yellow accent sofa in the
+      background. Vertical
+      blinds, tropical houseplants in brass pots, framed gilded
+      advertising-award certificates and motivational sunset prints on
+      the walls. Fluorescent ceiling-tube lighting plus warm desk lamps
+      creating a mild magenta-cyan colour cast. Two or three figures
+      (no recognisable faces) at desks: shoulder-padded power suits in
+      jewel tones, perms and gelled side-parts, oversized plastic
+      eyeglasses, gold tie-clips and statement gold earrings. Harsh
+      on-camera flash, slight VHS grain. Period-accurate. Editorial-
+      magazine corporate-brochure feel — confident, slightly tacky,
+      unmistakably 1987.
+
+  customer_placeholder:
+    model: flux-dev
+    width: 1024
+    height: 1024
+    style: >
+      Late-1980s corporate logo tile in the style of a 1987 trademark
+      registry: a small geometric mark in burgundy and gold, set against
+      a cream off-white background with a thin gold rule. Chunky
+      sans-serif or slab-serif initials, period-accurate. No legible
+      text beyond a placeholder initial. Used as a placeholder avatar
+      for B2B clients in Odoo.
+
+# ────────────────────────────────────────────────────────────────
+# Per-item prompt templates (Python .format style)
+# Variables come from the matching YAML story file.
+# ────────────────────────────────────────────────────────────────
+templates:
+  headshot: |
+    Late-1980s Dutch corporate brochure portrait of {name}, a
+    {nationality_adj} {role} at The Provisional Bureau, an advertising
+    and branding agency. {bio_hint} Period-accurate 1987 styling:
+    oversized plastic or tortoiseshell eyeglasses, hairsprayed period
+    hairstyle (perm, mullet, gelled side-part, teased bouffant, feathered
+    wings, layered shag), shoulder-padded power-suit blazer in chestnut,
+    mustard, teal or fuchsia, wide silk tie or ribbon-tie collars blouse, gold
+    tie-clip or statement gold earrings, gold pinky ring or chunky
+    gold wrist watch. {age_hint} {gender_hint}
+
+  service_strategy: |
+    {name}. {description}
+
+  service_identity: |
+    {name}. {description}
+
+  service_digital: |
+    {name}. {description}
+
+  service_retainer: |
+    {name}. {description}
+
+  service_rate: |
+    {name}. {description}
+
+  logo: |
+    Primary brand mark for The Provisional Bureau, a late-1980s Dutch
+    advertising and branding agency. Heavy gold-and-burgundy serif slab
+    wordmark with optional small ribbon-crest above. Period-accurate
+    1987 corporate-identity look.
+
+  logo_alt_horizontal: |
+    Horizontal lockup variant of The Provisional Bureau brand mark,
+    wordmark plus small ribbon-crest in the late-1980s gold-and-burgundy
+    style.
+
+  factory_scene: |
+    The Provisional Bureau office floor, Amsterdam, photographed for a
+    corporate brochure circa 1987.
+
+  customer_placeholder: |
+    Placeholder tile for a fictional client of The Provisional Bureau
+    named {name} based in {city}, {country}, rendered as a 1987-style
+    trademark logo tile.

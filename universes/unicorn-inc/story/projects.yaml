@@ -1,0 +1,170 @@
+# Unicorn Inc. — projects.
+# Schema: see ../../../ARCHITECTURE.md.
+# Mix of internal initiatives and billable customer engagements.
+# Billable projects link to a customer slug from customers.yaml.
+
+# ─── Internal: Culture & QC ────────────────────────────────────
+- id: proj-sparklestamp-handbook-v2
+  name: Sparkle-Stamp Handbook v2
+  kind: internal
+  lead: pippa-sunfeather
+  start: 2026-02-01
+  end: 2026-06-30
+  tasks:
+    - title: Interview every Sparkle-Stamper across departments
+      assignee: lyric-moonquill
+    - title: Draft new chapter on permit-grade products (Inferno, Djinn)
+      assignee: halia-mirrorbloom
+    - title: Illustrate handbook with Ollie's showroom photos
+      assignee: ollie-twinklefoot
+    - title: Sparkle Circle review + sign-off
+      assignee: aurora-manebraid
+
+- id: proj-magical-qc-rebuild
+  name: Magical QC Bench Rebuild
+  kind: internal
+  lead: halia-mirrorbloom
+  start: 2026-03-15
+  end: 2026-07-31
+  tasks:
+    - title: Spec new enchantment-tester station for Kael
+      assignee: kael-sparksong
+    - title: Source dryad-bark inspection clipboards (replacement set)
+      assignee: bramble-mossbeard
+    - title: Calibrate the Wisp slow-inspection protocol
+      assignee: wisp-cloudpaw
+    - title: Final inspection run-through with Iris
+      assignee: iris-manebraid
+
+# ─── Internal: Sourcing ────────────────────────────────────────
+- id: proj-caldera-onboarding
+  name: Caldera Elder Cooperative — onboarding
+  kind: internal
+  lead: grunda-slatestone
+  start: 2026-01-15
+  end: 2026-05-30
+  tasks:
+    - title: Permit A-3 paperwork audit with Realm Council
+      assignee: dottie-cobblepocket
+    - title: Site visit + elder-mood baseline assessment
+      assignee: bramble-mossbeard
+    - title: Dragon-airlift route survey from Caldera Reach
+      assignee: saffi-brightwing
+    - title: First Inferno bottling acceptance test
+      assignee: nori-embertongue
+
+- id: proj-foxfire-seasonal-tea
+  name: Foxfire Hollow seasonal tea + supply review
+  kind: internal
+  lead: bramble-mossbeard
+  start: 2026-04-01
+  end: 2026-04-30
+  tasks:
+    - title: Schedule den-elder visits across the season
+      assignee: bramble-mossbeard
+    - title: Negotiate scale-up for autumn sky-opera capes
+      assignee: grunda-slatestone
+    - title: Update vendor file with new shed-cycle dates
+      assignee: fennek-goldwhisker
+
+# ─── Internal: Brand & Showroom ────────────────────────────────
+- id: proj-hemelhof-showroom-refresh
+  name: Hemelhof Showroom — spring refresh
+  kind: internal
+  lead: lyric-moonquill
+  start: 2026-02-15
+  end: 2026-05-15
+  tasks:
+    - title: Repaint the wing-fitting bay (sun-on-rainbow palette)
+      assignee: ollie-twinklefoot
+    - title: Reshoot brand films with Zephyrine
+      assignee: zephyrine-stardapple
+    - title: Curate the Sparkle-Stamp wall (anonymised customer notes)
+      assignee: kit-brushtail
+    - title: Daily petting hour relocation to new annex
+      assignee: rosy-sunbasket
+
+- id: proj-sky-opera-campaign
+  name: Sky-Opera campaign — autumn launch
+  kind: internal
+  lead: zephyrine-stardapple
+  start: 2026-04-01
+  end: 2026-09-15
+  tasks:
+    - title: Story treatment + scene boards
+      assignee: lyric-moonquill
+    - title: Aerial choreography with Drift + cast
+      assignee: drift-skyclasp
+    - title: Crystal-ball trailer cut + distribution
+      assignee: ollie-twinklefoot
+    - title: Tie-in catalogue copy refresh
+      assignee: lyric-moonquill
+
+# ─── Internal: People & Petting ────────────────────────────────
+- id: proj-people-petting-charter
+  name: People & Petting — charter v1
+  kind: internal
+  lead: rosy-sunbasket
+  start: 2026-03-01
+  end: 2026-05-31
+  tasks:
+    - title: Codify daily petting hour as company ritual
+      assignee: rosy-sunbasket
+    - title: Sparkle Circle review of new-hire onboarding flow
+      assignee: pippa-sunfeather
+    - title: First-quarter cast survey + write-up
+      assignee: lyric-moonquill
+
+# ─── Billable: Customer engagements ────────────────────────────
+- id: proj-silverhall-fitting-fortnight
+  name: Silverhall first-year fitting fortnight
+  kind: billable
+  customer_ref: silverhall-academy
+  lead: iris-manebraid
+  start: 2026-08-15
+  end: 2026-08-29
+  tasks:
+    - title: Pre-fitting size survey at Silverhall
+      assignee: drift-skyclasp
+    - title: On-site fitting bay setup (Hemelhof annex)
+      assignee: iris-manebraid
+    - title: 60× Sparkle-Stamp rituals
+      assignee: pippa-sunfeather
+    - title: Customer-joy follow-up calls
+      assignee: tobias-honeypaw
+
+- id: proj-borealis-winter-procurement
+  name: Borealis winter cloak procurement
+  kind: billable
+  customer_ref: royal-quartermaster-borealis
+  lead: marisol-tideglass
+  start: 2026-05-01
+  end: 2026-09-30
+  tasks:
+    - title: Permit A-3 paperwork batch
+      assignee: dottie-cobblepocket
+    - title: Northwind mammoth-fur sourcing run
+      assignee: bramble-mossbeard
+    - title: Fur restoration + lining at Hemelhof
+      assignee: petal-snowtuft
+    - title: Quartermaster on-site inspection day
+      assignee: kit-brushtail
+    - title: Cold-skiff caravan to Frostkeep
+      assignee: rikard-cloudhoof
+
+- id: proj-skyharbour-q3-resupply
+  name: Skyharbour Q3 wholesale resupply
+  kind: billable
+  customer_ref: skyharbour-traders
+  lead: kit-brushtail
+  start: 2026-06-01
+  end: 2026-09-30
+  tasks:
+    - title: Final SKU mix sign-off
+      assignee: kit-brushtail
+    - title: Sparkle-Stamp visibility audit at packing
+      assignee: halia-mirrorbloom
+    - title: Dragon-airlift loading at Hemelhof
+      assignee: saffi-brightwing
+    - title: Wholesale invoicing schedule
+      assignee: dottie-cobblepocket

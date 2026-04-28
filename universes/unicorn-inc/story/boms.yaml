@@ -1,0 +1,217 @@
+# Unicorn Inc. — bills of materials.
+# Schema: see ../../../ARCHITECTURE.md.
+# Components not defined in products.yaml are implicit — they get created as
+# internally-routed component products at population time, with a sensible
+# cost equal to roughly the parent's cost_price spread across components.
+
+# ─── Wings & Flight ────────────────────────────────────────────
+- id: bom-pegasus-wings-small
+  product_ref: pegasus-wings-small
+  version: 1
+  components:
+    - product_ref: pegasus-feather-bundle-s
+      qty: 1
+    - product_ref: harness-leather-strap
+      qty: 1
+    - product_ref: harness-buckle-set
+      qty: 1
+    - product_ref: sparkle-stamp-card
+      qty: 1
+
+- id: bom-pegasus-wings-medium
+  product_ref: pegasus-wings-medium
+  version: 1
+  components:
+    - product_ref: pegasus-feather-bundle-m
+      qty: 1
+    - product_ref: harness-leather-strap
+      qty: 1
+    - product_ref: harness-buckle-set
+      qty: 1
+    - product_ref: sparkle-stamp-card
+      qty: 1
+
+- id: bom-pegasus-wings-large
+  product_ref: pegasus-wings-large
+  version: 1
+  components:
+    - product_ref: pegasus-feather-bundle-l
+      qty: 1
+    - product_ref: harness-leather-strap
+      qty: 2
+    - product_ref: harness-buckle-set
+      qty: 1
+    - product_ref: sparkle-stamp-card
+      qty: 1
+
+- id: bom-cloud-skiff-kit
+  product_ref: cloud-skiff-kit
+  version: 1
+  components:
+    - product_ref: cloud-silk-envelope
+      qty: 1
+    - product_ref: willow-basket
+      qty: 1
+    - product_ref: sylph-rigging
+      qty: 1
+    - product_ref: bottled-tailwind
+      qty: 1
+    - product_ref: sparkle-stamp-card
+      qty: 1
+
+- id: bom-gryphon-saddle-classic
+  product_ref: gryphon-saddle-classic
+  version: 1
+  components:
+    - product_ref: gryphon-saddle-leather
+      qty: 1
+    - product_ref: harness-buckle-set
+      qty: 1
+    - product_ref: sparkle-stamp-card
+      qty: 1
+
+- id: bom-sylph-spun-parachute
+  product_ref: sylph-spun-parachute
+  version: 1
+  components:
+    - product_ref: cloud-silk-canopy
+      qty: 1
+    - product_ref: sylph-rigging
+      qty: 1
+    - product_ref: sparkle-stamp-card
+      qty: 1
+
+# ─── Fire & Force ──────────────────────────────────────────────
+- id: bom-dragon-fire-mild
+  product_ref: dragon-fire-mild
+  version: 1
+  components:
+    - product_ref: empty-bottle-apothecary
+      qty: 1
+    - product_ref: dragon-fire-decant-mild
+      qty: 1
+    - product_ref: sparkle-stamp-card
+      qty: 1
+
+- id: bom-dragon-fire-medium
+  product_ref: dragon-fire-medium
+  version: 1
+  components:
+    - product_ref: empty-bottle-apothecary
+      qty: 1
+    - product_ref: dragon-fire-decant-medium
+      qty: 1
+    - product_ref: sparkle-stamp-card
+      qty: 1
+
+- id: bom-dragon-fire-inferno
+  product_ref: dragon-fire-inferno
+  version: 1
+  components:
+    - product_ref: empty-bottle-reinforced
+      qty: 1
+    - product_ref: dragon-fire-decant-inferno
+      qty: 1
+    - product_ref: permit-a3-waiver
+      qty: 1
+    - product_ref: sparkle-stamp-card
+      qty: 1
+
+- id: bom-phoenix-feather-torch
+  product_ref: phoenix-feather-torch
+  version: 1
+  components:
+    - product_ref: phoenix-feather-raw
+      qty: 1
+    - product_ref: torch-handle
+      qty: 1
+    - product_ref: sparkle-stamp-card
+      qty: 1
+
+- id: bom-djinn-jar
+  product_ref: djinn-jar
+  version: 1
+  components:
+    - product_ref: lapis-jar-empty
+      qty: 1
+    - product_ref: bound-djinn
+      qty: 1
+    - product_ref: wish-legal-addendum
+      qty: 1
+    - product_ref: sparkle-stamp-card
+      qty: 1
+
+# ─── Fur & Form ────────────────────────────────────────────────
+- id: bom-mammoth-fur-cloak
+  product_ref: mammoth-fur-cloak
+  version: 1
+  components:
+    - product_ref: mammoth-fur-comb
+      qty: 1
+    - product_ref: cloak-lining
+      qty: 1
+    - product_ref: harness-buckle-set
+      qty: 1
+    - product_ref: sparkle-stamp-card
+      qty: 1
+
+- id: bom-kitsune-tail-cape
+  product_ref: kitsune-tail-cape
+  version: 1
+  components:
+    - product_ref: kitsune-tail-shed
+      qty: 1
+    - product_ref: cloak-lining
+      qty: 1
+    - product_ref: sparkle-stamp-card
+      qty: 1
+
+# ─── Ink & Insight ─────────────────────────────────────────────
+- id: bom-kraken-ink-squid
+  product_ref: kraken-ink-squid
+  version: 1
+  components:
+    - product_ref: ink-jar-empty
+      qty: 1
+    - product_ref: kraken-ink-decant-squid
+      qty: 1
+    - product_ref: sparkle-stamp-card
+      qty: 1
+
+- id: bom-kraken-ink-giant
+  product_ref: kraken-ink-giant
+  version: 1
+  components:
+    - product_ref: ink-jar-empty
+      qty: 1
+    - product_ref: kraken-ink-decant-giant
+      qty: 1
+    - product_ref: sparkle-stamp-card
+      qty: 1
+
+- id: bom-phoenix-feather-quill
+  product_ref: phoenix-feather-quill
+  version: 1
+  components:
+    - product_ref: phoenix-feather-raw
+      qty: 1
+    - product_ref: quill-brass-stand
+      qty: 1
+    - product_ref: sparkle-stamp-card
+      qty: 1
+
+# ─── Mirror ────────────────────────────────────────────────────
+- id: bom-basilisk-mirror-handheld
+  product_ref: basilisk-mirror-handheld
+  version: 1
+  components:
+    - product_ref: mirror-glass-blank
+      qty: 1
+    - product_ref: mirror-gold-frame
+      qty: 1
+    - product_ref: mirror-cloth-cover
+      qty: 1
+    - product_ref: permit-m2-card
+      qty: 1
+    - product_ref: sparkle-stamp-card
+      qty: 1

@@ -1866,6 +1866,97 @@ product_mirror/basilisk-mirror-handheld:
     Animation), not live-action photography and not photoreal CGI..'
   slug: basilisk-mirror-handheld
   width: 1280
+product_service/service-fire-rebottling:
+  bfl_id: 5e985569-6246-48bc-987a-bccc96d705cd
+  generated_at: '2026-04-28T11:59:10Z'
+  height: 1280
+  kind: product_service
+  model: flux-dev
+  path: universes/unicorn-inc/images/generated/product_service/service-fire-rebottling.jpg
+  prompt: 'A cinematic still from a Pixar-style 3D-animated feature about Unicorn
+    Inc., a cheerful fabelwezen cooperative on the sky-island of Hemelhof, supplying
+    real superpowers and mythic materials to the realm. Fire Re-Bottling Service.
+    Top up a depleted dragon-fire bottle to its original grade. Bring the empty bottle;
+    collect the next morning. Pixar-style 3D-animated still-life suggesting an on-site
+    service engagement at Unicorn Inc.: a polished wooden service kit on a workshop
+    bench — sculpted brass tools, fitting tape, sparkle-stamp, a leather-bound service
+    ledger with a quill, embroidered guild sash folded beside it, soft prism god-rays
+    through a tall workshop window, gentle haze, cinematic shallow depth of field.
+    No human figures. Studio feature-animation render. Pixar-style 3D animation render,
+    stylized character design with expressive features and soft rounded shapes, subsurface
+    scattering on skin and fur, cinematic film-still composition, dramatic key light
+    with soft fill, god-rays and atmospheric haze, rich saturated joyful color grade,
+    slight depth of field. Studio feature-animation quality. Palette: saturated rainbow
+    prism, gold leaf, deep sky-blue, blossom-pink, cloud-white, mint and lavender
+    accents — bold, vivid, joyful, never washed-out. Mood: Pixar-style 3D-animated
+    feature film. Stylized fantasy characters and props with soft expressive shapes,
+    exaggerated proportions, smooth subsurface-scattering skin/fur/feathers, bright
+    saturated palette. Cinematic key-light + rim-light + atmospheric haze, but framed
+    as a film-still from a major animation studio (Pixar, DreamWorks, Sony Pictures
+    Animation), not live-action photography and not photoreal CGI..'
+  slug: service-fire-rebottling
+  width: 1280
+product_service/service-sparkle-restamp:
+  bfl_id: ad64aca2-0a7e-4cc1-bc9b-d42df8d484ec
+  generated_at: '2026-04-28T11:59:21Z'
+  height: 1280
+  kind: product_service
+  model: flux-dev
+  path: universes/unicorn-inc/images/generated/product_service/service-sparkle-restamp.jpg
+  prompt: 'A cinematic still from a Pixar-style 3D-animated feature about Unicorn
+    Inc., a cheerful fabelwezen cooperative on the sky-island of Hemelhof, supplying
+    real superpowers and mythic materials to the realm. Sparkle Re-Stamp. Re-attest
+    a Unicorn Inc. product whose Sparkle-Stamp has faded. Includes Magical QC re-inspection
+    and a fresh handwritten note from the original fitter, where possible. Pixar-style
+    3D-animated still-life suggesting an on-site service engagement at Unicorn Inc.:
+    a polished wooden service kit on a workshop bench — sculpted brass tools, fitting
+    tape, sparkle-stamp, a leather-bound service ledger with a quill, embroidered
+    guild sash folded beside it, soft prism god-rays through a tall workshop window,
+    gentle haze, cinematic shallow depth of field. No human figures. Studio feature-animation
+    render. Pixar-style 3D animation render, stylized character design with expressive
+    features and soft rounded shapes, subsurface scattering on skin and fur, cinematic
+    film-still composition, dramatic key light with soft fill, god-rays and atmospheric
+    haze, rich saturated joyful color grade, slight depth of field. Studio feature-animation
+    quality. Palette: saturated rainbow prism, gold leaf, deep sky-blue, blossom-pink,
+    cloud-white, mint and lavender accents — bold, vivid, joyful, never washed-out.
+    Mood: Pixar-style 3D-animated feature film. Stylized fantasy characters and props
+    with soft expressive shapes, exaggerated proportions, smooth subsurface-scattering
+    skin/fur/feathers, bright saturated palette. Cinematic key-light + rim-light +
+    atmospheric haze, but framed as a film-still from a major animation studio (Pixar,
+    DreamWorks, Sony Pictures Animation), not live-action photography and not photoreal
+    CGI..'
+  slug: service-sparkle-restamp
+  width: 1280
+product_service/service-wing-fitting:
+  bfl_id: b9ba80c3-4374-4027-bd2a-5bf53dbe0a4b
+  generated_at: '2026-04-28T11:58:59Z'
+  height: 1280
+  kind: product_service
+  model: flux-dev
+  path: universes/unicorn-inc/images/generated/product_service/service-wing-fitting.jpg
+  prompt: 'A cinematic still from a Pixar-style 3D-animated feature about Unicorn
+    Inc., a cheerful fabelwezen cooperative on the sky-island of Hemelhof, supplying
+    real superpowers and mythic materials to the realm. Wing Fitting Appointment.
+    Personal wing-fitting session at the Hemelhof workshop. Includes sizing, harness
+    fitting, balance trial-flight, and the Sparkle-Stamp. Pixar-style 3D-animated
+    still-life suggesting an on-site service engagement at Unicorn Inc.: a polished
+    wooden service kit on a workshop bench — sculpted brass tools, fitting tape, sparkle-stamp,
+    a leather-bound service ledger with a quill, embroidered guild sash folded beside
+    it, soft prism god-rays through a tall workshop window, gentle haze, cinematic
+    shallow depth of field. No human figures. Studio feature-animation render. Pixar-style
+    3D animation render, stylized character design with expressive features and soft
+    rounded shapes, subsurface scattering on skin and fur, cinematic film-still composition,
+    dramatic key light with soft fill, god-rays and atmospheric haze, rich saturated
+    joyful color grade, slight depth of field. Studio feature-animation quality. Palette:
+    saturated rainbow prism, gold leaf, deep sky-blue, blossom-pink, cloud-white,
+    mint and lavender accents — bold, vivid, joyful, never washed-out. Mood: Pixar-style
+    3D-animated feature film. Stylized fantasy characters and props with soft expressive
+    shapes, exaggerated proportions, smooth subsurface-scattering skin/fur/feathers,
+    bright saturated palette. Cinematic key-light + rim-light + atmospheric haze,
+    but framed as a film-still from a major animation studio (Pixar, DreamWorks, Sony
+    Pictures Animation), not live-action photography and not photoreal CGI..'
+  slug: service-wing-fitting
+  width: 1280
 product_wings/cloud-skiff-kit:
   bfl_id: c98f3673-704b-4b63-a15d-71353f31c196
   generated_at: '2026-04-27T19:34:24Z'

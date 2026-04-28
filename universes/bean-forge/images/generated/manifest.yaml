@@ -1,3 +1,463 @@
+customer_placeholder/alberti-caffe:
+  bfl_id: 35489435-c33f-4b88-9b76-ccecaa81ea1d
+  generated_at: '2026-04-28T11:59:16Z'
+  height: 1024
+  kind: customer_placeholder
+  model: flux-dev
+  path: universes/bean-forge/images/generated/customer_placeholder/alberti-caffe.jpg
+  prompt: 'Photographed for Bean Forge BV, a precision drum-coffee-roaster manufacturer
+    in Utrecht, Netherlands. Placeholder tile for a fictional specialty-coffee B2B
+    customer
+
+    named Alberti Caffè based in Bologna, IT. Abstract geometric brand-tile in warm
+    neutral tones, suggesting a specialty-coffee business. Subtle coffee-bean or cup
+    motif, flat design, single accent color, no text. Used as a placeholder avatar
+    for B2B customer companies in Odoo. Warm neutral color grade, brushed-steel and
+    brass accents, natural workshop atmosphere, realistic textures, no stock-photo
+    gloss, no excessive bokeh, no cartoon or illustration styling. Palette: warm neutrals,
+    deep espresso brown, brushed stainless steel, muted brass accents, off-white backdrop,
+    soft amber highlights. Mood: craft-oriented industrial, confident without glamour,
+    documentary realism — a third-generation Dutch family workshop, not corporate
+    stock photography.'
+  slug: alberti-caffe
+  width: 1024
+customer_placeholder/cafeteros-cumbre:
+  bfl_id: b70a1143-c774-4bb1-a8e0-303e45c088b9
+  generated_at: '2026-04-28T12:00:21Z'
+  height: 1024
+  kind: customer_placeholder
+  model: flux-dev
+  path: universes/bean-forge/images/generated/customer_placeholder/cafeteros-cumbre.jpg
+  prompt: 'Photographed for Bean Forge BV, a precision drum-coffee-roaster manufacturer
+    in Utrecht, Netherlands. Placeholder tile for a fictional specialty-coffee B2B
+    customer
+
+    named Cafeteros Cumbre based in Bogotá, CO. Abstract geometric brand-tile in warm
+    neutral tones, suggesting a specialty-coffee business. Subtle coffee-bean or cup
+    motif, flat design, single accent color, no text. Used as a placeholder avatar
+    for B2B customer companies in Odoo. Warm neutral color grade, brushed-steel and
+    brass accents, natural workshop atmosphere, realistic textures, no stock-photo
+    gloss, no excessive bokeh, no cartoon or illustration styling. Palette: warm neutrals,
+    deep espresso brown, brushed stainless steel, muted brass accents, off-white backdrop,
+    soft amber highlights. Mood: craft-oriented industrial, confident without glamour,
+    documentary realism — a third-generation Dutch family workshop, not corporate
+    stock photography.'
+  slug: cafeteros-cumbre
+  width: 1024
+customer_placeholder/casa-do-cafe-lisboa:
+  bfl_id: 99407bfe-5a3a-453a-a6b3-288317d65ac4
+  generated_at: '2026-04-28T11:59:47Z'
+  height: 1024
+  kind: customer_placeholder
+  model: flux-dev
+  path: universes/bean-forge/images/generated/customer_placeholder/casa-do-cafe-lisboa.jpg
+  prompt: 'Photographed for Bean Forge BV, a precision drum-coffee-roaster manufacturer
+    in Utrecht, Netherlands. Placeholder tile for a fictional specialty-coffee B2B
+    customer
+
+    named Casa do Café Lisboa based in Lisbon, PT. Abstract geometric brand-tile in
+    warm neutral tones, suggesting a specialty-coffee business. Subtle coffee-bean
+    or cup motif, flat design, single accent color, no text. Used as a placeholder
+    avatar for B2B customer companies in Odoo. Warm neutral color grade, brushed-steel
+    and brass accents, natural workshop atmosphere, realistic textures, no stock-photo
+    gloss, no excessive bokeh, no cartoon or illustration styling. Palette: warm neutrals,
+    deep espresso brown, brushed stainless steel, muted brass accents, off-white backdrop,
+    soft amber highlights. Mood: craft-oriented industrial, confident without glamour,
+    documentary realism — a third-generation Dutch family workshop, not corporate
+    stock photography.'
+  slug: casa-do-cafe-lisboa
+  width: 1024
+customer_placeholder/cinco-soles-cafe:
+  bfl_id: fd0ac264-b248-4c39-8ee0-a205259999f9
+  generated_at: '2026-04-28T12:00:14Z'
+  height: 1024
+  kind: customer_placeholder
+  model: flux-dev
+  path: universes/bean-forge/images/generated/customer_placeholder/cinco-soles-cafe.jpg
+  prompt: 'Photographed for Bean Forge BV, a precision drum-coffee-roaster manufacturer
+    in Utrecht, Netherlands. Placeholder tile for a fictional specialty-coffee B2B
+    customer
+
+    named Cinco Soles Café based in Mexico City, MX. Abstract geometric brand-tile
+    in warm neutral tones, suggesting a specialty-coffee business. Subtle coffee-bean
+    or cup motif, flat design, single accent color, no text. Used as a placeholder
+    avatar for B2B customer companies in Odoo. Warm neutral color grade, brushed-steel
+    and brass accents, natural workshop atmosphere, realistic textures, no stock-photo
+    gloss, no excessive bokeh, no cartoon or illustration styling. Palette: warm neutrals,
+    deep espresso brown, brushed stainless steel, muted brass accents, off-white backdrop,
+    soft amber highlights. Mood: craft-oriented industrial, confident without glamour,
+    documentary realism — a third-generation Dutch family workshop, not corporate
+    stock photography.'
+  slug: cinco-soles-cafe
+  width: 1024
+customer_placeholder/drop-coffee-lab:
+  bfl_id: f8ec8c3c-34ac-476d-86bd-341a6dc902ea
+  generated_at: '2026-04-28T11:59:32Z'
+  height: 1024
+  kind: customer_placeholder
+  model: flux-dev
+  path: universes/bean-forge/images/generated/customer_placeholder/drop-coffee-lab.jpg
+  prompt: 'Photographed for Bean Forge BV, a precision drum-coffee-roaster manufacturer
+    in Utrecht, Netherlands. Placeholder tile for a fictional specialty-coffee B2B
+    customer
+
+    named Drop Coffee Lab based in Stockholm, SE. Abstract geometric brand-tile in
+    warm neutral tones, suggesting a specialty-coffee business. Subtle coffee-bean
+    or cup motif, flat design, single accent color, no text. Used as a placeholder
+    avatar for B2B customer companies in Odoo. Warm neutral color grade, brushed-steel
+    and brass accents, natural workshop atmosphere, realistic textures, no stock-photo
+    gloss, no excessive bokeh, no cartoon or illustration styling. Palette: warm neutrals,
+    deep espresso brown, brushed stainless steel, muted brass accents, off-white backdrop,
+    soft amber highlights. Mood: craft-oriented industrial, confident without glamour,
+    documentary realism — a third-generation Dutch family workshop, not corporate
+    stock photography.'
+  slug: drop-coffee-lab
+  width: 1024
+customer_placeholder/fjord-coffee:
+  bfl_id: 7a094da3-f6ca-47e0-bae0-eaffd1cdead2
+  generated_at: '2026-04-28T11:59:01Z'
+  height: 1024
+  kind: customer_placeholder
+  model: flux-dev
+  path: universes/bean-forge/images/generated/customer_placeholder/fjord-coffee.jpg
+  prompt: 'Photographed for Bean Forge BV, a precision drum-coffee-roaster manufacturer
+    in Utrecht, Netherlands. Placeholder tile for a fictional specialty-coffee B2B
+    customer
+
+    named Fjord Coffee based in Oslo, NO. Abstract geometric brand-tile in warm neutral
+    tones, suggesting a specialty-coffee business. Subtle coffee-bean or cup motif,
+    flat design, single accent color, no text. Used as a placeholder avatar for B2B
+    customer companies in Odoo. Warm neutral color grade, brushed-steel and brass
+    accents, natural workshop atmosphere, realistic textures, no stock-photo gloss,
+    no excessive bokeh, no cartoon or illustration styling. Palette: warm neutrals,
+    deep espresso brown, brushed stainless steel, muted brass accents, off-white backdrop,
+    soft amber highlights. Mood: craft-oriented industrial, confident without glamour,
+    documentary realism — a third-generation Dutch family workshop, not corporate
+    stock photography.'
+  slug: fjord-coffee
+  width: 1024
+customer_placeholder/fortaleza-coffee:
+  bfl_id: 1fa8b023-9e06-41f9-9d79-1519dd5bc678
+  generated_at: '2026-04-28T12:00:57Z'
+  height: 1024
+  kind: customer_placeholder
+  model: flux-dev
+  path: universes/bean-forge/images/generated/customer_placeholder/fortaleza-coffee.jpg
+  prompt: 'Photographed for Bean Forge BV, a precision drum-coffee-roaster manufacturer
+    in Utrecht, Netherlands. Placeholder tile for a fictional specialty-coffee B2B
+    customer
+
+    named Fortaleza Coffee based in Melbourne, AU. Abstract geometric brand-tile in
+    warm neutral tones, suggesting a specialty-coffee business. Subtle coffee-bean
+    or cup motif, flat design, single accent color, no text. Used as a placeholder
+    avatar for B2B customer companies in Odoo. Warm neutral color grade, brushed-steel
+    and brass accents, natural workshop atmosphere, realistic textures, no stock-photo
+    gloss, no excessive bokeh, no cartoon or illustration styling. Palette: warm neutrals,
+    deep espresso brown, brushed stainless steel, muted brass accents, off-white backdrop,
+    soft amber highlights. Mood: craft-oriented industrial, confident without glamour,
+    documentary realism — a third-generation Dutch family workshop, not corporate
+    stock photography.'
+  slug: fortaleza-coffee
+  width: 1024
+customer_placeholder/harbour-bean:
+  bfl_id: 25adc4fa-a621-47be-a8dc-8db5ffedd7e0
+  generated_at: '2026-04-28T12:00:50Z'
+  height: 1024
+  kind: customer_placeholder
+  model: flux-dev
+  path: universes/bean-forge/images/generated/customer_placeholder/harbour-bean.jpg
+  prompt: 'Photographed for Bean Forge BV, a precision drum-coffee-roaster manufacturer
+    in Utrecht, Netherlands. Placeholder tile for a fictional specialty-coffee B2B
+    customer
+
+    named Harbour Bean based in Singapore, SG. Abstract geometric brand-tile in warm
+    neutral tones, suggesting a specialty-coffee business. Subtle coffee-bean or cup
+    motif, flat design, single accent color, no text. Used as a placeholder avatar
+    for B2B customer companies in Odoo. Warm neutral color grade, brushed-steel and
+    brass accents, natural workshop atmosphere, realistic textures, no stock-photo
+    gloss, no excessive bokeh, no cartoon or illustration styling. Palette: warm neutrals,
+    deep espresso brown, brushed stainless steel, muted brass accents, off-white backdrop,
+    soft amber highlights. Mood: craft-oriented industrial, confident without glamour,
+    documentary realism — a third-generation Dutch family workshop, not corporate
+    stock photography.'
+  slug: harbour-bean
+  width: 1024
+customer_placeholder/ironbark-coffee:
+  bfl_id: 767de932-f881-425d-968c-d4d96cc13ef3
+  generated_at: '2026-04-28T12:00:29Z'
+  height: 1024
+  kind: customer_placeholder
+  model: flux-dev
+  path: universes/bean-forge/images/generated/customer_placeholder/ironbark-coffee.jpg
+  prompt: 'Photographed for Bean Forge BV, a precision drum-coffee-roaster manufacturer
+    in Utrecht, Netherlands. Placeholder tile for a fictional specialty-coffee B2B
+    customer
+
+    named Ironbark Coffee based in Toronto, CA. Abstract geometric brand-tile in warm
+    neutral tones, suggesting a specialty-coffee business. Subtle coffee-bean or cup
+    motif, flat design, single accent color, no text. Used as a placeholder avatar
+    for B2B customer companies in Odoo. Warm neutral color grade, brushed-steel and
+    brass accents, natural workshop atmosphere, realistic textures, no stock-photo
+    gloss, no excessive bokeh, no cartoon or illustration styling. Palette: warm neutrals,
+    deep espresso brown, brushed stainless steel, muted brass accents, off-white backdrop,
+    soft amber highlights. Mood: craft-oriented industrial, confident without glamour,
+    documentary realism — a third-generation Dutch family workshop, not corporate
+    stock photography.'
+  slug: ironbark-coffee
+  width: 1024
+customer_placeholder/kintaro-roastworks:
+  bfl_id: 216506d8-8f2c-4403-8031-8631bb4af98a
+  generated_at: '2026-04-28T12:00:37Z'
+  height: 1024
+  kind: customer_placeholder
+  model: flux-dev
+  path: universes/bean-forge/images/generated/customer_placeholder/kintaro-roastworks.jpg
+  prompt: 'Photographed for Bean Forge BV, a precision drum-coffee-roaster manufacturer
+    in Utrecht, Netherlands. Placeholder tile for a fictional specialty-coffee B2B
+    customer
+
+    named Kintaro Roastworks based in Tokyo, JP. Abstract geometric brand-tile in
+    warm neutral tones, suggesting a specialty-coffee business. Subtle coffee-bean
+    or cup motif, flat design, single accent color, no text. Used as a placeholder
+    avatar for B2B customer companies in Odoo. Warm neutral color grade, brushed-steel
+    and brass accents, natural workshop atmosphere, realistic textures, no stock-photo
+    gloss, no excessive bokeh, no cartoon or illustration styling. Palette: warm neutrals,
+    deep espresso brown, brushed stainless steel, muted brass accents, off-white backdrop,
+    soft amber highlights. Mood: craft-oriented industrial, confident without glamour,
+    documentary realism — a third-generation Dutch family workshop, not corporate
+    stock photography.'
+  slug: kintaro-roastworks
+  width: 1024
+customer_placeholder/kreuzberg-coffee:
+  bfl_id: 8b087f86-cd55-4147-a5be-a0397c855c78
+  generated_at: '2026-04-28T11:58:53Z'
+  height: 1024
+  kind: customer_placeholder
+  model: flux-dev
+  path: universes/bean-forge/images/generated/customer_placeholder/kreuzberg-coffee.jpg
+  prompt: 'Photographed for Bean Forge BV, a precision drum-coffee-roaster manufacturer
+    in Utrecht, Netherlands. Placeholder tile for a fictional specialty-coffee B2B
+    customer
+
+    named Kreuzberg Coffee Co. based in Berlin, DE. Abstract geometric brand-tile
+    in warm neutral tones, suggesting a specialty-coffee business. Subtle coffee-bean
+    or cup motif, flat design, single accent color, no text. Used as a placeholder
+    avatar for B2B customer companies in Odoo. Warm neutral color grade, brushed-steel
+    and brass accents, natural workshop atmosphere, realistic textures, no stock-photo
+    gloss, no excessive bokeh, no cartoon or illustration styling. Palette: warm neutrals,
+    deep espresso brown, brushed stainless steel, muted brass accents, off-white backdrop,
+    soft amber highlights. Mood: craft-oriented industrial, confident without glamour,
+    documentary realism — a third-generation Dutch family workshop, not corporate
+    stock photography.'
+  slug: kreuzberg-coffee
+  width: 1024
+customer_placeholder/meridian-coffee-seoul:
+  bfl_id: cf33fff9-fe62-4598-a64a-e8cbae2054a3
+  generated_at: '2026-04-28T12:00:44Z'
+  height: 1024
+  kind: customer_placeholder
+  model: flux-dev
+  path: universes/bean-forge/images/generated/customer_placeholder/meridian-coffee-seoul.jpg
+  prompt: 'Photographed for Bean Forge BV, a precision drum-coffee-roaster manufacturer
+    in Utrecht, Netherlands. Placeholder tile for a fictional specialty-coffee B2B
+    customer
+
+    named Meridian Coffee Seoul based in Seoul, KR. Abstract geometric brand-tile
+    in warm neutral tones, suggesting a specialty-coffee business. Subtle coffee-bean
+    or cup motif, flat design, single accent color, no text. Used as a placeholder
+    avatar for B2B customer companies in Odoo. Warm neutral color grade, brushed-steel
+    and brass accents, natural workshop atmosphere, realistic textures, no stock-photo
+    gloss, no excessive bokeh, no cartoon or illustration styling. Palette: warm neutrals,
+    deep espresso brown, brushed stainless steel, muted brass accents, off-white backdrop,
+    soft amber highlights. Mood: craft-oriented industrial, confident without glamour,
+    documentary realism — a third-generation Dutch family workshop, not corporate
+    stock photography.'
+  slug: meridian-coffee-seoul
+  width: 1024
+customer_placeholder/northwind-roasters:
+  bfl_id: f30a74eb-d495-411c-8aa2-ff5072d0d847
+  generated_at: '2026-04-28T11:59:54Z'
+  height: 1024
+  kind: customer_placeholder
+  model: flux-dev
+  path: universes/bean-forge/images/generated/customer_placeholder/northwind-roasters.jpg
+  prompt: 'Photographed for Bean Forge BV, a precision drum-coffee-roaster manufacturer
+    in Utrecht, Netherlands. Placeholder tile for a fictional specialty-coffee B2B
+    customer
+
+    named Northwind Roasters based in Seattle, US. Abstract geometric brand-tile in
+    warm neutral tones, suggesting a specialty-coffee business. Subtle coffee-bean
+    or cup motif, flat design, single accent color, no text. Used as a placeholder
+    avatar for B2B customer companies in Odoo. Warm neutral color grade, brushed-steel
+    and brass accents, natural workshop atmosphere, realistic textures, no stock-photo
+    gloss, no excessive bokeh, no cartoon or illustration styling. Palette: warm neutrals,
+    deep espresso brown, brushed stainless steel, muted brass accents, off-white backdrop,
+    soft amber highlights. Mood: craft-oriented industrial, confident without glamour,
+    documentary realism — a third-generation Dutch family workshop, not corporate
+    stock photography.'
+  slug: northwind-roasters
+  width: 1024
+customer_placeholder/orsted-espresso:
+  bfl_id: d802cd8a-1676-4f52-a950-4af04e132d9d
+  generated_at: '2026-04-28T11:59:23Z'
+  height: 1024
+  kind: customer_placeholder
+  model: flux-dev
+  path: universes/bean-forge/images/generated/customer_placeholder/orsted-espresso.jpg
+  prompt: 'Photographed for Bean Forge BV, a precision drum-coffee-roaster manufacturer
+    in Utrecht, Netherlands. Placeholder tile for a fictional specialty-coffee B2B
+    customer
+
+    named Ørsted Espresso based in Copenhagen, DK. Abstract geometric brand-tile in
+    warm neutral tones, suggesting a specialty-coffee business. Subtle coffee-bean
+    or cup motif, flat design, single accent color, no text. Used as a placeholder
+    avatar for B2B customer companies in Odoo. Warm neutral color grade, brushed-steel
+    and brass accents, natural workshop atmosphere, realistic textures, no stock-photo
+    gloss, no excessive bokeh, no cartoon or illustration styling. Palette: warm neutrals,
+    deep espresso brown, brushed stainless steel, muted brass accents, off-white backdrop,
+    soft amber highlights. Mood: craft-oriented industrial, confident without glamour,
+    documentary realism — a third-generation Dutch family workshop, not corporate
+    stock photography.'
+  slug: orsted-espresso
+  width: 1024
+customer_placeholder/pine-ridge-coffee:
+  bfl_id: fb7c6317-4755-431e-bf2e-250af4cde457
+  generated_at: '2026-04-28T12:00:00Z'
+  height: 1024
+  kind: customer_placeholder
+  model: flux-dev
+  path: universes/bean-forge/images/generated/customer_placeholder/pine-ridge-coffee.jpg
+  prompt: 'Photographed for Bean Forge BV, a precision drum-coffee-roaster manufacturer
+    in Utrecht, Netherlands. Placeholder tile for a fictional specialty-coffee B2B
+    customer
+
+    named Pine Ridge Coffee based in Portland, US. Abstract geometric brand-tile in
+    warm neutral tones, suggesting a specialty-coffee business. Subtle coffee-bean
+    or cup motif, flat design, single accent color, no text. Used as a placeholder
+    avatar for B2B customer companies in Odoo. Warm neutral color grade, brushed-steel
+    and brass accents, natural workshop atmosphere, realistic textures, no stock-photo
+    gloss, no excessive bokeh, no cartoon or illustration styling. Palette: warm neutrals,
+    deep espresso brown, brushed stainless steel, muted brass accents, off-white backdrop,
+    soft amber highlights. Mood: craft-oriented industrial, confident without glamour,
+    documentary realism — a third-generation Dutch family workshop, not corporate
+    stock photography.'
+  slug: pine-ridge-coffee
+  width: 1024
+customer_placeholder/ribbon-bean:
+  bfl_id: 4f196700-dada-4c48-8d33-a6ab1edaee58
+  generated_at: '2026-04-28T11:59:08Z'
+  height: 1024
+  kind: customer_placeholder
+  model: flux-dev
+  path: universes/bean-forge/images/generated/customer_placeholder/ribbon-bean.jpg
+  prompt: 'Photographed for Bean Forge BV, a precision drum-coffee-roaster manufacturer
+    in Utrecht, Netherlands. Placeholder tile for a fictional specialty-coffee B2B
+    customer
+
+    named Ribbon & Bean based in London, GB. Abstract geometric brand-tile in warm
+    neutral tones, suggesting a specialty-coffee business. Subtle coffee-bean or cup
+    motif, flat design, single accent color, no text. Used as a placeholder avatar
+    for B2B customer companies in Odoo. Warm neutral color grade, brushed-steel and
+    brass accents, natural workshop atmosphere, realistic textures, no stock-photo
+    gloss, no excessive bokeh, no cartoon or illustration styling. Palette: warm neutrals,
+    deep espresso brown, brushed stainless steel, muted brass accents, off-white backdrop,
+    soft amber highlights. Mood: craft-oriented industrial, confident without glamour,
+    documentary realism — a third-generation Dutch family workshop, not corporate
+    stock photography.'
+  slug: ribbon-bean
+  width: 1024
+customer_placeholder/silk-road-tea:
+  bfl_id: 9bf7e2f9-ef36-4c00-aa9b-032003a42d82
+  generated_at: '2026-04-28T12:01:13Z'
+  height: 1024
+  kind: customer_placeholder
+  model: flux-dev
+  path: universes/bean-forge/images/generated/customer_placeholder/silk-road-tea.jpg
+  prompt: 'Photographed for Bean Forge BV, a precision drum-coffee-roaster manufacturer
+    in Utrecht, Netherlands. Placeholder tile for a fictional specialty-coffee B2B
+    customer
+
+    named Silk Road Tea Works based in Hangzhou, CN. Abstract geometric brand-tile
+    in warm neutral tones, suggesting a specialty-coffee business. Subtle coffee-bean
+    or cup motif, flat design, single accent color, no text. Used as a placeholder
+    avatar for B2B customer companies in Odoo. Warm neutral color grade, brushed-steel
+    and brass accents, natural workshop atmosphere, realistic textures, no stock-photo
+    gloss, no excessive bokeh, no cartoon or illustration styling. Palette: warm neutrals,
+    deep espresso brown, brushed stainless steel, muted brass accents, off-white backdrop,
+    soft amber highlights. Mood: craft-oriented industrial, confident without glamour,
+    documentary realism — a third-generation Dutch family workshop, not corporate
+    stock photography.'
+  slug: silk-road-tea
+  width: 1024
+customer_placeholder/sunset-bean-co:
+  bfl_id: 1485231c-fe3e-4a3e-beab-994b31d966a7
+  generated_at: '2026-04-28T12:00:07Z'
+  height: 1024
+  kind: customer_placeholder
+  model: flux-dev
+  path: universes/bean-forge/images/generated/customer_placeholder/sunset-bean-co.jpg
+  prompt: 'Photographed for Bean Forge BV, a precision drum-coffee-roaster manufacturer
+    in Utrecht, Netherlands. Placeholder tile for a fictional specialty-coffee B2B
+    customer
+
+    named Sunset Bean Co. based in San Francisco, US. Abstract geometric brand-tile
+    in warm neutral tones, suggesting a specialty-coffee business. Subtle coffee-bean
+    or cup motif, flat design, single accent color, no text. Used as a placeholder
+    avatar for B2B customer companies in Odoo. Warm neutral color grade, brushed-steel
+    and brass accents, natural workshop atmosphere, realistic textures, no stock-photo
+    gloss, no excessive bokeh, no cartoon or illustration styling. Palette: warm neutrals,
+    deep espresso brown, brushed stainless steel, muted brass accents, off-white backdrop,
+    soft amber highlights. Mood: craft-oriented industrial, confident without glamour,
+    documentary realism — a third-generation Dutch family workshop, not corporate
+    stock photography.'
+  slug: sunset-bean-co
+  width: 1024
+customer_placeholder/vienna-caffe-institut:
+  bfl_id: bc478df5-2d1e-4f05-a6f8-b9903adb202c
+  generated_at: '2026-04-28T11:59:40Z'
+  height: 1024
+  kind: customer_placeholder
+  model: flux-dev
+  path: universes/bean-forge/images/generated/customer_placeholder/vienna-caffe-institut.jpg
+  prompt: 'Photographed for Bean Forge BV, a precision drum-coffee-roaster manufacturer
+    in Utrecht, Netherlands. Placeholder tile for a fictional specialty-coffee B2B
+    customer
+
+    named Vienna Caffè Institut based in Vienna, AT. Abstract geometric brand-tile
+    in warm neutral tones, suggesting a specialty-coffee business. Subtle coffee-bean
+    or cup motif, flat design, single accent color, no text. Used as a placeholder
+    avatar for B2B customer companies in Odoo. Warm neutral color grade, brushed-steel
+    and brass accents, natural workshop atmosphere, realistic textures, no stock-photo
+    gloss, no excessive bokeh, no cartoon or illustration styling. Palette: warm neutrals,
+    deep espresso brown, brushed stainless steel, muted brass accents, off-white backdrop,
+    soft amber highlights. Mood: craft-oriented industrial, confident without glamour,
+    documentary realism — a third-generation Dutch family workshop, not corporate
+    stock photography.'
+  slug: vienna-caffe-institut
+  width: 1024
+customer_placeholder/wonderworks-chocolate:
+  bfl_id: c7d59d14-852f-44a6-a286-9d613bf220ca
+  generated_at: '2026-04-28T12:01:06Z'
+  height: 1024
+  kind: customer_placeholder
+  model: flux-dev
+  path: universes/bean-forge/images/generated/customer_placeholder/wonderworks-chocolate.jpg
+  prompt: 'Photographed for Bean Forge BV, a precision drum-coffee-roaster manufacturer
+    in Utrecht, Netherlands. Placeholder tile for a fictional specialty-coffee B2B
+    customer
+
+    named Wonderworks Chocolate BV based in Zaandam, NL. Abstract geometric brand-tile
+    in warm neutral tones, suggesting a specialty-coffee business. Subtle coffee-bean
+    or cup motif, flat design, single accent color, no text. Used as a placeholder
+    avatar for B2B customer companies in Odoo. Warm neutral color grade, brushed-steel
+    and brass accents, natural workshop atmosphere, realistic textures, no stock-photo
+    gloss, no excessive bokeh, no cartoon or illustration styling. Palette: warm neutrals,
+    deep espresso brown, brushed stainless steel, muted brass accents, off-white backdrop,
+    soft amber highlights. Mood: craft-oriented industrial, confident without glamour,
+    documentary realism — a third-generation Dutch family workshop, not corporate
+    stock photography.'
+  slug: wonderworks-chocolate
+  width: 1024
 headshot/aisha-okonkwo:
   bfl_id: 56641a60-a4e3-4c32-a50f-118dec581f97
   generated_at: '2026-04-24T13:21:36Z'
@@ -179,6 +639,58 @@ headshot/fatima-al-hassan:
     industrial, confident without glamour, documentary realism — a third-generation
     Dutch family workshop, not corporate stock photography.'
   slug: fatima-al-hassan
+  width: 1024
+headshot/generic-01:
+  bfl_id: 9e416e87-7894-44aa-83ee-f95ce190d565
+  generated_at: '2026-04-24T19:15:47Z'
+  height: 1024
+  kind: headshot
+  model: flux-dev
+  path: images/generated/headshot/generic-01.jpg
+  prompt: 'Photographed for Bean Forge BV, a precision drum-coffee-roaster manufacturer
+    in Utrecht, Netherlands. Portrait of a 37-year-old Dutch man with short blonde
+    hair, blue eyes, clean-shaven or with very light stubble, sharp intelligent gaze,
+    warm confident smile. Smart-casual open-collar shirt, no visible branding. Looks
+    approachable and sharp — the kind of person who runs demos and product conversations.
+    Documentary-style corporate headshot. Subject framed from chest up, looking slightly
+    off-camera with a warm, genuine expression. Smart- casual workwear (no visible
+    branding). Shot on a 50mm prime lens, f/2.8, natural workshop lighting from a
+    large north-facing window, stainless-steel coffee-roaster equipment softly out
+    of focus in the background. Realistic skin texture, subtle film grain, photojournalism
+    aesthetic. Avoid the glossy LinkedIn-stock look. Warm neutral color grade, brushed-steel
+    and brass accents, natural workshop atmosphere, realistic textures, no stock-photo
+    gloss, no excessive bokeh, no cartoon or illustration styling. Palette: warm neutrals,
+    deep espresso brown, brushed stainless steel, muted brass accents, off-white backdrop,
+    soft amber highlights. Mood: craft-oriented industrial, confident without glamour,
+    documentary realism — a third-generation Dutch family workshop, not corporate
+    stock photography.'
+  slug: generic-01
+  width: 1024
+headshot/generic-02:
+  bfl_id: eff8dd6c-83a8-448a-8d55-e389e02b9266
+  generated_at: '2026-04-24T19:15:54Z'
+  height: 1024
+  kind: headshot
+  model: flux-dev
+  path: images/generated/headshot/generic-02.jpg
+  prompt: 'Photographed for Bean Forge BV, a precision drum-coffee-roaster manufacturer
+    in Utrecht, Netherlands. Portrait of a 43-year-old man with very short dark hair
+    or clean-shaven head, dark eyes, clean-shaven smooth features, thoughtful composed
+    expression, quiet confidence. Smart-casual shirt, no visible branding. Looks like
+    a senior technical professional, calm and deliberate. Documentary-style corporate
+    headshot. Subject framed from chest up, looking slightly off-camera with a warm,
+    genuine expression. Smart- casual workwear (no visible branding). Shot on a 50mm
+    prime lens, f/2.8, natural workshop lighting from a large north-facing window,
+    stainless-steel coffee-roaster equipment softly out of focus in the background.
+    Realistic skin texture, subtle film grain, photojournalism aesthetic. Avoid the
+    glossy LinkedIn-stock look. Warm neutral color grade, brushed-steel and brass
+    accents, natural workshop atmosphere, realistic textures, no stock-photo gloss,
+    no excessive bokeh, no cartoon or illustration styling. Palette: warm neutrals,
+    deep espresso brown, brushed stainless steel, muted brass accents, off-white backdrop,
+    soft amber highlights. Mood: craft-oriented industrial, confident without glamour,
+    documentary realism — a third-generation Dutch family workshop, not corporate
+    stock photography.'
+  slug: generic-02
   width: 1024
 headshot/hiroshi-tanaka:
   bfl_id: f8d78791-954c-4330-8115-8175e057b615

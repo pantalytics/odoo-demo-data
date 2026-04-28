@@ -1,0 +1,105 @@
+# The Provisional Bureau — suppliers & production partners. ALL FICTIONAL.
+# Schema: see ARCHITECTURE.md.
+# Mostly freelancers and production shops the bureau works with on-demand.
+
+# ─── Print & production ────────────────────────────────────────
+- id: pleinpers-printing
+  name: Pleinpers Printing
+  country: NL
+  city: Haarlem
+  category: print
+  notes: Preferred print partner for guidelines, books, identity collateral. Boutique offset + risograph.
+
+- id: rotterdam-fabricators
+  name: Rotterdam Sign Fabricators B.V.
+  country: NL
+  city: Rotterdam
+  category: fabrication
+  notes: Wayfinding + signage fabricator. Working partner on Rijndal Museum implementation.
+
+- id: noord-foto-studio
+  name: Noord Foto Studio
+  country: NL
+  city: Amsterdam
+  category: photo-studio
+  notes: Day-rate rental photo studio. Used for hospitality and CPG client shoots.
+
+# ─── Freelance creatives ───────────────────────────────────────
+- id: mira-veldkamp-illustration
+  name: Mira Veldkamp Illustration
+  country: NL
+  city: Utrecht
+  category: freelance-illustrator
+  notes: Editorial + brand illustration. Day rate €1200. Used for Rijndal exhibition campaigns.
+
+- id: anwar-okafor-photo
+  name: Anwar Okafor Photography
+  country: GB
+  city: London
+  category: freelance-photographer
+  notes: Hospitality + still-life photographer. Day rate €1800 + expenses. Halcyon-shoot regular.
+
+- id: tanja-hofstede-copy
+  name: Tanja Hofstede Copywriting
+  country: NL
+  city: Amsterdam
+  category: freelance-copywriter
+  notes: Long-form brand copy + naming linguistic review. Day rate €1100.
+
+- id: julien-marchal-motion
+  name: Julien Marchal Motion
+  country: FR
+  city: Paris
+  category: freelance-motion
+  notes: Motion designer for brand-launch films and identity animations. Project rate.
+
+- id: studio-lichtval-typography
+  name: Studio Lichtval Type
+  country: BE
+  city: Ghent
+  category: freelance-type-designer
+  notes: Custom typeface design. Working on Mustardcouch bespoke wordmark face.
+
+- id: kit-novak-strategy
+  name: Kit Novak Strategy Associates
+  country: PL
+  city: Warsaw
+  category: freelance-strategist
+  notes: Senior strategy associate. Used as overflow for major engagements. Day rate €1600.
+
+# ─── Digital production ────────────────────────────────────────
+- id: hexbench-engineering
+  name: Hexbench Engineering
+  country: NL
+  city: Amsterdam
+  category: dev-shop
+  notes: Frontend / CMS development partner. Build partner on most boutique website projects.
+
+- id: northing-hosting
+  name: Northing Hosting & DevOps
+  country: NL
+  city: Amsterdam
+  category: hosting
+  notes: Managed hosting + DNS + ongoing maintenance for stewardship-client sites.
+
+# ─── Office & ops ──────────────────────────────────────────────
+- id: westerpark-coworking
+  name: Westerpark Studios B.V.
+  country: NL
+  city: Amsterdam
+  category: real-estate
+  notes: Landlord — converted gasworks building. Monthly rent + meeting-room overflow.
+
+- id: vanlanen-legal
+  name: Van Lanen IP & Brand Counsel
+  country: NL
+  city: Amsterdam
+  category: legal
+  notes: Trademark + IP counsel. Engaged on every naming sprint.
+
+- id: bramerhof-coffee
+  name: Bramerhof Coffee Subscription
+  country: NL
+  city: Amsterdam
+  category: office-supplies
+  notes: Office coffee. Founders argue about it monthly. Margot keeps re-ordering it.

@@ -1,0 +1,188 @@
+[
+  {
+    "slug": "forge-atelier",
+    "kind": "product_roaster",
+    "subject": "Forge Atelier 1kg — 1kg capacity drum coffee roaster. Compact single-phase bench-top sample roaster for QC labs and micro-roasters. Full manual control with digital profile logging.",
+    "product_ids": [1, 16]
+  },
+  {
+    "slug": "forge-studio",
+    "kind": "product_roaster",
+    "subject": "Forge Studio 15kg — 15kg capacity drum coffee roaster. Flagship workhorse for specialty roasters. Gas or electric, Forge Control-ready, three-phase power.",
+    "product_ids": [2, 17]
+  },
+  {
+    "slug": "forge-foundry",
+    "kind": "product_roaster",
+    "subject": "Forge Foundry 60kg — 60kg capacity production drum roaster. Heavy-duty construction, PLC-driven, afterburner standard, for established specialty roasters scaling beyond artisan volumes.",
+    "product_ids": [3, 18]
+  },
+  {
+    "slug": "forge-hybrid-30kg",
+    "kind": "product_roaster",
+    "subject": "Forge 30kg Hybrid — 30kg capacity gas-plus-electric hybrid drum coffee roaster, sustainability-focused. Prototype aesthetic with clean production-ready industrial design.",
+    "product_ids": [19]
+  },
+  {
+    "slug": "afterburner-studio",
+    "kind": "product_accessory",
+    "subject": "Afterburner retrofit kit for 15kg Studio-class drum roaster. Compact stainless afterburner module with flanged inlet and outlet, control box with status LEDs, emission compliance for EU / West Coast US.",
+    "product_ids": [7, 22]
+  },
+  {
+    "slug": "afterburner-foundry",
+    "kind": "product_accessory",
+    "subject": "Heavy-duty afterburner retrofit for 60kg Foundry-class drum roaster. Large industrial stainless afterburner module with insulated ducting flanges and robust control enclosure.",
+    "product_ids": [23]
+  },
+  {
+    "slug": "chaff-collector-studio",
+    "kind": "product_accessory",
+    "subject": "Cyclone chaff collector for Studio-class drum roaster. Tall brushed-stainless cyclone body with clear viewing port, mounting bracket, flanged inlet and outlet.",
+    "product_ids": [24]
+  },
+  {
+    "slug": "chaff-collector-foundry",
+    "kind": "product_accessory",
+    "subject": "Large industrial cyclone chaff collector for Foundry-class 60kg drum roaster. Tall stainless cyclone with access doors and heavy-duty mounting frame.",
+    "product_ids": [40]
+  },
+  {
+    "slug": "probe-set",
+    "kind": "product_accessory",
+    "subject": "Calibration probe set — paired bean-temperature and exhaust-temperature thermocouple probes with braided stainless sheaths and color-coded connectors, arranged on a neutral studio backdrop.",
+    "product_ids": [25]
+  },
+  {
+    "slug": "drum-drive-belt",
+    "kind": "product_accessory",
+    "subject": "Drum drive belt — pack of two industrial toothed rubber drive belts for drum coffee roasters, arranged overlapping on a neutral studio backdrop.",
+    "product_ids": [26]
+  },
+  {
+    "slug": "control-panel-v2",
+    "kind": "product_accessory",
+    "subject": "Control panel assembly v2 — PLC plus amber back-lit touchscreen plus wiring harness, mounted on a matte black enamel panel with brass accents. Clean front three-quarter view.",
+    "product_ids": [27]
+  },
+  {
+    "slug": "burner-gas-15kw-studio",
+    "kind": "product_accessory",
+    "subject": "15kW gas burner assembly for 15kg Studio drum coffee roaster. Stainless burner tube with multiple jets, gas train with solenoid valve and ignition module.",
+    "product_ids": [38]
+  },
+  {
+    "slug": "burner-electric-3kw-atelier",
+    "kind": "product_accessory",
+    "subject": "3kW electric heating element assembly for 1kg Atelier drum coffee sample roaster. Coiled stainless element with ceramic insulator block and compact terminal housing.",
+    "product_ids": [37]
+  },
+  {
+    "slug": "burner-gas-60kw-foundry",
+    "kind": "product_accessory",
+    "subject": "60kW industrial gas burner assembly for 60kg Foundry production drum coffee roaster. Heavy stainless burner array with multi-stage gas train, safety valves, and ignition controller.",
+    "product_ids": [39]
+  },
+  {
+    "slug": "chassis-atelier",
+    "kind": "product_accessory",
+    "subject": "Bare welded stainless steel chassis frame for 1kg Atelier bench-top drum coffee roaster — compact square tube frame, unpainted, brushed-steel finish, structural sub-assembly.",
+    "product_ids": [31]
+  },
+  {
+    "slug": "chassis-studio",
+    "kind": "product_accessory",
+    "subject": "Bare welded stainless steel chassis frame for 15kg Studio drum coffee roaster — floor-standing rectangular square-tube frame, unpainted, brushed-steel finish, structural sub-assembly.",
+    "product_ids": [32]
+  },
+  {
+    "slug": "chassis-foundry",
+    "kind": "product_accessory",
+    "subject": "Bare welded stainless steel heavy-duty chassis frame for 60kg Foundry production drum coffee roaster — large floor-standing square-tube frame, structural sub-assembly.",
+    "product_ids": [33]
+  },
+  {
+    "slug": "drum-assembly-atelier",
+    "kind": "product_accessory",
+    "subject": "Drum assembly sub-unit for 1kg Atelier sample roaster — small polished stainless cylindrical drum with cast-iron end caps and drive shaft, displayed on a neutral studio backdrop.",
+    "product_ids": [34]
+  },
+  {
+    "slug": "drum-assembly-studio",
+    "kind": "product_accessory",
+    "subject": "Drum assembly sub-unit for 15kg Studio drum coffee roaster — medium polished stainless cylindrical drum with cast-iron end caps, drive shaft, and internal vanes visible through the opening.",
+    "product_ids": [35]
+  },
+  {
+    "slug": "drum-assembly-foundry",
+    "kind": "product_accessory",
+    "subject": "Drum assembly sub-unit for 60kg Foundry production drum coffee roaster — large polished stainless cylindrical drum with heavy cast-iron end caps and industrial drive shaft.",
+    "product_ids": [36]
+  },
+  {
+    "slug": "wiring-harness-atelier",
+    "kind": "product_accessory",
+    "subject": "Pre-made wiring harness for 1kg Atelier drum coffee roaster — neatly bundled cable loom with color-coded leads, labeled connectors, and coiled on a neutral studio backdrop.",
+    "product_ids": [41]
+  },
+  {
+    "slug": "wiring-harness-studio",
+    "kind": "product_accessory",
+    "subject": "Pre-made wiring harness for 15kg Studio drum coffee roaster — larger bundled cable loom with color-coded leads, labeled connectors, terminal blocks, coiled on a neutral studio backdrop.",
+    "product_ids": [42]
+  },
+  {
+    "slug": "wiring-harness-foundry",
+    "kind": "product_accessory",
+    "subject": "Pre-made industrial wiring harness for 60kg Foundry production drum coffee roaster — heavy cable loom with braided sleeves, labeled multi-pin connectors, coiled on a neutral backdrop.",
+    "product_ids": [43]
+  },
+  {
+    "slug": "shipping-crate-small",
+    "kind": "product_accessory",
+    "subject": "Small ISPM-15 stamped wooden shipping crate for 1kg Atelier drum coffee roaster — plain pine crate with metal corner reinforcements, stencilled handling arrows and fragile marks on a neutral backdrop.",
+    "product_ids": [44]
+  },
+  {
+    "slug": "shipping-crate-medium",
+    "kind": "product_accessory",
+    "subject": "Medium ISPM-15 stamped wooden shipping crate for 15kg Studio drum coffee roaster — pine crate with metal corner reinforcements, stencilled handling arrows and fragile marks on a neutral backdrop.",
+    "product_ids": [45]
+  },
+  {
+    "slug": "shipping-crate-large",
+    "kind": "product_accessory",
+    "subject": "Large heavy-duty ISPM-15 stamped wooden shipping crate for 60kg Foundry production drum coffee roaster — reinforced pine crate with metal banding and forklift pocket access on a neutral backdrop.",
+    "product_ids": [46]
+  },
+  {
+    "slug": "forge-control",
+    "kind": "product_software",
+    "subject": "Forge Control — cloud roast-profile SaaS subscription. Dashboard on a laptop showing an amber-and-cream roast-curve graph, bean-temperature and exhaust traces, multi-machine fleet panel on a dark UI.",
+    "product_ids": [5, 20]
+  },
+  {
+    "slug": "forge-control-onboarding",
+    "kind": "product_software",
+    "subject": "Forge Control onboarding and training — laptop on a workshop bench next to a Bean Forge roaster, the screen showing a welcome dashboard with user-setup and curve-library panels on a dark UI.",
+    "product_ids": [21]
+  },
+  {
+    "slug": "install-service",
+    "kind": "product_service",
+    "subject": "On-site installation and commissioning service — technician's hands adjusting the burner train on a freshly installed 15kg Forge Studio drum coffee roaster, with a clipboard and torque wrench on the workshop bench.",
+    "product_ids": [13, 28]
+  },
+  {
+    "slug": "maintenance-contract-studio",
+    "kind": "product_service",
+    "subject": "Preventative maintenance visit on a 15kg Forge Studio drum coffee roaster — technician's hands replacing a drive belt with open service panel, calibration probes and inspection sheet on a clipboard.",
+    "product_ids": [14, 29]
+  },
+  {
+    "slug": "maintenance-contract-foundry",
+    "kind": "product_service",
+    "subject": "Preventative maintenance visit on a 60kg Forge Foundry production drum coffee roaster — technician's hands checking the afterburner, with a large industrial inspection sheet on a clipboard.",
+    "product_ids": [30]
+  }
+]

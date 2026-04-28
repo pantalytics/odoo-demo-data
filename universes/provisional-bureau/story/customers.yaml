@@ -1,0 +1,146 @@
+# The Provisional Bureau — client roster. ALL FICTIONAL.
+# Schema: see ARCHITECTURE.md.
+# Mix of plausible engagements (scale-ups, NGOs, hotels, museums, energy)
+# and a handful of deliberately absurd legacy brands (Multilul-style winks).
+
+# ─── Flagship rebrand engagement ────────────────────────────────
+- id: mustardcouch
+  name: Mustardcouch B.V.
+  type: heritage_brand
+  country: NL
+  city: Eindhoven
+  segment: key_account
+  account_exec: cassian-foley
+  notes: Legacy lifestyle & furniture brand (founded 1962). Mid-rebrand — flagship Provisional Bureau engagement. Tagline candidate floated in deck — "Sit. Spread."
+
+# ─── Other deliberately absurd legacy clients ───────────────────
+- id: carnivore-assurance
+  name: Carnivore Assurance Group N.V.
+  type: heritage_brand
+  country: NL
+  city: Rotterdam
+  segment: mid_market
+  account_exec: cassian-foley
+  notes: Meat insurance. Underwrites livestock loss for butcheries and processors. Brand last refreshed in 1989. RFP in pipeline.
+
+- id: drive-thru-farewells
+  name: Drive-Thru Farewells International
+  type: heritage_brand
+  country: BE
+  city: Antwerp
+  segment: mid_market
+  account_exec: renee-du-plessis
+  notes: Drive-thru funeral home scaling from 4 to 14 locations across BENELUX. Brand strategy + naming engagement.
+
+# ─── Hospitality ────────────────────────────────────────────────
+- id: halcyon-hotel-group
+  name: Halcyon Hotel Group
+  type: hospitality
+  country: NL
+  city: Amsterdam
+  segment: key_account
+  account_exec: cassian-foley
+  notes: Boutique hotel group, 11 properties across AMS, BCN, CPH, LIS. Stewardship retainer + a sub-brand naming sprint per new property.
+
+- id: bothy-hospitality
+  name: Bothy Hospitality
+  type: hospitality
+  country: GB
+  city: Edinburgh
+  segment: mid_market
+  account_exec: cassian-foley
+  notes: Scottish small-inn chain. Wrapped a brand identity refresh in 2025; now on a light stewardship retainer.
+
+# ─── NGO / Foundation ───────────────────────────────────────────
+- id: open-atlas-foundation
+  name: Open Atlas Foundation
+  type: ngo
+  country: NL
+  city: The Hague
+  segment: mid_market
+  account_exec: renee-du-plessis
+  notes: Climate-policy NGO. Refreshing visual identity ahead of 2027 strategy launch. Sensitive to optics — no greenwashing aesthetics.
+
+- id: civic-roots
+  name: Civic Roots
+  type: ngo
+  country: BE
+  city: Brussels
+  segment: smb
+  account_exec: renee-du-plessis
+  notes: EU-policy advocacy nonprofit. Light retainer for ongoing report design and event identity.
+
+# ─── Cultural ───────────────────────────────────────────────────
+- id: rijndal-museum
+  name: Rijndal Museum
+  type: cultural
+  country: NL
+  city: Arnhem
+  segment: mid_market
+  account_exec: cassian-foley
+  notes: Mid-size regional art museum. Won a competitive pitch in 2024 for full identity refresh + wayfinding. Stewardship retainer ongoing.
+
+- id: kunsthal-noord
+  name: Kunsthal Noord
+  type: cultural
+  country: NL
+  city: Groningen
+  segment: smb
+  account_exec: renee-du-plessis
+  notes: Contemporary art kunsthal. Annual exhibition-identity work + small retainer.
+
+# ─── Energy / Regulated ─────────────────────────────────────────
+- id: polder-power
+  name: Polder Power N.V.
+  type: energy
+  country: NL
+  city: Utrecht
+  segment: key_account
+  account_exec: cassian-foley
+  notes: Dutch energy utility transitioning to renewables. Big, slow, regulated. Engaged for narrative + identity refresh aligned to 2030 transition plan.
+
+- id: meridian-mutual
+  name: Meridian Mutual
+  type: financial
+  country: GB
+  city: London
+  segment: mid_market
+  account_exec: cassian-foley
+  notes: Building society modernizing for younger members. Project — brand strategy + digital identity. Long sales cycle.
+
+# ─── Scale-ups & startups ───────────────────────────────────────
+- id: stellar-rye
+  name: Stellar Rye
+  type: cpg
+  country: US
+  city: Brooklyn
+  segment: mid_market
+  account_exec: renee-du-plessis
+  notes: Artisanal sourdough scale-up entering EU retail. Brand system + packaging architecture engagement.
+
+- id: quartile-fintech
+  name: Quartile
+  type: tech
+  country: NL
+  city: Amsterdam
+  segment: mid_market
+  account_exec: renee-du-plessis
+  notes: B2B finance ops fintech, Series B. Naming sprint completed 2025; design-system rollout ongoing.
+
+- id: northwind-athletics
+  name: Northwind Athletics
+  type: cpg
+  country: SE
+  city: Stockholm
+  segment: smb
+  account_exec: renee-du-plessis
+  notes: Outdoor apparel scale-up. Pitched but didn't sign retainer; relationship warm for next project.
+
+- id: trove-press
+  name: Trove Press
+  type: publishing
+  country: GB
+  city: Bristol
+  segment: smb
+  account_exec: renee-du-plessis
+  notes: Independent publisher. Annual catalog identity + occasional series-design projects.
