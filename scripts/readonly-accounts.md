@@ -67,7 +67,10 @@ its secret is shown only once. So:
      Custom Date is the non-admin equivalent.
 4. Copy the key. That is your `DEMO_ODOO_API_KEY`.
 
-Verify it end to end:
+**Do not ship the key until this write-blocked check passes.** Read-only rests
+entirely on the key being scoped to the role; a key minted without the role (or
+the demo user's own password) is read-write. This step is mandatory, not
+optional:
 
 ```bash
 python - <<'PY'
@@ -113,3 +116,13 @@ DEMO_ODOO_LOGIN=<owner-login>
   cap (set by the script), so a plain read-only user can mint an
   effectively-permanent key via **Custom Date**. You cannot edit a key's expiry
   after creation (API keys are immutable) - re-mint if you need to change it.
+  Trade-off: a ~100-year key has no expiry backstop; if it leaks it stays valid
+  until someone notices and **deletes** it in Odoo (deletion is the only control,
+  so "permanent" is not "unrevocable"). It's a read-only key, so the blast radius
+  is read-only, but treat it like any long-lived credential.
+- **The denylist is load-bearing.** The Base group mirrors everything an Internal
+  User can read minus `SECRET_MODELS` (keys/tokens/2FA, plus financial PII like
+  `res.partner.bank` IBANs and private `ir.attachment` files). If you point the
+  script at a **real customer Odoo** rather than a synthetic demo, re-check that
+  denylist against that DB's models first - the script warns about denylist
+  entries it could not resolve, but review the list for that install.

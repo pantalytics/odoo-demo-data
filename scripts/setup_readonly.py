@@ -64,16 +64,32 @@ KEY_DURATION_DAYS = 36500
 DEMO_USER_LOGIN = "demo-readonly"
 DEMO_USER_NAME = "Demo (read-only)"
 
-# Never mirror read on these: credentials, tokens, session/2FA, key hashes.
-# A demo read-only account must not be able to read them.
+# Never mirror read on these: credentials, tokens, session/2FA, key hashes,
+# financial PII and private files. A demo read-only account must not read them.
+# Entries not installed on the target DB are simply absent (reported by the
+# unresolved-name warning in main(), so a typo is visible rather than silent).
 SECRET_MODELS = [
+    # keys / auth / session / 2FA
     "res.users.apikeys", "res.users.apikeys.description", "res.users.apikeys.show",
     "res.users.identitycheck", "change.password.own", "change.password.wizard",
     "auth_totp.device", "auth_totp.wizard", "auth.passkey.key", "auth.passkey.key.create",
-    "res.device", "res.device.log", "iap.account", "iap.service",
-    "payment.token", "payment.transaction", "payment.method",
-    "account.payment.method", "account.payment.method.line",
-    "account_edi_proxy_client.user", "ir.config_parameter",
+    "res.device", "res.device.log",
+    # tokens / provider credentials
+    "iap.account", "iap.service", "payment.token", "payment.transaction",
+    "payment.method", "payment.provider", "account.payment.method",
+    "account.payment.method.line", "account_edi_proxy_client.user",
+    "ir.config_parameter", "ir.mail_server", "fetchmail.server",
+    "certificate.certificate", "certificate.key",
+    "account.online.link", "account.online.account",
+    # financial PII (Member-readable, IBANs not field-gated)
+    "res.partner.bank",
+    # ir.attachment: excluded here to drop the explicit group grant, but Odoo
+    # governs attachment reads by "can you read the linked record" in its own
+    # check() (not by ir.model.access alone), so a reader can still see
+    # attachments OF records it can already read. Residual exposure is therefore
+    # bounded to already-readable records; it cannot be fully closed at the group
+    # ACL level. Accept + document rather than pretend the denylist blocks it.
+    "ir.attachment",
 ]
 
 
@@ -100,8 +116,13 @@ class Odoo:
         self.models = xmlrpc.client.ServerProxy(f"{url}/xmlrpc/2/object", context=ctx)
 
     def call(self, model, method, args=None, kw=None):
+        # Force English so privilege/group name matching (APP_READ_SOURCES) works
+        # regardless of the DB's or admin user's language; group/privilege names
+        # are translatable and would otherwise be returned in the local language.
+        kw = dict(kw or {})
+        kw.setdefault("context", {"lang": "en_US"})
         return self.models.execute_kw(
-            self.db, self.uid, self.key, model, method, args or [], kw or {}
+            self.db, self.uid, self.key, model, method, args or [], kw
         )
 
     def search_read(self, model, domain, fields, **kw):
@@ -148,32 +169,47 @@ def read_model_ids(odoo, group_ids, exclude):
 
 
 def mirror_read_acls(odoo, ro_gid, model_ids, label):
-    """Create a read-only ir.model.access on `ro_gid` for each model (idempotent,
-    batched into one create call)."""
+    """Sync `ro_gid`'s read ACLs to exactly `model_ids` (idempotent). Creates
+    missing ones (batched) AND prunes stale ones, so tightening SECRET_MODELS
+    and re-running actually revokes the old grant."""
+    desired = set(model_ids)
     existing = {
-        a["model_id"][0]
+        a["model_id"][0]: a["id"]
         for a in odoo.search_read("ir.model.access", [["group_id", "=", ro_gid]], ["model_id"])
     }
     vals = [{
         "name": f"RO {label}: {mid}", "model_id": mid, "group_id": ro_gid,
         "perm_read": True, "perm_write": False, "perm_create": False, "perm_unlink": False,
     } for mid in model_ids if mid not in existing]
-    if vals:
-        odoo.call("ir.model.access", "create", [vals])
-    print(f"      {len(model_ids)} read ACLs ({len(vals)} new)")
+    stale = [aid for mid, aid in existing.items() if mid not in desired]
+    if not odoo.dry:
+        if vals:
+            odoo.call("ir.model.access", "create", [vals])
+        if stale:
+            odoo.call("ir.model.access", "unlink", [stale])
+    verb = "would add" if odoo.dry else "new"
+    print(f"      {len(model_ids)} read ACLs ({len(vals)} {verb}, {len(stale)} pruned)")
 
 
-def link_record_rules(odoo, src_gid, ro_gid):
-    """Add the read-only group to the source group's record rules (never removes),
-    so the read-only group sees the same rows."""
-    rules = odoo.search_read("ir.rule", [["groups", "in", [src_gid]]], ["id", "groups"])
+def link_record_rules(odoo, group_ids, ro_gid):
+    """Add the read-only group to the record rules of EVERY group whose read
+    ACLs we mirrored (`group_ids`), not just the top one. Row visibility can be
+    gated by a rule on an implied sub-group; without this the RO group would be
+    unrestricted by that rule (group rules OR-combine, and a user in none of a
+    model's rule-groups is unfiltered) and could see MORE rows than the tier it
+    mirrors. Never removes a group; idempotent via the membership check."""
+    if not group_ids:
+        return
+    rules = odoo.search_read("ir.rule", [["groups", "in", list(group_ids)]], ["id", "groups"])
     linked = 0
     for r in rules:
         if ro_gid not in r["groups"]:
-            odoo.call("ir.rule", "write", [[r["id"]], {"groups": [[4, ro_gid]]}])
+            if not odoo.dry:
+                odoo.call("ir.rule", "write", [[r["id"]], {"groups": [[4, ro_gid]]}])
             linked += 1
     if rules:
-        print(f"      {len(rules)} record rules ({linked} newly linked)")
+        verb = "would link" if odoo.dry else "newly linked"
+        print(f"      {len(rules)} record rules ({linked} {verb})")
 
 
 def main():
@@ -193,10 +229,17 @@ def main():
     odoo = Odoo(url, db, login, key, dry_run=args.dry_run)
     print(f"Connected to {url} / {db} as uid {odoo.uid}{'  [DRY RUN]' if args.dry_run else ''}\n")
 
-    # Resolve the secret denylist to model ids once.
-    secret_ids = {
-        m["id"] for m in odoo.search_read("ir.model", [["model", "in", SECRET_MODELS]], ["id"])
-    }
+    # Resolve the secret denylist to model ids once. Report which entries did
+    # NOT resolve to an installed model, so a typo (which would silently drop a
+    # protection) is visible instead of hidden - not every entry is installed on
+    # every DB, but a misspelled installed model must never pass unnoticed.
+    resolved = odoo.search_read("ir.model", [["model", "in", SECRET_MODELS]], ["id", "model"])
+    secret_ids = {m["id"] for m in resolved}
+    unresolved = sorted(set(SECRET_MODELS) - {m["model"] for m in resolved})
+    print(f"  Secret denylist: {len(secret_ids)}/{len(SECRET_MODELS)} models present, excluded from read.")
+    if unresolved:
+        print(f"  ! denylist entries not installed on this DB (verify none is a typo): {', '.join(unresolved)}")
+
 
     # Base read-only group: everything an Internal User (base.group_user) can
     # read - the reference + framework models every app leans on - minus
@@ -211,14 +254,17 @@ def main():
          "api_key_duration": KEY_DURATION_DAYS},
         f"group '{BASE_RO_GROUP}'",
     )
-    ro_group_ids = []
     if base_ro:
         mirror_read_acls(odoo, base_ro, read_model_ids(odoo, base_closure, secret_ids), "Base")
-        ro_group_ids.append(base_ro)
+        # Link the base RO group into the base closure's record rules too, so a
+        # key scoped strictly to the role (which drops group_user) is still
+        # row-restricted by group_user's own rules instead of unfiltered.
+        link_record_rules(odoo, base_closure, base_ro)
 
     # Per-app read-only groups: the app's User tier read surface MINUS the base
     # surface (the app-specific delta), attached to that app's privilege so
     # "Read Only" shows up as an option in the app dropdown.
+    matched = 0
     for priv_name, read_src in APP_READ_SOURCES.items():
         pid = odoo.find_id("res.groups.privilege", [["name", "=", priv_name]])
         if not pid:
@@ -235,6 +281,7 @@ def main():
         if not src:
             print(f"    ! read-source group '{read_src}' not found, skipping")
             continue
+        matched += 1
         ro = odoo.ensure(
             "res.groups", [["name", "=", RO_GROUP_SUFFIX], ["privilege_id", "=", priv["id"]]],
             {"name": RO_GROUP_SUFFIX, "privilege_id": priv["id"], "api_key_duration": KEY_DURATION_DAYS},
@@ -244,15 +291,30 @@ def main():
             continue
         app_ids = group_closure(odoo, src["id"]) - base_closure
         mirror_read_acls(odoo, ro, read_model_ids(odoo, app_ids, secret_ids), priv_name)
-        link_record_rules(odoo, src["id"], ro)
-        ro_group_ids.append(ro)
+        link_record_rules(odoo, app_ids, ro)
 
-    # Bundle every read-only group into one OCA base_user_role role.
+    # Fail loud rather than silently building a base-only role: zero matched apps
+    # means the privileges could not be resolved at all (wrong DB, or a naming
+    # mismatch the en_US context did not cover) - not a valid read-only setup.
+    if not args.dry_run and matched == 0:
+        sys.exit("No business-app privileges matched. Refusing to build a base-only "
+                 "read-only role. Check the target DB and APP_READ_SOURCES names.")
+
+    # Bundle every read-only group into one OCA base_user_role role. Resolve the
+    # groups by querying ALL read-only groups THIS SCRIPT owns (base + per-app),
+    # not just the ones touched this run, so a partial re-run (an app skipped this
+    # time) never shrinks a previously-complete role via the [6,0] full-replace.
+    # Scoped to our own groups (base-ro comment, or attached to a privilege) so a
+    # foreign group happening to be named "Read Only" is never swept in.
     print(f"\n  Role '{ROLE_NAME}':")
-    role_id = odoo.ensure(
+    all_ro = odoo.call("res.groups", "search", [[
+        ["name", "=", RO_GROUP_SUFFIX],
+        "|", ["comment", "like", "base-ro"], ["privilege_id", "!=", False],
+    ]]) if not odoo.dry else []
+    odoo.ensure(
         "res.users.role",
         [["name", "=", ROLE_NAME]],
-        {"name": ROLE_NAME, "implied_ids": [[6, 0, ro_group_ids]]} if ro_group_ids else {"name": ROLE_NAME},
+        {"name": ROLE_NAME, "implied_ids": [[6, 0, all_ro]]} if all_ro else {"name": ROLE_NAME},
         f"role '{ROLE_NAME}'",
     )
 
